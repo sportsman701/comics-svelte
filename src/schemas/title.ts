@@ -1,15 +1,6 @@
-import { Publisher } from "./publisher"
+import { components } from "./generated"
 
-export type Title = {
-  id: number
-  name: string
-  publisher_id: number
-  url: string
-  issues: number
-  year: number
-  volume: number
-  publisher?: Publisher
-}
+export type Title = components["schemas"]["Title"]
 
 export type TitleRecord = {
   id: number

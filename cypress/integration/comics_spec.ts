@@ -1,3 +1,5 @@
+import { Comic } from "../../src/schemas"
+
 describe("Comics List", () => {
   it("Comics List is OK", () => {
     cy.request("/v1/comics").then((response) => {
@@ -59,7 +61,9 @@ describe("Comics List", () => {
     cy.request("/v1/comics?publisherIds=1")
       .its("body")
       .then((response) => {
-        const publisherIds = response["comics"].map((a) => a["publisher"]["id"])
+        const publisherIds = response["comics"].map(
+          (a: Comic) => a["publisher"]["id"]
+        )
         expect([...new Set(publisherIds)]).to.deep.equal([1])
       })
   })
@@ -68,7 +72,9 @@ describe("Comics List", () => {
     cy.request("/v1/comics?publisherIds=3,4")
       .its("body")
       .then((response) => {
-        const publisherIds = response["comics"].map((a) => a["publisher"]["id"])
+        const publisherIds = response["comics"].map(
+          (a: Comic) => a["publisher"]["id"]
+        )
         expect([...new Set(publisherIds)]).to.deep.equal([3, 4])
       })
   })
@@ -77,7 +83,7 @@ describe("Comics List", () => {
     cy.request("/v1/comics?gradeIds=5")
       .its("body")
       .then((response) => {
-        const gradeIds = response["comics"].map((a) => a["grade"]["id"])
+        const gradeIds = response["comics"].map((a: Comic) => a["grade"]["id"])
         expect([...new Set(gradeIds)]).to.deep.equal([5])
       })
   })
@@ -86,7 +92,7 @@ describe("Comics List", () => {
     cy.request("/v1/comics?gradeIds=5,12")
       .its("body")
       .then((response) => {
-        const gradeIds = response["comics"].map((a) => a["grade"]["id"])
+        const gradeIds = response["comics"].map((a: Comic) => a["grade"]["id"])
         expect([...new Set(gradeIds)]).to.deep.equal([5, 12])
       })
   })
@@ -95,7 +101,7 @@ describe("Comics List", () => {
     cy.request("/v1/comics?titleIds=10")
       .its("body")
       .then((response) => {
-        const titleIds = response["comics"].map((a) => a["title"]["id"])
+        const titleIds = response["comics"].map((a: Comic) => a["title"]["id"])
         expect([...new Set(titleIds)]).to.deep.equal([10])
       })
   })
@@ -104,7 +110,7 @@ describe("Comics List", () => {
     cy.request("/v1/comics?titleIds=10,11")
       .its("body")
       .then((response) => {
-        const titleIds = response["comics"].map((a) => a["title"]["id"])
+        const titleIds = response["comics"].map((a: Comic) => a["title"]["id"])
         expect([...new Set(titleIds)]).to.deep.equal([10, 11])
       })
   })

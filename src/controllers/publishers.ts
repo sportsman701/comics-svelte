@@ -1,6 +1,6 @@
 import * as express from "express"
 import { db, Pagination } from "../database"
-import { Publisher } from "../models"
+import { Publisher } from "../schemas"
 
 export async function listPublishers(
   req: express.Request,

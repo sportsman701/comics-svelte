@@ -1,16 +1,6 @@
-import { Title } from "./title"
-import { Grade } from "./grade"
-import { Publisher } from "./publisher"
+import { components } from "./generated"
 
-export type Comic = {
-  id: number
-  issue: number
-  description: string
-  date: number
-  grade: Grade
-  title: Title
-  publisher: Publisher
-}
+export type Comic = components["schemas"]["Comic"]
 
 export type ComicRecord = {
   id: number

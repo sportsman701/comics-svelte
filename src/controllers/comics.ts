@@ -1,7 +1,7 @@
 import * as express from "express"
 import { db, joinedObjectParser, idsParser, Pagination } from "../database"
-import { Comic, Title, Grade, Publisher } from "../models"
-import { ComicRecord } from "../models"
+import { Comic, Title, Grade, Publisher } from "../schemas"
+import { ComicRecord } from "../schemas"
 // import logger from "../log"
 
 const transformComicResponse = (obj: ComicRecord): Comic => ({

@@ -1,5 +1,3 @@
-import { Comic, Title } from "../../src/models"
-
 describe("Titles List", () => {
   it("Titles List is OK", () => {
     cy.request("/v1/titles").then((response) => {

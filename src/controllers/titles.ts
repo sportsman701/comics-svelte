@@ -1,6 +1,6 @@
 import * as express from "express"
 import { db, joinedObjectParser, Pagination } from "../database"
-import { Title, TitleRecord, Publisher } from "../models"
+import { Title, TitleRecord, Publisher } from "../schemas"
 
 const transformTitleResponse = (obj: TitleRecord): Title => {
   return {

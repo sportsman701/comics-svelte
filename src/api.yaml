@@ -276,6 +276,8 @@ components:
           minimum: 0
           maximum: 2147483647
           nullable: true
+        publisher:
+          $ref: "#/components/schemas/Publisher"
     Grade:
       type: object
       required:

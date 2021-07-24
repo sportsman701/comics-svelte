@@ -10,7 +10,8 @@
     "run:dev": "NODE_ENV=development nodemon ./src/app.ts",
     "cy:run": "npx cypress run --headless --spec \"cypress/integration/**/*spec.[t|j]s\"",
     "cy:open": "npx cypress open",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate-schemas": "npx openapi-typescript src/api.yaml --output src/schemas/generated.ts"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

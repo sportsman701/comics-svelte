@@ -2,3 +2,4 @@ bin
 logs
 node_modules
 yarn.lock
+src/schemas/generated.ts
