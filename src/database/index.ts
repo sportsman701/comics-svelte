@@ -22,11 +22,11 @@ console.log(`Environment: ${environment}`)
 // }
 
 const config: Knex.Config = {
-    client: "sqlite3",
-    connection: {
-        filename: "./src/database/production.db"
-    },
-    useNullAsDefault: true
+  client: "sqlite3",
+  connection: {
+    filename: "./src/database/production.db",
+  },
+  useNullAsDefault: true,
 }
 
 const db = knex(config)

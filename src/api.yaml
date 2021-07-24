@@ -3,7 +3,7 @@ info:
   title: Comics!
   description: Comics!
   version: 1.0.0
-servers: 
+servers:
   - url: /v1
 paths:
   /comics:
@@ -222,7 +222,7 @@ components:
       required:
         - type
         - message
-      properties: 
+      properties:
         type:
           type: string
           maxLength: 2048
@@ -307,7 +307,7 @@ components:
         - id
         - name
         - url
-      properties: 
+      properties:
         id:
           type: integer
           format: int32
