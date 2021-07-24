@@ -1,0 +1,4 @@
+bin
+logs
+node_modules
+yarn.lock

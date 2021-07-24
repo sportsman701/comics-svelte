@@ -9,7 +9,11 @@
     "test": "start-server-and-test run:dev http://localhost:3000 cy:run",
     "run:dev": "NODE_ENV=development nodemon ./src/app.ts",
     "cy:run": "npx cypress run --headless --spec \"cypress/integration/**/*spec.[t|j]s\"",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "author": "",
   "license": "ISC",
@@ -35,8 +39,11 @@
     "@types/validator": "^13.1.4",
     "@types/yamljs": "^0.2.31",
     "cypress": "^7.5.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.0",
     "nodemon": "^2.0.7",
     "openapi-typescript": "^4.0.2",
+    "prettier": "2.3.2",
     "start-server-and-test": "^1.12.6",
     "ts-node": "^10.0.0"
   }
