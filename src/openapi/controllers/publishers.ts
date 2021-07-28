@@ -1,5 +1,5 @@
 import * as express from "express"
-import { db, Pagination } from "../database"
+import { db, Pagination } from "../../database"
 import { Publisher } from "../schemas"
 
 export async function listPublishers(

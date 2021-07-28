@@ -1,0 +1,27 @@
+# import Comic from "comics.graphql"
+# import Publisher from "publishers.graphql"
+# import Title from "titles.graphql"
+
+type PageInfo {
+  startCursor: String
+  endCursor: String
+  hasNextPage: Boolean
+}
+
+type ComicsPage {
+  totalCount: Int!
+  items: [Comic]
+  pageInfo: PageInfo
+}
+
+type PublishersPage {
+  totalCount: Int!
+  items: [Publisher]
+  pageInfo: PageInfo
+}
+
+type TitlesPage {
+  totalCount: Int!
+  items: [Title]
+  pageInfo: PageInfo
+}

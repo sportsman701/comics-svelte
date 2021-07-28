@@ -11,7 +11,7 @@
     "cy:run": "npx cypress run --headless --spec \"cypress/integration/**/*spec.[t|j]s\"",
     "cy:open": "npx cypress open",
     "prepare": "husky install",
-    "generate-schemas": "npx openapi-typescript src/api.yaml --output src/schemas/generated.ts"
+    "generate-schemas": "npx openapi-typescript src/api.yaml --output src/openapi/schemas/generated.ts"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -22,7 +22,10 @@
     "compression": "^1.7.4",
     "connect": "^3.7.0",
     "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
     "express-openapi-validator": "^4.12.11",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^7.0.5",
     "morgan": "^1.10.0",
     "sqlite3": "^5.0.2",
     "swagger-routes-express": "^3.3.0",
@@ -34,6 +37,8 @@
   "devDependencies": {
     "@types/compression": "^1.7.1",
     "@types/express": "^4.17.12",
+    "@types/express-graphql": "^0.9.0",
+    "@types/graphql": "^14.5.0",
     "@types/knex": "^0.16.1",
     "@types/node": "^15.12.2",
     "@types/sqlite3": "^3.1.7",

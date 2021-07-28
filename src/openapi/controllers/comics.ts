@@ -1,5 +1,5 @@
 import * as express from "express"
-import { db, joinedObjectParser, idsParser, Pagination } from "../database"
+import { db, joinedObjectParser, idsParser, Pagination } from "../../database"
 import { Comic, Title, Grade, Publisher } from "../schemas"
 import { ComicRecord } from "../schemas"
 // import logger from "../log"
