@@ -8,7 +8,7 @@
     "start": "node ./bin/app.js",
     "test": "start-server-and-test run:dev http://localhost:3000 cy:run",
     "run:dev": "NODE_ENV=development nodemon ./src/app.ts",
-    "cy:run": "npx cypress run --headless --spec \"cypress/integration/**/*spec.[t|j]s\"",
+    "cy:run": "npx cypress run --headless --spec \"cypress/integration/graphql/**/*spec.[t|j]s\"",
     "cy:open": "npx cypress open",
     "prepare": "husky install",
     "generate-schemas": "npx openapi-typescript src/api.yaml --output src/openapi/schemas/generated.ts"

@@ -17,10 +17,50 @@ import { resolvers } from "./graphql/resolvers"
 
 const morgan = require("morgan")("combined")
 
-async function genServer(): Promise<Express> {
-  // const apiSpec = YAML.load(path.resolve("./src/openapi/api.yaml"))
-  // logger.info(summarise(apiSpec))
+const configGraphQL = (server: Express) => {
+  const schema = loadSchemaSync("./src/graphql/schemas/*.graphql", {
+    loaders: [new GraphQLFileLoader()],
+  })
 
+  server.use(
+    "/graphql",
+    graphqlHTTP({
+      schema: addResolversToSchema({
+        schema,
+        resolvers,
+      }),
+      graphiql: true,
+      pretty: process.env.NODE_ENV === "development",
+    })
+  )
+}
+
+const configOpenAPI = (server: Express) => {
+  const apiSpec = YAML.load(path.resolve("./src/openapi/api.yaml"))
+  logger.info(summarise(apiSpec))
+
+  server.use(
+    OpenApiValidator.middleware({
+      apiSpec: "./src/openapi/api.yaml",
+      validateRequests: {
+        coerceTypes: true,
+      },
+      validateResponses: true,
+    })
+  )
+
+  const connect = connector(api, apiSpec, {
+    onCreateRoute: (method: string, descriptor: any[]) => {
+      console.log(
+        `${method}: ${descriptor[0]} -> ${(descriptor[1] as any).name}`
+      )
+    },
+  })
+
+  connect(server)
+}
+
+async function genServer(): Promise<Express> {
   const server = express()
   server.use(morgan)
   server.use(compression())
@@ -40,35 +80,11 @@ async function genServer(): Promise<Express> {
     }
   )
 
+  // OpenAPI
+  configOpenAPI(server)
+
   // GraphQL
-
-  const schema = loadSchemaSync("./src/graphql/schemas/*.graphql", {
-    loaders: [new GraphQLFileLoader()],
-  })
-
-  server.use(
-    "/graphql",
-    graphqlHTTP({
-      schema: addResolversToSchema({
-        schema,
-        resolvers,
-      }),
-      graphiql: true,
-      pretty: process.env.NODE_ENV === "development",
-    })
-  )
-
-  // Open API
-
-  // server.use(
-  //   OpenApiValidator.middleware({
-  //     apiSpec: "./src/openapi/api.yaml",
-  //     validateRequests: {
-  //       coerceTypes: true,
-  //     },
-  //     validateResponses: true,
-  //   })
-  // )
+  configGraphQL(server)
 
   // Stupid error handler
   server.use(
@@ -96,16 +112,6 @@ async function genServer(): Promise<Express> {
       }
     }
   )
-
-  // const connect = connector(api, apiSpec, {
-  //   onCreateRoute: (method: string, descriptor: any[]) => {
-  //     console.log(
-  //       `${method}: ${descriptor[0]} -> ${(descriptor[1] as any).name}`
-  //     )
-  //   },
-  // })
-
-  // connect(server)
 
   return server
 }

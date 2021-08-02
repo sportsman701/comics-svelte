@@ -2,7 +2,6 @@ import { db } from "../../database"
 import { listComics, fetchComic } from "./comics"
 import { listTitles, fetchTitle } from "./titles"
 import { listPublishers, fetchPublisher } from "./publishers"
-import logger from "../../log"
 
 export const resolvers = {
   Query: {
