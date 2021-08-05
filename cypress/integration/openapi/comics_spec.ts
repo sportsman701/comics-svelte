@@ -1,4 +1,4 @@
-import { Comic } from "../../src/schemas"
+import { Comic } from "../../../src/openapi/schemas"
 
 describe("Comics List", () => {
   it("Comics List is OK", () => {

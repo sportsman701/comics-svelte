@@ -15,6 +15,8 @@ import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader"
 import { addResolversToSchema } from "@graphql-tools/schema"
 import { resolvers } from "./graphql/resolvers"
 
+import { db, paginateQuery, countTable } from "./database"
+
 const morgan = require("morgan")("combined")
 
 const configGraphQL = (server: Express) => {
@@ -31,6 +33,13 @@ const configGraphQL = (server: Express) => {
       }),
       graphiql: true,
       pretty: process.env.NODE_ENV === "development",
+      context: {
+        database: {
+          db,
+          paginateQuery,
+          countTable,
+        },
+      },
     })
   )
 }

@@ -9,19 +9,20 @@ type Query {
     title_id: Int
     publisher_id: Int
     pageSize: Int = 100
-    beforeCursor: String
-    afterCursor: String
+    beforeCursor: String = null
+    afterCursor: String = null
   ): ComicsPage
-  title(id: Int): Title
+  title(id: Int!): Title
   titles(
+    publisher_id: String
     pageSize: Int = 100
-    beforeCursor: String
-    afterCursor: String
+    beforeCursor: String = null
+    afterCursor: String = null
   ): TitlesPage
-  publisher(id: Int): Publisher
+  publisher(id: Int!): Publisher
   publishers(
     pageSize: Int = 100
-    beforeCursor: String
-    afterCursor: String
+    beforeCursor: String = null
+    afterCursor: String = null
   ): PublishersPage
 }

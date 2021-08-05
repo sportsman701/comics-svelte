@@ -1,21 +1,26 @@
-import { db, paginateQuery, countTable } from "../../database"
+import { Knex } from "knex"
+import { AppContext } from "../modules/context"
+import { Title, TitlesPage, QueryTitlesArgs } from "../types/schemas"
 
-const titleQueryBuilder = () =>
+const titleQueryBuilder = (db: Knex) =>
   db("titles").select("titles.*").orderBy("name", "asc")
 
-export const listTitles = async (args: any) => {
-  const titleQuery = titleQueryBuilder().modify((queryBuilder) => {
-    if (args.publisher_id) {
-      queryBuilder.where("publisher_id", args.publisher_id)
+export const listTitles = async (
+  args: QueryTitlesArgs,
+  context: AppContext
+): Promise<TitlesPage> => {
+  const titleQuery = titleQueryBuilder(context.database.db).modify(
+    (queryBuilder) => {
+      if (args.publisher_id) {
+        queryBuilder.where("publisher_id", args.publisher_id.toString())
+      }
     }
-  })
-
-  const { result, startCursor, endCursor, hasNextPage } = await paginateQuery(
-    titleQuery,
-    args
   )
 
-  const totalCount = await countTable("titles")
+  const { result, startCursor, endCursor, hasNextPage } =
+    await context.database.paginateQuery<Title>(titleQuery, args)
+
+  const totalCount = await context.database.countTable("titles")
 
   return {
     totalCount: totalCount,
@@ -28,6 +33,9 @@ export const listTitles = async (args: any) => {
   }
 }
 
-export const fetchTitle = async (id: number) => {
-  return await titleQueryBuilder().where("id", id).first()
+export const fetchTitle = async (
+  id: number,
+  context: AppContext
+): Promise<Title> => {
+  return await titleQueryBuilder(context.database.db).where("id", id).first()
 }

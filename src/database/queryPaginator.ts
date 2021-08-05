@@ -1,8 +1,18 @@
 import { Knex } from "knex"
+import {
+  ArgsTypes,
+  PaginationResult,
+  ParsedResult,
+  PrimitiveTypes,
+  QueryPaginatorArgs,
+} from "../graphql/types/paginator"
 
 const CURSOR_PREFIX = "id__"
 
-export const encodeCursor = (id: number): string => {
+// the `string | number` here is bulls**t because of the id field
+// being textual in graphql and we're generating these types from
+// the graphql schemas. Probably need a better solution here.
+export const encodeCursor = (id: string | number): string => {
   return Buffer.from(CURSOR_PREFIX + id.toString()).toString("base64")
 }
 
@@ -11,7 +21,7 @@ export const decodeCursor = (cursor: string): number => {
   return parseInt(decoded.replace(CURSOR_PREFIX, ""), 10)
 }
 
-class QueryPaginator {
+class QueryPaginator<T> {
   readonly DEFAULT_START = 0
   readonly DEFAULT_PAGE_SIZE = 100
 
@@ -19,9 +29,9 @@ class QueryPaginator {
   before: number | null
   after: number | null
 
-  constructor(args: any) {
+  constructor(args: QueryPaginatorArgs) {
     this.pageSize =
-      parseInt(args.pageSize as string, 10) || this.DEFAULT_PAGE_SIZE
+      typeof args.pageSize === "number" ? args.pageSize : this.DEFAULT_PAGE_SIZE
     this.before = args.beforeCursor ? decodeCursor(args.beforeCursor) : null
     this.after = args.afterCursor ? decodeCursor(args.afterCursor) : null
   }
@@ -30,29 +40,34 @@ class QueryPaginator {
   getAfter = () => this.after
   getPageSize = () => this.pageSize
 
-  paginateQuery = (queryBuilder: Knex.QueryBuilder): void => {
+  paginateQuery = (queryBuilder: Knex.QueryBuilder): Knex.QueryBuilder => {
     queryBuilder.limit(this.getPageSize() + 1)
 
     if (this.getBefore()) {
-      queryBuilder.where("id", "<", this.getBefore()).orderBy("id", "desc")
+      const orderDir = this.getAfter() ? undefined : "desc"
+      queryBuilder.where("id", "<", this.getBefore()).orderBy("id", orderDir)
     }
 
     if (this.getAfter()) {
       queryBuilder.where("id", ">", this.getAfter()).orderBy("id", "asc")
     }
+
+    return queryBuilder
   }
 
-  parseResult = (data: object[]): any => {
-    const isBefore = this.getBefore() !== null
+  query = async (queryBuilder: Knex.QueryBuilder): Promise<ParsedResult<T>> => {
+    let result = await queryBuilder
     let hasNextPage = false
-    let result = data
 
     if (result.length > this.getPageSize()) {
       result = result.slice(0, this.getPageSize())
       hasNextPage = true
     }
 
-    if (isBefore) {
+    // Due to the query semantics of getting items Before a cursor, we
+    // need to reverse the results of pure Before queries to standardize
+    // on an ascending id order
+    if (this.shouldReverseResults()) {
       result = result.reverse()
     }
 
@@ -61,23 +76,31 @@ class QueryPaginator {
       hasNextPage,
     }
   }
+
+  shouldReverseResults = (): boolean => {
+    const isBefore = this.getBefore() !== null
+    const isAfter = this.getAfter() !== null
+    return isBefore && !isAfter
+  }
 }
 
-export const paginateQuery = async (
-  query: Knex.QueryBuilder,
-  args: object
-): Promise<any> => {
-  const paginator = new QueryPaginator(args)
-  paginator.paginateQuery(query)
+export const paginateQuery = async <T extends PrimitiveTypes>(
+  queryBuilder: Knex.QueryBuilder,
+  args: ArgsTypes
+): Promise<PaginationResult<T>> => {
+  const paginator = new QueryPaginator<T>({
+    pageSize: args.pageSize,
+    afterCursor: args.afterCursor,
+    beforeCursor: args.beforeCursor,
+  })
 
-  const rawResult = await query
+  const paginatedQueryBuilder = paginator.paginateQuery(queryBuilder)
 
-  const { result, hasNextPage } = paginator.parseResult(rawResult)
+  const { result, hasNextPage } = await paginator.query(queryBuilder)
 
-  const startCursor = result.length ? encodeCursor(result[0].id) : null
-  const endCursor = result.length
-    ? encodeCursor(result[result.length - 1].id)
-    : null
+  const startCursor = encodeCursor(result[0].id)
+  const endCursor =
+    result.length > 1 ? encodeCursor(result[result.length - 1].id) : undefined
 
   return {
     result,
