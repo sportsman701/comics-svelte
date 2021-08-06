@@ -15,9 +15,9 @@ import {
   QueryTitlesArgs,
   Title,
   TitlesPage,
-} from "../types/schemas"
-import { Resolvers } from "../types/resolvers"
-import { AppContext } from "../modules/context"
+} from "../types"
+import { Resolvers } from "../types"
+import { AppContext } from "../modules"
 
 /**
  * Basic resolver signature has positional arguments:
@@ -76,8 +76,8 @@ export const resolvers: Resolvers = {
     async titles(
       parent: Publisher,
       _: any,
-      context: any
-    ): Promise<Publisher[]> {
+      context: AppContext
+    ): Promise<Title[]> {
       return await context.database
         .db("titles")
         .select("*")

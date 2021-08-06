@@ -1,5 +1,5 @@
-import { AppContext } from "../modules/context"
-import { Comic, ComicsPage, QueryComicsArgs } from "../types/schemas"
+import { AppContext } from "../modules"
+import { Comic, ComicsPage, QueryComicsArgs } from "../types"
 import { Knex } from "knex"
 
 const comicQueryBuilder = (db: Knex) => db("comics").select("comics.*")

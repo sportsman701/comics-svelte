@@ -5,7 +5,7 @@ import {
   ParsedResult,
   PrimitiveTypes,
   QueryPaginatorArgs,
-} from "../graphql/types/paginator"
+} from "../types/paginator"
 
 const CURSOR_PREFIX = "id__"
 
@@ -95,8 +95,7 @@ export const paginateQuery = async <T extends PrimitiveTypes>(
   })
 
   const paginatedQueryBuilder = paginator.paginateQuery(queryBuilder)
-
-  const { result, hasNextPage } = await paginator.query(queryBuilder)
+  const { result, hasNextPage } = await paginator.query(paginatedQueryBuilder)
 
   const startCursor = encodeCursor(result[0].id)
   const endCursor =

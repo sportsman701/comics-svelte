@@ -1,4 +1,4 @@
-import { encodeCursor } from "../../../src/database/queryPaginator"
+import { encodeCursor } from "../../server/database/queryPaginator"
 
 describe("GraphQL: lists", () => {
   it("Comics List OK", () => {

@@ -1,10 +1,6 @@
 import { Knex } from "knex"
-import { AppContext } from "../modules/context"
-import {
-  Publisher,
-  PublishersPage,
-  QueryPublishersArgs,
-} from "../types/schemas"
+import { AppContext } from "../modules"
+import { Publisher, PublishersPage, QueryPublishersArgs } from "../types"
 
 const publisherQueryBuilder = (db: Knex) =>
   db("publishers").select("publishers.*").orderBy("name", "asc")

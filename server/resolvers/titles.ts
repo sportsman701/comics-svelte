@@ -1,6 +1,6 @@
 import { Knex } from "knex"
-import { AppContext } from "../modules/context"
-import { Title, TitlesPage, QueryTitlesArgs } from "../types/schemas"
+import { AppContext } from "../modules"
+import { Title, TitlesPage, QueryTitlesArgs } from "../types"
 
 const titleQueryBuilder = (db: Knex) =>
   db("titles").select("titles.*").orderBy("name", "asc")

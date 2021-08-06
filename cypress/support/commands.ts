@@ -23,39 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-Cypress.Commands.add(
-  "assertListPagination",
-  { prevSubject: true },
-  (subject, { listKey, page, pageSize, previousPage, nextPage }) => {
-    expect(subject[listKey]).to.have.length(pageSize)
-    expect(subject["meta"]).to.deep.equal({
-      page: page,
-      pageSize: pageSize,
-      previousPage: previousPage,
-      nextPage: nextPage,
-    })
-
-    return subject
-  }
-)
-
-declare namespace Cypress {
-  interface ListAssertionParameters {
-    listKey: string
-    page: number
-    pageSize: number
-    previousPage: number | null
-    nextPage: number | null
-  }
-
-  interface Chainable {
-    assertListPagination({
-      listKey,
-      page,
-      pageSize,
-      previousPage,
-      nextPage,
-    }: ListAssertionParameters): Chainable<Subject>
-  }
-}

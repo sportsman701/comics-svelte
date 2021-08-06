@@ -1,14 +1,9 @@
-schema: "src/graphql/schemas/*.graphql"
+schema: "src/schemas/*.graphql"
 generates:
-  ./src/graphql/types/schemas.ts:
+  ./src/types/schemas.ts:
     hooks:
       afterOneFileWrite:
         - prettier --write
     plugins:
       - typescript
-  ./src/graphql/types/resolvers.ts:
-    hooks:
-      afterOneFileWrite:
-        - prettier --write
-    plugins:
       - typescript-resolvers

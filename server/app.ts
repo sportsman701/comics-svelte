@@ -2,25 +2,19 @@ import express from "express"
 import { Express } from "express-serve-static-core"
 import compression from "compression"
 import logger from "./log"
-import * as OpenApiValidator from "express-openapi-validator"
-import { connector, summarise } from "swagger-routes-express"
-import YAML from "yamljs"
-import path from "path"
-
-import * as api from "./openapi/controllers"
 
 import { graphqlHTTP } from "express-graphql"
 import { loadSchemaSync } from "@graphql-tools/load"
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader"
 import { addResolversToSchema } from "@graphql-tools/schema"
-import { resolvers } from "./graphql/resolvers"
+import { resolvers } from "./resolvers"
 
 import { db, paginateQuery, countTable } from "./database"
 
 const morgan = require("morgan")("combined")
 
 const configGraphQL = (server: Express) => {
-  const schema = loadSchemaSync("./src/graphql/schemas/*.graphql", {
+  const schema = loadSchemaSync("./server/schemas/*.graphql", {
     loaders: [new GraphQLFileLoader()],
   })
 
@@ -44,39 +38,24 @@ const configGraphQL = (server: Express) => {
   )
 }
 
-const configOpenAPI = (server: Express) => {
-  const apiSpec = YAML.load(path.resolve("./src/openapi/api.yaml"))
-  logger.info(summarise(apiSpec))
-
-  server.use(
-    OpenApiValidator.middleware({
-      apiSpec: "./src/openapi/api.yaml",
-      validateRequests: {
-        coerceTypes: true,
-      },
-      validateResponses: true,
-    })
-  )
-
-  const connect = connector(api, apiSpec, {
-    onCreateRoute: (method: string, descriptor: any[]) => {
-      console.log(
-        `${method}: ${descriptor[0]} -> ${(descriptor[1] as any).name}`
-      )
-    },
-  })
-
-  connect(server)
-}
-
-async function genServer(): Promise<Express> {
-  const server = express()
-  server.use(morgan)
-  server.use(compression())
-
-  // simple healthcheck
+const configSinglePageApp = (server: Express) => {
   server.get(
     "/",
+    (
+      req: express.Request,
+      res: express.Response,
+      next: express.NextFunction
+    ) => {
+      res.sendFile("views/index.html", {
+        root: __dirname,
+      })
+    }
+  )
+}
+
+const configHealthcheck = (server: Express) => {
+  server.get(
+    "/healthcheck",
     (
       req: express.Request,
       res: express.Response,
@@ -88,14 +67,9 @@ async function genServer(): Promise<Express> {
       next()
     }
   )
+}
 
-  // OpenAPI
-  configOpenAPI(server)
-
-  // GraphQL
-  configGraphQL(server)
-
-  // Stupid error handler
+const configErrorHandlers = (server: Express) => {
   server.use(
     (
       err: any,
@@ -121,6 +95,17 @@ async function genServer(): Promise<Express> {
       }
     }
   )
+}
+
+async function genServer(): Promise<Express> {
+  const server = express()
+  server.use(morgan)
+  server.use(compression())
+
+  configHealthcheck(server)
+  configSinglePageApp(server)
+  configGraphQL(server)
+  configErrorHandlers(server)
 
   return server
 }
@@ -132,5 +117,5 @@ genServer()
     })
   })
   .catch((err) => {
-    console.error(`Error: ${err}`)
+    logger.error(`Error: ${err}`)
   })

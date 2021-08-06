@@ -1,5 +1,5 @@
 import { Knex } from "knex"
-import { db, paginateQuery, countTable } from "../../database"
+import { db, paginateQuery, countTable } from "../database"
 import { ArgsTypes, PaginationResult, PrimitiveTypes } from "../types/paginator"
 
 type DatabaseContext = {
