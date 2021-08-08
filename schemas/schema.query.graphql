@@ -1,0 +1,28 @@
+# import Comic from "schema.comics.graphql"
+# import Title from "schema.titles.graphql"
+# import Publisher from "schema.publishers.graphql"
+# import ComicsPage, TitlesPage, PublishersPage from "schema.pages.graphql"
+
+type Query {
+  comic(id: Int!): Comic
+  comics(
+    titleId: Int
+    publisherId: Int
+    pageSize: Int = 100
+    beforeCursor: String = null
+    afterCursor: String = null
+  ): ComicsPage
+  title(id: Int!): Title
+  titles(
+    publisherId: String
+    pageSize: Int = 100
+    beforeCursor: String = null
+    afterCursor: String = null
+  ): TitlesPage
+  publisher(id: Int!): Publisher
+  publishers(
+    pageSize: Int = 100
+    beforeCursor: String = null
+    afterCursor: String = null
+  ): PublishersPage
+}

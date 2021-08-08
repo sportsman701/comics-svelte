@@ -1,5 +1,0 @@
-bin
-logs
-node_modules
-yarn.lock
-src/openapi/schemas/generated.ts

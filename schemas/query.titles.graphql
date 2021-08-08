@@ -1,0 +1,37 @@
+query GetTitles($pageSize: Int, $afterCursor: String, $beforeCursor: String) {
+  titles(pageSize: $pageSize, afterCursor: $afterCursor, beforeCursor: $beforeCursor) {
+    totalCount
+    items {
+      id
+      name
+      url
+      year
+      volume
+      publisher {
+        id
+        name
+        url
+      }
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
+    }
+  }
+}
+
+query GetTitle($id: Int!) {
+  title(id: $id) {
+    id
+    name
+    url
+		year
+    volume
+    publisher {
+      id
+      name
+      url
+    }
+  }
+}

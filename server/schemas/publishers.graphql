@@ -1,7 +1,0 @@
-# import Title from "titles.graphql"
-type Publisher {
-  id: ID!
-  name: String!
-  url: String
-  titles: [Title]
-}

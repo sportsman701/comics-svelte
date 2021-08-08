@@ -1,0 +1,10 @@
+# import Title from "schema.titles.graphql"
+type Comic {
+  id: ID!
+  issue_no: Int
+  description: String
+  date: Int
+  grade_id: Int!
+  title_id: Int!
+  title: Title!
+}

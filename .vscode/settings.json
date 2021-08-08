@@ -7,6 +7,12 @@
   "[typescript]": {
     "editor.tabSize": 2
   },
+  "[svelte]": {
+    "editor.tabSize": 2
+  },
+  "[graphql]": {
+    "editor.tabSize": 2
+  },
   "debug.javascript.codelens.npmScripts": "never",
   "debug.javascript.autoAttachFilter": "onlyWithFlag"
 }

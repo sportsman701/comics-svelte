@@ -1,0 +1,8122 @@
+{
+  "titles": {
+    "1": {
+      "id": 1,
+      "name": "Alien Legion",
+      "publisher_id": 1,
+      "issues": {
+        "1": {
+          "id": 1,
+          "issue_no": 8,
+          "title_id": 1,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "2": {
+          "id": 2,
+          "issue_no": 9,
+          "title_id": 1,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "2": {
+      "id": 2,
+      "name": "Aliens",
+      "publisher_id": 3,
+      "issues": {
+        "11": {
+          "id": 11,
+          "issue_no": 5,
+          "title_id": 2,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "12": {
+          "id": 12,
+          "issue_no": 6,
+          "title_id": 2,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": 1,
+      "count": 2
+    },
+    "3": {
+      "id": 3,
+      "name": "Aliens",
+      "publisher_id": 3,
+      "issues": {
+        "13": {
+          "id": 13,
+          "issue_no": 1,
+          "title_id": 3,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "14": {
+          "id": 14,
+          "issue_no": 2,
+          "title_id": 3,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "15": {
+          "id": 15,
+          "issue_no": 3,
+          "title_id": 3,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "16": {
+          "id": 16,
+          "issue_no": 4,
+          "title_id": 3,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": 2,
+      "count": 4
+    },
+    "4": {
+      "id": 4,
+      "name": "Aliens vs. Predator",
+      "publisher_id": 3,
+      "issues": {
+        "18": {
+          "id": 18,
+          "issue_no": 0,
+          "title_id": 4,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "compilation of stories from Dark Horse Presents"
+        },
+        "19": {
+          "id": 19,
+          "issue_no": 1,
+          "title_id": 4,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "20": {
+          "id": 20,
+          "issue_no": 2,
+          "title_id": 4,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "21": {
+          "id": 21,
+          "issue_no": 3,
+          "title_id": 4,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "22": {
+          "id": 22,
+          "issue_no": 4,
+          "title_id": 4,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 5
+    },
+    "5": {
+      "id": 5,
+      "name": "Aliens: Earth War",
+      "publisher_id": 3,
+      "issues": {
+        "3": {
+          "id": 3,
+          "issue_no": 1,
+          "title_id": 5,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "4": {
+          "id": 4,
+          "issue_no": 2,
+          "title_id": 5,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "5": {
+          "id": 5,
+          "issue_no": 3,
+          "title_id": 5,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "6": {
+          "id": 6,
+          "issue_no": 4,
+          "title_id": 5,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "6": {
+      "id": 6,
+      "name": "Aliens: Genocide",
+      "publisher_id": 3,
+      "issues": {
+        "7": {
+          "id": 7,
+          "issue_no": 1,
+          "title_id": 6,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "8": {
+          "id": 8,
+          "issue_no": 2,
+          "title_id": 6,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "9": {
+          "id": 9,
+          "issue_no": 3,
+          "title_id": 6,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "10": {
+          "id": 10,
+          "issue_no": 4,
+          "title_id": 6,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "7": {
+      "id": 7,
+      "name": "Aliens: Newts Tale",
+      "publisher_id": 3,
+      "issues": {
+        "17": {
+          "id": 17,
+          "issue_no": 1,
+          "title_id": 7,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "TPB"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "8": {
+      "id": 8,
+      "name": "Alpha Flight",
+      "publisher_id": 1,
+      "issues": {
+        "23": {
+          "id": 23,
+          "issue_no": 17,
+          "title_id": 8,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "X-Men app."
+        },
+        "24": {
+          "id": 24,
+          "issue_no": 87,
+          "title_id": 8,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine app."
+        },
+        "25": {
+          "id": 25,
+          "issue_no": 88,
+          "title_id": 8,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine, Forge"
+        },
+        "26": {
+          "id": 26,
+          "issue_no": 89,
+          "title_id": 8,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine, Puck, Guardian Returns"
+        },
+        "27": {
+          "id": 27,
+          "issue_no": 89,
+          "title_id": 8,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine app."
+        },
+        "28": {
+          "id": 28,
+          "issue_no": 100,
+          "title_id": 8,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 6
+    },
+    "9": {
+      "id": 9,
+      "name": "Amazing Spider-Man",
+      "publisher_id": 1,
+      "issues": {
+        "29": {
+          "id": 29,
+          "issue_no": 279,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Silver Sable"
+        },
+        "30": {
+          "id": 30,
+          "issue_no": 280,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Silver Sable"
+        },
+        "31": {
+          "id": 31,
+          "issue_no": 285,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Punisher app."
+        },
+        "32": {
+          "id": 32,
+          "issue_no": 286,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "33": {
+          "id": 33,
+          "issue_no": 288,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Last Gang War"
+        },
+        "34": {
+          "id": 34,
+          "issue_no": 289,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Hobgoblin Revealed as Ned Leeds, Double Issue"
+        },
+        "35": {
+          "id": 35,
+          "issue_no": 290,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Peter proposes to Mary-Jane"
+        },
+        "36": {
+          "id": 36,
+          "issue_no": 291,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "37": {
+          "id": 37,
+          "issue_no": 292,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "38": {
+          "id": 38,
+          "issue_no": 293,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "39": {
+          "id": 39,
+          "issue_no": 294,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Death of Kraven"
+        },
+        "40": {
+          "id": 40,
+          "issue_no": 295,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "41": {
+          "id": 41,
+          "issue_no": 296,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "42": {
+          "id": 42,
+          "issue_no": 298,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Chance, 1st Venom not in costume, Todd McFarlane art begins"
+        },
+        "43": {
+          "id": 43,
+          "issue_no": 299,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Chance, 1st Venom app. in costume"
+        },
+        "44": {
+          "id": 44,
+          "issue_no": 304,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "45": {
+          "id": 45,
+          "issue_no": 308,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "46": {
+          "id": 46,
+          "issue_no": 309,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "47": {
+          "id": 47,
+          "issue_no": 313,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "48": {
+          "id": 48,
+          "issue_no": 314,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "49": {
+          "id": 49,
+          "issue_no": 315,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Venom app."
+        },
+        "50": {
+          "id": 50,
+          "issue_no": 316,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Venom app."
+        },
+        "51": {
+          "id": 51,
+          "issue_no": 317,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Venom app."
+        },
+        "52": {
+          "id": 52,
+          "issue_no": 318,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Scorpion"
+        },
+        "53": {
+          "id": 53,
+          "issue_no": 320,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot"
+        },
+        "54": {
+          "id": 54,
+          "issue_no": 321,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot"
+        },
+        "55": {
+          "id": 55,
+          "issue_no": 322,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot"
+        },
+        "56": {
+          "id": 56,
+          "issue_no": 323,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot, Capt. America app."
+        },
+        "57": {
+          "id": 57,
+          "issue_no": 324,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot, Sabretooth app., McFarlane cover art only"
+        },
+        "58": {
+          "id": 58,
+          "issue_no": 325,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The AssasinNation Plot, Capt. America, Silver Sable"
+        },
+        "59": {
+          "id": 59,
+          "issue_no": 328,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Hulk app., Last McFarlane Issue, Sebastian Shaw app."
+        },
+        "60": {
+          "id": 60,
+          "issue_no": 346,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Venom app."
+        },
+        "61": {
+          "id": 61,
+          "issue_no": 347,
+          "title_id": 9,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Venom app."
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 33
+    },
+    "10": {
+      "id": 10,
+      "name": "Brigade",
+      "publisher_id": 4,
+      "issues": {
+        "62": {
+          "id": 62,
+          "issue_no": 1,
+          "title_id": 10,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "11": {
+      "id": 11,
+      "name": "Captain America & Falcon",
+      "publisher_id": 1,
+      "issues": {
+        "63": {
+          "id": 63,
+          "issue_no": 166,
+          "title_id": 11,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "12": {
+      "id": 12,
+      "name": "Concrete: Earth Day",
+      "publisher_id": 3,
+      "issues": {
+        "64": {
+          "id": 64,
+          "issue_no": 1,
+          "title_id": 12,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Stories by: Moebius, Charles Vess, Paul Chadwick"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "13": {
+      "id": 13,
+      "name": "Concrete: Fragile Creature",
+      "publisher_id": 3,
+      "issues": {
+        "65": {
+          "id": 65,
+          "issue_no": 1,
+          "title_id": 13,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "TPB"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "14": {
+      "id": 14,
+      "name": "Dark Horse Presents",
+      "publisher_id": 3,
+      "issues": {
+        "66": {
+          "id": 66,
+          "issue_no": 36,
+          "title_id": 14,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Aliens vs. Predator"
+        },
+        "67": {
+          "id": 67,
+          "issue_no": 42,
+          "title_id": 14,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Aliens"
+        },
+        "68": {
+          "id": 68,
+          "issue_no": 43,
+          "title_id": 14,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Aliens"
+        },
+        "69": {
+          "id": 69,
+          "issue_no": 46,
+          "title_id": 14,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Predator"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "15": {
+      "id": 15,
+      "name": "Excalibur",
+      "publisher_id": 1,
+      "issues": {
+        "70": {
+          "id": 70,
+          "issue_no": 1,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "71": {
+          "id": 71,
+          "issue_no": 0,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Sword is Drawn"
+        },
+        "72": {
+          "id": 72,
+          "issue_no": 0,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Mojo Mayhem"
+        },
+        "73": {
+          "id": 73,
+          "issue_no": 2,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "74": {
+          "id": 74,
+          "issue_no": 3,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Juggernaut app."
+        },
+        "75": {
+          "id": 75,
+          "issue_no": 4,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "76": {
+          "id": 76,
+          "issue_no": 5,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "77": {
+          "id": 77,
+          "issue_no": 6,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Inferno"
+        },
+        "78": {
+          "id": 78,
+          "issue_no": 7,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Inferno"
+        },
+        "79": {
+          "id": 79,
+          "issue_no": 8,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "80": {
+          "id": 80,
+          "issue_no": 9,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "81": {
+          "id": 81,
+          "issue_no": 10,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "82": {
+          "id": 82,
+          "issue_no": 11,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "83": {
+          "id": 83,
+          "issue_no": 12,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Begin Cross Time Caper"
+        },
+        "84": {
+          "id": 84,
+          "issue_no": 13,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "85": {
+          "id": 85,
+          "issue_no": 14,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "86": {
+          "id": 86,
+          "issue_no": 15,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "87": {
+          "id": 87,
+          "issue_no": 16,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "88": {
+          "id": 88,
+          "issue_no": 17,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "89": {
+          "id": 89,
+          "issue_no": 18,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "90": {
+          "id": 90,
+          "issue_no": 19,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cross Time Caper"
+        },
+        "91": {
+          "id": 91,
+          "issue_no": 20,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "92": {
+          "id": 92,
+          "issue_no": 21,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "1st Crusader-X"
+        },
+        "93": {
+          "id": 93,
+          "issue_no": 22,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Iron Man app."
+        },
+        "94": {
+          "id": 94,
+          "issue_no": 23,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "95": {
+          "id": 95,
+          "issue_no": 24,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "John Byrne (artist) app. in story"
+        },
+        "96": {
+          "id": 96,
+          "issue_no": 25,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Galactus app."
+        },
+        "97": {
+          "id": 97,
+          "issue_no": 26,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "98": {
+          "id": 98,
+          "issue_no": 27,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "99": {
+          "id": 99,
+          "issue_no": 28,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "100": {
+          "id": 100,
+          "issue_no": 29,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "101": {
+          "id": 101,
+          "issue_no": 30,
+          "title_id": 15,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 32
+    },
+    "16": {
+      "id": 16,
+      "name": "Fantasy Masterpieces",
+      "publisher_id": 1,
+      "issues": {
+        "102": {
+          "id": 102,
+          "issue_no": 5,
+          "title_id": 16,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": "Silver Surfer"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "17": {
+      "id": 17,
+      "name": "Fathom",
+      "publisher_id": 4,
+      "issues": {
+        "103": {
+          "id": 103,
+          "issue_no": 2,
+          "title_id": 17,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "18": {
+      "id": 18,
+      "name": "Flaming Carrot",
+      "publisher_id": 4,
+      "issues": {
+        "104": {
+          "id": 104,
+          "issue_no": 25,
+          "title_id": 18,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "TMNT app., Includes Trading Cards"
+        },
+        "105": {
+          "id": 105,
+          "issue_no": 26,
+          "title_id": 18,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "TMNT app."
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "19": {
+      "id": 19,
+      "name": "G.I. Joe",
+      "publisher_id": 1,
+      "issues": {
+        "106": {
+          "id": 106,
+          "issue_no": 19,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "107": {
+          "id": 107,
+          "issue_no": 22,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "108": {
+          "id": 108,
+          "issue_no": 27,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Origin of Snake-Eyes part 2"
+        },
+        "109": {
+          "id": 109,
+          "issue_no": 29,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "110": {
+          "id": 110,
+          "issue_no": 31,
+          "title_id": 19,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": ""
+        },
+        "111": {
+          "id": 111,
+          "issue_no": 32,
+          "title_id": 19,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": ""
+        },
+        "112": {
+          "id": 112,
+          "issue_no": 33,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "New Headquarters"
+        },
+        "113": {
+          "id": 113,
+          "issue_no": 34,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "114": {
+          "id": 114,
+          "issue_no": 35,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "115": {
+          "id": 115,
+          "issue_no": 36,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "116": {
+          "id": 116,
+          "issue_no": 37,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "117": {
+          "id": 117,
+          "issue_no": 38,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "118": {
+          "id": 118,
+          "issue_no": 39,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "119": {
+          "id": 119,
+          "issue_no": 40,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "120": {
+          "id": 120,
+          "issue_no": 41,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "121": {
+          "id": 121,
+          "issue_no": 42,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "122": {
+          "id": 122,
+          "issue_no": 43,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "123": {
+          "id": 123,
+          "issue_no": 44,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "124": {
+          "id": 124,
+          "issue_no": 45,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "125": {
+          "id": 125,
+          "issue_no": 46,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "126": {
+          "id": 126,
+          "issue_no": 47,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "127": {
+          "id": 127,
+          "issue_no": 48,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "128": {
+          "id": 128,
+          "issue_no": 49,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "129": {
+          "id": 129,
+          "issue_no": 50,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Size, Intro Special Missions"
+        },
+        "130": {
+          "id": 130,
+          "issue_no": 51,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "131": {
+          "id": 131,
+          "issue_no": 52,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "132": {
+          "id": 132,
+          "issue_no": 53,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "133": {
+          "id": 133,
+          "issue_no": 54,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "134": {
+          "id": 134,
+          "issue_no": 55,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "135": {
+          "id": 135,
+          "issue_no": 56,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "136": {
+          "id": 136,
+          "issue_no": 57,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "137": {
+          "id": 137,
+          "issue_no": 58,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "138": {
+          "id": 138,
+          "issue_no": 59,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "$1.00 cover price begins"
+        },
+        "139": {
+          "id": 139,
+          "issue_no": 60,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Todd McFarlane art"
+        },
+        "140": {
+          "id": 140,
+          "issue_no": 61,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "141": {
+          "id": 141,
+          "issue_no": 62,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "142": {
+          "id": 142,
+          "issue_no": 63,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "143": {
+          "id": 143,
+          "issue_no": 64,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "144": {
+          "id": 144,
+          "issue_no": 65,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "145": {
+          "id": 145,
+          "issue_no": 66,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "146": {
+          "id": 146,
+          "issue_no": 67,
+          "title_id": 19,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 41
+    },
+    "20": {
+      "id": 20,
+      "name": "G.I. Joe & Transformers",
+      "publisher_id": 1,
+      "issues": {
+        "161": {
+          "id": 161,
+          "issue_no": 1,
+          "title_id": 20,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "162": {
+          "id": 162,
+          "issue_no": 2,
+          "title_id": 20,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "21": {
+      "id": 21,
+      "name": "G.I. Joe 3-D",
+      "publisher_id": 1,
+      "issues": {
+        "147": {
+          "id": 147,
+          "issue_no": 2,
+          "title_id": 21,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "with glasses"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "22": {
+      "id": 22,
+      "name": "G.I. Joe Order of Battle",
+      "publisher_id": 1,
+      "issues": {
+        "148": {
+          "id": 148,
+          "issue_no": 1,
+          "title_id": 22,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "149": {
+          "id": 149,
+          "issue_no": 3,
+          "title_id": 22,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "150": {
+          "id": 150,
+          "issue_no": 4,
+          "title_id": 22,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "23": {
+      "id": 23,
+      "name": "G.I. Joe Special Missions",
+      "publisher_id": 1,
+      "issues": {
+        "151": {
+          "id": 151,
+          "issue_no": 1,
+          "title_id": 23,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "152": {
+          "id": 152,
+          "issue_no": 2,
+          "title_id": 23,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "153": {
+          "id": 153,
+          "issue_no": 3,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "154": {
+          "id": 154,
+          "issue_no": 4,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "155": {
+          "id": 155,
+          "issue_no": 5,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "156": {
+          "id": 156,
+          "issue_no": 6,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "157": {
+          "id": 157,
+          "issue_no": 7,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "158": {
+          "id": 158,
+          "issue_no": 8,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "159": {
+          "id": 159,
+          "issue_no": 10,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "160": {
+          "id": 160,
+          "issue_no": 14,
+          "title_id": 23,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 10
+    },
+    "24": {
+      "id": 24,
+      "name": "G.I. Joe Yearbook",
+      "publisher_id": 1,
+      "issues": {
+        "163": {
+          "id": 163,
+          "issue_no": 3,
+          "title_id": 24,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "25": {
+      "id": 25,
+      "name": "Gambit",
+      "publisher_id": 1,
+      "issues": {
+        "164": {
+          "id": 164,
+          "issue_no": 0,
+          "title_id": 25,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Water Damage (warping)\nTPB"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "26": {
+      "id": 26,
+      "name": "Ghost Rider",
+      "publisher_id": 1,
+      "issues": {
+        "165": {
+          "id": 165,
+          "issue_no": 26,
+          "title_id": 26,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "X-Men crossover, Jim Lee cover art"
+        },
+        "166": {
+          "id": 166,
+          "issue_no": 27,
+          "title_id": 26,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "X-Men crossover, Jim Lee cover art"
+        },
+        "167": {
+          "id": 167,
+          "issue_no": 28,
+          "title_id": 26,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Rise of the Midnight Sons, Bagged with poster, unopened"
+        },
+        "168": {
+          "id": 168,
+          "issue_no": 29,
+          "title_id": 26,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine & Beast app."
+        },
+        "169": {
+          "id": 169,
+          "issue_no": 30,
+          "title_id": 26,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 5
+    },
+    "27": {
+      "id": 27,
+      "name": "Grendel Tales",
+      "publisher_id": 3,
+      "issues": {
+        "170": {
+          "id": 170,
+          "issue_no": 2,
+          "title_id": 27,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "171": {
+          "id": 171,
+          "issue_no": 3,
+          "title_id": 27,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "28": {
+      "id": 28,
+      "name": "Grendel: War Child",
+      "publisher_id": 3,
+      "issues": {
+        "172": {
+          "id": 172,
+          "issue_no": 0,
+          "title_id": 28,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "TPB"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "29": {
+      "id": 29,
+      "name": "Groo the Wanderer",
+      "publisher_id": 1,
+      "issues": {
+        "173": {
+          "id": 173,
+          "issue_no": 11,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "174": {
+          "id": 174,
+          "issue_no": 17,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "175": {
+          "id": 175,
+          "issue_no": 18,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "176": {
+          "id": 176,
+          "issue_no": 19,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "177": {
+          "id": 177,
+          "issue_no": 20,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "178": {
+          "id": 178,
+          "issue_no": 21,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "179": {
+          "id": 179,
+          "issue_no": 22,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "180": {
+          "id": 180,
+          "issue_no": 23,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "181": {
+          "id": 181,
+          "issue_no": 24,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "182": {
+          "id": 182,
+          "issue_no": 25,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "183": {
+          "id": 183,
+          "issue_no": 26,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "184": {
+          "id": 184,
+          "issue_no": 27,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "185": {
+          "id": 185,
+          "issue_no": 28,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "186": {
+          "id": 186,
+          "issue_no": 29,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "187": {
+          "id": 187,
+          "issue_no": 30,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "188": {
+          "id": 188,
+          "issue_no": 35,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "189": {
+          "id": 189,
+          "issue_no": 38,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "190": {
+          "id": 190,
+          "issue_no": 44,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "191": {
+          "id": 191,
+          "issue_no": 47,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "192": {
+          "id": 192,
+          "issue_no": 52,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "193": {
+          "id": 193,
+          "issue_no": 53,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "194": {
+          "id": 194,
+          "issue_no": 54,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "195": {
+          "id": 195,
+          "issue_no": 55,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "196": {
+          "id": 196,
+          "issue_no": 58,
+          "title_id": 29,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "197": {
+          "id": 197,
+          "issue_no": 59,
+          "title_id": 29,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "198": {
+          "id": 198,
+          "issue_no": 74,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "199": {
+          "id": 199,
+          "issue_no": 75,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "200": {
+          "id": 200,
+          "issue_no": 77,
+          "title_id": 29,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 28
+    },
+    "30": {
+      "id": 30,
+      "name": "Hard Boiled",
+      "publisher_id": 3,
+      "issues": {
+        "201": {
+          "id": 201,
+          "issue_no": 1,
+          "title_id": 30,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "31": {
+      "id": 31,
+      "name": "Havok & Wolverine",
+      "publisher_id": 1,
+      "issues": {
+        "202": {
+          "id": 202,
+          "issue_no": 1,
+          "title_id": 31,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "203": {
+          "id": 203,
+          "issue_no": 3,
+          "title_id": 31,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "204": {
+          "id": 204,
+          "issue_no": 4,
+          "title_id": 31,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "32": {
+      "id": 32,
+      "name": "History of the DC Universe",
+      "publisher_id": 2,
+      "issues": {
+        "205": {
+          "id": 205,
+          "issue_no": 1,
+          "title_id": 32,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "206": {
+          "id": 206,
+          "issue_no": 2,
+          "title_id": 32,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "33": {
+      "id": 33,
+      "name": "Icarus",
+      "publisher_id": 1,
+      "issues": {
+        "207": {
+          "id": 207,
+          "issue_no": 5,
+          "title_id": 33,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "34": {
+      "id": 34,
+      "name": "Iceman",
+      "publisher_id": 1,
+      "issues": {
+        "208": {
+          "id": 208,
+          "issue_no": 3,
+          "title_id": 34,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "209": {
+          "id": 209,
+          "issue_no": 4,
+          "title_id": 34,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": 1985,
+      "volume": "NULL",
+      "count": 2
+    },
+    "35": {
+      "id": 35,
+      "name": "Incredible Hulk, The",
+      "publisher_id": 1,
+      "issues": {
+        "210": {
+          "id": 210,
+          "issue_no": 340,
+          "title_id": 35,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "McFarlane art, Hulk vs. Wolverine"
+        },
+        "211": {
+          "id": 211,
+          "issue_no": 342,
+          "title_id": 35,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "McFarlane art"
+        },
+        "212": {
+          "id": 212,
+          "issue_no": 343,
+          "title_id": 35,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "McFarlane art"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "36": {
+      "id": 36,
+      "name": "Infinity Gauntlet, The",
+      "publisher_id": 1,
+      "issues": {
+        "213": {
+          "id": 213,
+          "issue_no": 1,
+          "title_id": 36,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "214": {
+          "id": 214,
+          "issue_no": 2,
+          "title_id": 36,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "215": {
+          "id": 215,
+          "issue_no": 3,
+          "title_id": 36,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "216": {
+          "id": 216,
+          "issue_no": 4,
+          "title_id": 36,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "37": {
+      "id": 37,
+      "name": "Justice League Europe",
+      "publisher_id": 2,
+      "issues": {
+        "217": {
+          "id": 217,
+          "issue_no": 1,
+          "title_id": 37,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "218": {
+          "id": 218,
+          "issue_no": 2,
+          "title_id": 37,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "38": {
+      "id": 38,
+      "name": "Justice Society of America",
+      "publisher_id": 2,
+      "issues": {
+        "219": {
+          "id": 219,
+          "issue_no": 1,
+          "title_id": 38,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Flash app."
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "39": {
+      "id": 39,
+      "name": "Kitty Pride & Wolverine",
+      "publisher_id": 1,
+      "issues": {
+        "220": {
+          "id": 220,
+          "issue_no": 2,
+          "title_id": 39,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "221": {
+          "id": 221,
+          "issue_no": 4,
+          "title_id": 39,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "222": {
+          "id": 222,
+          "issue_no": 5,
+          "title_id": 39,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Slight water damage (warping - no ink damage)"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "40": {
+      "id": 40,
+      "name": "Knights of Pendragon",
+      "publisher_id": 1,
+      "issues": {
+        "223": {
+          "id": 223,
+          "issue_no": 1,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "224": {
+          "id": 224,
+          "issue_no": 2,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "225": {
+          "id": 225,
+          "issue_no": 3,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "226": {
+          "id": 226,
+          "issue_no": 4,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "227": {
+          "id": 227,
+          "issue_no": 5,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "228": {
+          "id": 228,
+          "issue_no": 6,
+          "title_id": 40,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": 1,
+      "count": 6
+    },
+    "41": {
+      "id": 41,
+      "name": "Lady Death: Between Heaven & Hell",
+      "publisher_id": 5,
+      "issues": {
+        "229": {
+          "id": 229,
+          "issue_no": 0,
+          "title_id": 41,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Water Damage (warping)"
+        }
+      },
+      "year": 1995,
+      "volume": "NULL",
+      "count": 1
+    },
+    "42": {
+      "id": 42,
+      "name": "Lady Death: The Odyssey",
+      "publisher_id": 5,
+      "issues": {
+        "230": {
+          "id": 230,
+          "issue_no": 2,
+          "title_id": 42,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "231": {
+          "id": 231,
+          "issue_no": 3,
+          "title_id": 42,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "232": {
+          "id": 232,
+          "issue_no": 4,
+          "title_id": 42,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "43": {
+      "id": 43,
+      "name": "Longshot",
+      "publisher_id": 1,
+      "issues": {
+        "233": {
+          "id": 233,
+          "issue_no": 0,
+          "title_id": 43,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Compilation of 6 part series"
+        },
+        "234": {
+          "id": 234,
+          "issue_no": 3,
+          "title_id": 43,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "44": {
+      "id": 44,
+      "name": "Magik",
+      "publisher_id": 1,
+      "issues": {
+        "235": {
+          "id": 235,
+          "issue_no": 3,
+          "title_id": 44,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": 1983,
+      "volume": "NULL",
+      "count": 1
+    },
+    "45": {
+      "id": 45,
+      "name": "Marvel Comics Presents",
+      "publisher_id": 1,
+      "issues": {
+        "237": {
+          "id": 237,
+          "issue_no": 24,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "238": {
+          "id": 238,
+          "issue_no": 25,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "239": {
+          "id": 239,
+          "issue_no": 28,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "240": {
+          "id": 240,
+          "issue_no": 29,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "241": {
+          "id": 241,
+          "issue_no": 32,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": "McFarlane cover art"
+        },
+        "242": {
+          "id": 242,
+          "issue_no": 33,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "243": {
+          "id": 243,
+          "issue_no": 34,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "244": {
+          "id": 244,
+          "issue_no": 35,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "245": {
+          "id": 245,
+          "issue_no": 36,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "246": {
+          "id": 246,
+          "issue_no": 38,
+          "title_id": 45,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "247": {
+          "id": 247,
+          "issue_no": 41,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "248": {
+          "id": 248,
+          "issue_no": 74,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Begin Weapon X"
+        },
+        "249": {
+          "id": 249,
+          "issue_no": 75,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "250": {
+          "id": 250,
+          "issue_no": 76,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "251": {
+          "id": 251,
+          "issue_no": 77,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "252": {
+          "id": 252,
+          "issue_no": 78,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "253": {
+          "id": 253,
+          "issue_no": 79,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "254": {
+          "id": 254,
+          "issue_no": 80,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "255": {
+          "id": 255,
+          "issue_no": 81,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "256": {
+          "id": 256,
+          "issue_no": 82,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "257": {
+          "id": 257,
+          "issue_no": 83,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "258": {
+          "id": 258,
+          "issue_no": 84,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Weapon X"
+        },
+        "259": {
+          "id": 259,
+          "issue_no": 85,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Wolverine - Sam Keith art"
+        },
+        "260": {
+          "id": 260,
+          "issue_no": 86,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Wolverine - Sam Keith art"
+        },
+        "261": {
+          "id": 261,
+          "issue_no": 87,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Wolverine - Sam Keith art"
+        },
+        "262": {
+          "id": 262,
+          "issue_no": 88,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Wolverine - Sam Keith art"
+        },
+        "263": {
+          "id": 263,
+          "issue_no": 89,
+          "title_id": 45,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Wolverine - Sam Keith art"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 27
+    },
+    "46": {
+      "id": 46,
+      "name": "Marvel Fanfare",
+      "publisher_id": 1,
+      "issues": {
+        "264": {
+          "id": 264,
+          "issue_no": 51,
+          "title_id": 46,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Silver Surfer"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "47": {
+      "id": 47,
+      "name": "Marvel Masterworks",
+      "publisher_id": 1,
+      "issues": {
+        "265": {
+          "id": 265,
+          "issue_no": 0,
+          "title_id": 47,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Giant Size X-Men #1, & X-Men #s 94-100"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "48": {
+      "id": 48,
+      "name": "Marvel Milestone Edition",
+      "publisher_id": 1,
+      "issues": {
+        "266": {
+          "id": 266,
+          "issue_no": 0,
+          "title_id": 48,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "49": {
+      "id": 49,
+      "name": "Marvel Super-Heroes Summer Special",
+      "publisher_id": 1,
+      "issues": {
+        "267": {
+          "id": 267,
+          "issue_no": 2,
+          "title_id": 49,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "50": {
+      "id": 50,
+      "name": "Marvel Universe",
+      "publisher_id": 1,
+      "issues": {
+        "268": {
+          "id": 268,
+          "issue_no": 8,
+          "title_id": 50,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "51": {
+      "id": 51,
+      "name": "Marvel: 1989 Year in Review",
+      "publisher_id": 1,
+      "issues": {
+        "236": {
+          "id": 236,
+          "issue_no": 0,
+          "title_id": 51,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Time Parody, McFarlane cover"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "52": {
+      "id": 52,
+      "name": "Mask, The",
+      "publisher_id": 3,
+      "issues": {
+        "269": {
+          "id": 269,
+          "issue_no": 1,
+          "title_id": 52,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "270": {
+          "id": 270,
+          "issue_no": 2,
+          "title_id": 52,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "53": {
+      "id": 53,
+      "name": "Mephisto vs. The X-Men",
+      "publisher_id": 1,
+      "issues": {
+        "271": {
+          "id": 271,
+          "issue_no": 3,
+          "title_id": 53,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "54": {
+      "id": 54,
+      "name": "Mighty Thor Annual, The",
+      "publisher_id": 1,
+      "issues": {
+        "272": {
+          "id": 272,
+          "issue_no": 14,
+          "title_id": 54,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": "Atlantis Attacks"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "55": {
+      "id": 55,
+      "name": "Mighty Thor, The",
+      "publisher_id": 1,
+      "issues": {
+        "273": {
+          "id": 273,
+          "issue_no": 384,
+          "title_id": 55,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "274": {
+          "id": 274,
+          "issue_no": 411,
+          "title_id": 55,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Juggernaut app., Acts of Vengence"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "56": {
+      "id": 56,
+      "name": "Mister Miracle",
+      "publisher_id": 2,
+      "issues": {
+        "275": {
+          "id": 275,
+          "issue_no": 1,
+          "title_id": 56,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "57": {
+      "id": 57,
+      "name": "Morbius",
+      "publisher_id": 1,
+      "issues": {
+        "276": {
+          "id": 276,
+          "issue_no": 1,
+          "title_id": 57,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": "Bagged"
+        },
+        "277": {
+          "id": 277,
+          "issue_no": 1,
+          "title_id": 57,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Open Bag"
+        },
+        "278": {
+          "id": 278,
+          "issue_no": 2,
+          "title_id": 57,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "58": {
+      "id": 58,
+      "name": "New Mutants Annual",
+      "publisher_id": 1,
+      "issues": {
+        "279": {
+          "id": 279,
+          "issue_no": 2,
+          "title_id": 58,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "280": {
+          "id": 280,
+          "issue_no": 7,
+          "title_id": 58,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Kings of Pain"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "59": {
+      "id": 59,
+      "name": "New Mutants, The",
+      "publisher_id": 1,
+      "issues": {
+        "281": {
+          "id": 281,
+          "issue_no": 22,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "282": {
+          "id": 282,
+          "issue_no": 23,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cloak & Dagger app."
+        },
+        "283": {
+          "id": 283,
+          "issue_no": 24,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cloak & Dagger app."
+        },
+        "284": {
+          "id": 284,
+          "issue_no": 25,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cloak & Dagger app."
+        },
+        "285": {
+          "id": 285,
+          "issue_no": 33,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "286": {
+          "id": 286,
+          "issue_no": 42,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "287": {
+          "id": 287,
+          "issue_no": 43,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "288": {
+          "id": 288,
+          "issue_no": 44,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "289": {
+          "id": 289,
+          "issue_no": 56,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "290": {
+          "id": 290,
+          "issue_no": 57,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "291": {
+          "id": 291,
+          "issue_no": 59,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Fall of the Mutants"
+        },
+        "292": {
+          "id": 292,
+          "issue_no": 60,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Fall of the Mutants, Double Size"
+        },
+        "293": {
+          "id": 293,
+          "issue_no": 61,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Fall of the Mutants"
+        },
+        "294": {
+          "id": 294,
+          "issue_no": 71,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Inferno"
+        },
+        "295": {
+          "id": 295,
+          "issue_no": 72,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Inferno"
+        },
+        "296": {
+          "id": 296,
+          "issue_no": 73,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Inferno"
+        },
+        "297": {
+          "id": 297,
+          "issue_no": 93,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cable vs. Wolverine"
+        },
+        "298": {
+          "id": 298,
+          "issue_no": 94,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cable vs. Wolverine"
+        },
+        "299": {
+          "id": 299,
+          "issue_no": 95,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "X-Tinction Agenda"
+        },
+        "300": {
+          "id": 300,
+          "issue_no": 96,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "X-Tinction Agenda"
+        },
+        "301": {
+          "id": 301,
+          "issue_no": 97,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "X-Tinction Agenda"
+        },
+        "302": {
+          "id": 302,
+          "issue_no": 98,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "303": {
+          "id": 303,
+          "issue_no": 99,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "304": {
+          "id": 304,
+          "issue_no": 100,
+          "title_id": 59,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "1st app. X-Force"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 24
+    },
+    "60": {
+      "id": 60,
+      "name": "New Teen Titans Annual",
+      "publisher_id": 1,
+      "issues": {
+        "305": {
+          "id": 305,
+          "issue_no": 2,
+          "title_id": 60,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "61": {
+      "id": 61,
+      "name": "Night Thrasher",
+      "publisher_id": 1,
+      "issues": {
+        "306": {
+          "id": 306,
+          "issue_no": 1,
+          "title_id": 61,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "62": {
+      "id": 62,
+      "name": "Nightcrawler",
+      "publisher_id": 1,
+      "issues": {
+        "307": {
+          "id": 307,
+          "issue_no": 1,
+          "title_id": 62,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "308": {
+          "id": 308,
+          "issue_no": 2,
+          "title_id": 62,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "309": {
+          "id": 309,
+          "issue_no": 3,
+          "title_id": 62,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "310": {
+          "id": 310,
+          "issue_no": 4,
+          "title_id": 62,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "63": {
+      "id": 63,
+      "name": "Nth Man",
+      "publisher_id": 1,
+      "issues": {
+        "311": {
+          "id": 311,
+          "issue_no": 1,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "312": {
+          "id": 312,
+          "issue_no": 2,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "313": {
+          "id": 313,
+          "issue_no": 3,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "314": {
+          "id": 314,
+          "issue_no": 4,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "315": {
+          "id": 315,
+          "issue_no": 5,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "316": {
+          "id": 316,
+          "issue_no": 6,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "317": {
+          "id": 317,
+          "issue_no": 7,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "318": {
+          "id": 318,
+          "issue_no": 8,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "319": {
+          "id": 319,
+          "issue_no": 9,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "320": {
+          "id": 320,
+          "issue_no": 10,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "321": {
+          "id": 321,
+          "issue_no": 11,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "322": {
+          "id": 322,
+          "issue_no": 12,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "323": {
+          "id": 323,
+          "issue_no": 13,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "324": {
+          "id": 324,
+          "issue_no": 14,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "325": {
+          "id": 325,
+          "issue_no": 15,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "326": {
+          "id": 326,
+          "issue_no": 16,
+          "title_id": 63,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 16
+    },
+    "64": {
+      "id": 64,
+      "name": "Obnoxio the Clown vs. The X-Men",
+      "publisher_id": 1,
+      "issues": {
+        "327": {
+          "id": 327,
+          "issue_no": 1,
+          "title_id": 64,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "65": {
+      "id": 65,
+      "name": "Open Space",
+      "publisher_id": 1,
+      "issues": {
+        "328": {
+          "id": 328,
+          "issue_no": 1,
+          "title_id": 65,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "329": {
+          "id": 329,
+          "issue_no": 3,
+          "title_id": 65,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "330": {
+          "id": 330,
+          "issue_no": 4,
+          "title_id": 65,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "66": {
+      "id": 66,
+      "name": "Paul the Samurai",
+      "publisher_id": 8,
+      "issues": {
+        "331": {
+          "id": 331,
+          "issue_no": 1,
+          "title_id": 66,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "67": {
+      "id": 67,
+      "name": "Phoenix: The Untold Story",
+      "publisher_id": 1,
+      "issues": {
+        "332": {
+          "id": 332,
+          "issue_no": 1,
+          "title_id": 67,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "68": {
+      "id": 68,
+      "name": "Pitt",
+      "publisher_id": 4,
+      "issues": {
+        "333": {
+          "id": 333,
+          "issue_no": 2,
+          "title_id": 68,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "69": {
+      "id": 69,
+      "name": "Power Man & Iron Fist",
+      "publisher_id": 1,
+      "issues": {
+        "334": {
+          "id": 334,
+          "issue_no": 65,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "335": {
+          "id": 335,
+          "issue_no": 67,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "336": {
+          "id": 336,
+          "issue_no": 122,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "337": {
+          "id": 337,
+          "issue_no": 123,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "338": {
+          "id": 338,
+          "issue_no": 124,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "339": {
+          "id": 339,
+          "issue_no": 125,
+          "title_id": 69,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 6
+    },
+    "70": {
+      "id": 70,
+      "name": "Predator",
+      "publisher_id": 3,
+      "issues": {
+        "340": {
+          "id": 340,
+          "issue_no": 1,
+          "title_id": 70,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "2nd Printing"
+        },
+        "341": {
+          "id": 341,
+          "issue_no": 3,
+          "title_id": 70,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "342": {
+          "id": 342,
+          "issue_no": 4,
+          "title_id": 70,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "71": {
+      "id": 71,
+      "name": "Predator: Big Game",
+      "publisher_id": 3,
+      "issues": {
+        "343": {
+          "id": 343,
+          "issue_no": 1,
+          "title_id": 71,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "344": {
+          "id": 344,
+          "issue_no": 2,
+          "title_id": 71,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "345": {
+          "id": 345,
+          "issue_no": 3,
+          "title_id": 71,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "346": {
+          "id": 346,
+          "issue_no": 4,
+          "title_id": 71,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "72": {
+      "id": 72,
+      "name": "Predator: Bloody Sands of Time",
+      "publisher_id": 3,
+      "issues": {
+        "347": {
+          "id": 347,
+          "issue_no": 1,
+          "title_id": 72,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "73": {
+      "id": 73,
+      "name": "Predator: Cold War",
+      "publisher_id": 3,
+      "issues": {
+        "348": {
+          "id": 348,
+          "issue_no": 1,
+          "title_id": 73,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "349": {
+          "id": 349,
+          "issue_no": 2,
+          "title_id": 73,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "350": {
+          "id": 350,
+          "issue_no": 3,
+          "title_id": 73,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "351": {
+          "id": 351,
+          "issue_no": 4,
+          "title_id": 73,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "74": {
+      "id": 74,
+      "name": "Punisher & Wolverine",
+      "publisher_id": 1,
+      "issues": {
+        "352": {
+          "id": 352,
+          "issue_no": 0,
+          "title_id": 74,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "African Saga"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "75": {
+      "id": 75,
+      "name": "Purgatori: Prelude",
+      "publisher_id": 5,
+      "issues": {
+        "353": {
+          "id": 353,
+          "issue_no": 1,
+          "title_id": 75,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "76": {
+      "id": 76,
+      "name": "Ranma 1/2",
+      "publisher_id": 7,
+      "issues": {
+        "354": {
+          "id": 354,
+          "issue_no": 1,
+          "title_id": 76,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "355": {
+          "id": 355,
+          "issue_no": 2,
+          "title_id": 76,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "356": {
+          "id": 356,
+          "issue_no": 3,
+          "title_id": 76,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "77": {
+      "id": 77,
+      "name": "Robocop vs. Terminator",
+      "publisher_id": 3,
+      "issues": {
+        "357": {
+          "id": 357,
+          "issue_no": 1,
+          "title_id": 77,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "78": {
+      "id": 78,
+      "name": "Savage Dragon",
+      "publisher_id": 4,
+      "issues": {
+        "358": {
+          "id": 358,
+          "issue_no": 1,
+          "title_id": 78,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Tunnel Poster"
+        },
+        "359": {
+          "id": 359,
+          "issue_no": 1,
+          "title_id": 78,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Leaping - Group in Background Poster"
+        },
+        "360": {
+          "id": 360,
+          "issue_no": 1,
+          "title_id": 78,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Leaping - Long Coat Poster"
+        },
+        "361": {
+          "id": 361,
+          "issue_no": 1,
+          "title_id": 78,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Leaping - No Coat Poster"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "79": {
+      "id": 79,
+      "name": "Secret Wars",
+      "publisher_id": 1,
+      "issues": {
+        "362": {
+          "id": 362,
+          "issue_no": 1,
+          "title_id": 79,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "80": {
+      "id": 80,
+      "name": "Shadow Hawk",
+      "publisher_id": 4,
+      "issues": {
+        "363": {
+          "id": 363,
+          "issue_no": 1,
+          "title_id": 80,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Silver & Black embossed cover"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "81": {
+      "id": 81,
+      "name": "Shi",
+      "publisher_id": 6,
+      "issues": {
+        "364": {
+          "id": 364,
+          "issue_no": 7,
+          "title_id": 81,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "82": {
+      "id": 82,
+      "name": "Shi & Cyblade",
+      "publisher_id": 6,
+      "issues": {
+        "365": {
+          "id": 365,
+          "issue_no": 1,
+          "title_id": 82,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "83": {
+      "id": 83,
+      "name": "Silver Surfer",
+      "publisher_id": 1,
+      "issues": {
+        "366": {
+          "id": 366,
+          "issue_no": 1,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "1987 Series"
+        },
+        "367": {
+          "id": 367,
+          "issue_no": 2,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "368": {
+          "id": 368,
+          "issue_no": 3,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "369": {
+          "id": 369,
+          "issue_no": 4,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "370": {
+          "id": 370,
+          "issue_no": 5,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "371": {
+          "id": 371,
+          "issue_no": 6,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "372": {
+          "id": 372,
+          "issue_no": 7,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "373": {
+          "id": 373,
+          "issue_no": 8,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "374": {
+          "id": 374,
+          "issue_no": 9,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "375": {
+          "id": 375,
+          "issue_no": 10,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "376": {
+          "id": 376,
+          "issue_no": 11,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "377": {
+          "id": 377,
+          "issue_no": 12,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "378": {
+          "id": 378,
+          "issue_no": 13,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "379": {
+          "id": 379,
+          "issue_no": 14,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "380": {
+          "id": 380,
+          "issue_no": 15,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "381": {
+          "id": 381,
+          "issue_no": 16,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "382": {
+          "id": 382,
+          "issue_no": 17,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "383": {
+          "id": 383,
+          "issue_no": 18,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "384": {
+          "id": 384,
+          "issue_no": 19,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "385": {
+          "id": 385,
+          "issue_no": 20,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "386": {
+          "id": 386,
+          "issue_no": 21,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "387": {
+          "id": 387,
+          "issue_no": 22,
+          "title_id": 83,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "388": {
+          "id": 388,
+          "issue_no": 23,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "389": {
+          "id": 389,
+          "issue_no": 24,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "390": {
+          "id": 390,
+          "issue_no": 25,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Skrulls app."
+        },
+        "391": {
+          "id": 391,
+          "issue_no": 26,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "392": {
+          "id": 392,
+          "issue_no": 27,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "393": {
+          "id": 393,
+          "issue_no": 28,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "394": {
+          "id": 394,
+          "issue_no": 29,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "395": {
+          "id": 395,
+          "issue_no": 30,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "396": {
+          "id": 396,
+          "issue_no": 31,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "397": {
+          "id": 397,
+          "issue_no": 32,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "398": {
+          "id": 398,
+          "issue_no": 33,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "399": {
+          "id": 399,
+          "issue_no": 34,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Thanos Returns, Starlin scripts begin"
+        },
+        "400": {
+          "id": 400,
+          "issue_no": 35,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Thanos app."
+        },
+        "401": {
+          "id": 401,
+          "issue_no": 36,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Capt. Marvel & Warlock app."
+        },
+        "402": {
+          "id": 402,
+          "issue_no": 37,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "403": {
+          "id": 403,
+          "issue_no": 38,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "404": {
+          "id": 404,
+          "issue_no": 39,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "405": {
+          "id": 405,
+          "issue_no": 40,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "406": {
+          "id": 406,
+          "issue_no": 41,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "407": {
+          "id": 407,
+          "issue_no": 42,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "408": {
+          "id": 408,
+          "issue_no": 43,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "409": {
+          "id": 409,
+          "issue_no": 44,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "410": {
+          "id": 410,
+          "issue_no": 45,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "411": {
+          "id": 411,
+          "issue_no": 46,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "412": {
+          "id": 412,
+          "issue_no": 47,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Warlock app."
+        },
+        "413": {
+          "id": 413,
+          "issue_no": 48,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "414": {
+          "id": 414,
+          "issue_no": 49,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "415": {
+          "id": 415,
+          "issue_no": 50,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Silver Embossed Cover, Thanos"
+        },
+        "416": {
+          "id": 416,
+          "issue_no": 51,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "417": {
+          "id": 417,
+          "issue_no": 52,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "418": {
+          "id": 418,
+          "issue_no": 53,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "419": {
+          "id": 419,
+          "issue_no": 54,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "420": {
+          "id": 420,
+          "issue_no": 55,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "421": {
+          "id": 421,
+          "issue_no": 56,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "422": {
+          "id": 422,
+          "issue_no": 57,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "423": {
+          "id": 423,
+          "issue_no": 58,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "424": {
+          "id": 424,
+          "issue_no": 59,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "425": {
+          "id": 425,
+          "issue_no": 60,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "426": {
+          "id": 426,
+          "issue_no": 61,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "427": {
+          "id": 427,
+          "issue_no": 62,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "428": {
+          "id": 428,
+          "issue_no": 63,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "429": {
+          "id": 429,
+          "issue_no": 64,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "430": {
+          "id": 430,
+          "issue_no": 65,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "431": {
+          "id": 431,
+          "issue_no": 66,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "432": {
+          "id": 432,
+          "issue_no": 67,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "433": {
+          "id": 433,
+          "issue_no": 68,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "434": {
+          "id": 434,
+          "issue_no": 69,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "435": {
+          "id": 435,
+          "issue_no": 70,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "436": {
+          "id": 436,
+          "issue_no": 71,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "437": {
+          "id": 437,
+          "issue_no": 72,
+          "title_id": 83,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 72
+    },
+    "84": {
+      "id": 84,
+      "name": "Silver Surfer Annual",
+      "publisher_id": 1,
+      "issues": {
+        "438": {
+          "id": 438,
+          "issue_no": 2,
+          "title_id": 84,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Atlantis Attacks"
+        },
+        "439": {
+          "id": 439,
+          "issue_no": 3,
+          "title_id": 84,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Lifeform"
+        },
+        "440": {
+          "id": 440,
+          "issue_no": 4,
+          "title_id": 84,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Korvac Quest"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "85": {
+      "id": 85,
+      "name": "Spawn",
+      "publisher_id": 4,
+      "issues": {
+        "441": {
+          "id": 441,
+          "issue_no": 1,
+          "title_id": 85,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "1st book"
+        },
+        "442": {
+          "id": 442,
+          "issue_no": 2,
+          "title_id": 85,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "443": {
+          "id": 443,
+          "issue_no": 3,
+          "title_id": 85,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "444": {
+          "id": 444,
+          "issue_no": 9,
+          "title_id": 85,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "86": {
+      "id": 86,
+      "name": "Spectacular Spider-Man",
+      "publisher_id": 1,
+      "issues": {
+        "445": {
+          "id": 445,
+          "issue_no": 127,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "446": {
+          "id": 446,
+          "issue_no": 129,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "447": {
+          "id": 447,
+          "issue_no": 131,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "448": {
+          "id": 448,
+          "issue_no": 132,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "449": {
+          "id": 449,
+          "issue_no": 133,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "450": {
+          "id": 450,
+          "issue_no": 134,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "451": {
+          "id": 451,
+          "issue_no": 135,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "452": {
+          "id": 452,
+          "issue_no": 136,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "453": {
+          "id": 453,
+          "issue_no": 137,
+          "title_id": 86,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 9
+    },
+    "87": {
+      "id": 87,
+      "name": "Spider-Man",
+      "publisher_id": 1,
+      "issues": {
+        "454": {
+          "id": 454,
+          "issue_no": 1,
+          "title_id": 87,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": "Silver Cover - No UPC - Unbagged"
+        },
+        "455": {
+          "id": 455,
+          "issue_no": 1,
+          "title_id": 87,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": "Green Cover - No UPC - Unbagged"
+        },
+        "456": {
+          "id": 456,
+          "issue_no": 2,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "457": {
+          "id": 457,
+          "issue_no": 3,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "458": {
+          "id": 458,
+          "issue_no": 4,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "459": {
+          "id": 459,
+          "issue_no": 5,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "460": {
+          "id": 460,
+          "issue_no": 6,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "461": {
+          "id": 461,
+          "issue_no": 7,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "462": {
+          "id": 462,
+          "issue_no": 8,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "463": {
+          "id": 463,
+          "issue_no": 9,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "464": {
+          "id": 464,
+          "issue_no": 10,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "465": {
+          "id": 465,
+          "issue_no": 11,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "466": {
+          "id": 466,
+          "issue_no": 12,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "467": {
+          "id": 467,
+          "issue_no": 13,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "468": {
+          "id": 468,
+          "issue_no": 14,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "469": {
+          "id": 469,
+          "issue_no": 15,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "470": {
+          "id": 470,
+          "issue_no": 16,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "471": {
+          "id": 471,
+          "issue_no": 17,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "472": {
+          "id": 472,
+          "issue_no": 18,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "473": {
+          "id": 473,
+          "issue_no": 19,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "474": {
+          "id": 474,
+          "issue_no": 20,
+          "title_id": 87,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 21
+    },
+    "88": {
+      "id": 88,
+      "name": "Spirits of Vengence",
+      "publisher_id": 1,
+      "issues": {
+        "475": {
+          "id": 475,
+          "issue_no": 1,
+          "title_id": 88,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": "Bagged, Ghost Rider & Blaze"
+        },
+        "476": {
+          "id": 476,
+          "issue_no": 1,
+          "title_id": 88,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": "Open Bag, Ghost Rider & Blaze"
+        },
+        "477": {
+          "id": 477,
+          "issue_no": 2,
+          "title_id": 88,
+          "grade": "Mint",
+          "grade_score": 10.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "89": {
+      "id": 89,
+      "name": "Stormwatch",
+      "publisher_id": 4,
+      "issues": {
+        "478": {
+          "id": 478,
+          "issue_no": 1,
+          "title_id": 89,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "90": {
+      "id": 90,
+      "name": "Supercops",
+      "publisher_id": 9,
+      "issues": {
+        "479": {
+          "id": 479,
+          "issue_no": 1,
+          "title_id": 90,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "91": {
+      "id": 91,
+      "name": "Tempus Fugitive",
+      "publisher_id": 2,
+      "issues": {
+        "480": {
+          "id": 480,
+          "issue_no": 1,
+          "title_id": 91,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "481": {
+          "id": 481,
+          "issue_no": 2,
+          "title_id": 91,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "482": {
+          "id": 482,
+          "issue_no": 3,
+          "title_id": 91,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "483": {
+          "id": 483,
+          "issue_no": 4,
+          "title_id": 91,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "92": {
+      "id": 92,
+      "name": "Terminator, The",
+      "publisher_id": 9,
+      "issues": {
+        "498": {
+          "id": 498,
+          "issue_no": 15,
+          "title_id": 92,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "93": {
+      "id": 93,
+      "name": "Terminator: All my Futures Past",
+      "publisher_id": 9,
+      "issues": {
+        "484": {
+          "id": 484,
+          "issue_no": 1,
+          "title_id": 93,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "485": {
+          "id": 485,
+          "issue_no": 2,
+          "title_id": 93,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "94": {
+      "id": 94,
+      "name": "Terminator: Hunters and Killers",
+      "publisher_id": 3,
+      "issues": {
+        "486": {
+          "id": 486,
+          "issue_no": 1,
+          "title_id": 94,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "487": {
+          "id": 487,
+          "issue_no": 2,
+          "title_id": 94,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "488": {
+          "id": 488,
+          "issue_no": 3,
+          "title_id": 94,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "95": {
+      "id": 95,
+      "name": "Terminator: One Shot",
+      "publisher_id": 3,
+      "issues": {
+        "489": {
+          "id": 489,
+          "issue_no": 1,
+          "title_id": 95,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Matt Wagner art"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "96": {
+      "id": 96,
+      "name": "Terminator: Secondary Objectives",
+      "publisher_id": 3,
+      "issues": {
+        "490": {
+          "id": 490,
+          "issue_no": 1,
+          "title_id": 96,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "491": {
+          "id": 491,
+          "issue_no": 2,
+          "title_id": 96,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "492": {
+          "id": 492,
+          "issue_no": 3,
+          "title_id": 96,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "493": {
+          "id": 493,
+          "issue_no": 4,
+          "title_id": 96,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "97": {
+      "id": 97,
+      "name": "Terminator: Tempest",
+      "publisher_id": 3,
+      "issues": {
+        "494": {
+          "id": 494,
+          "issue_no": 1,
+          "title_id": 97,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "495": {
+          "id": 495,
+          "issue_no": 2,
+          "title_id": 97,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "496": {
+          "id": 496,
+          "issue_no": 3,
+          "title_id": 97,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "497": {
+          "id": 497,
+          "issue_no": 4,
+          "title_id": 97,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "98": {
+      "id": 98,
+      "name": "Terminator: The Burning Earth",
+      "publisher_id": 9,
+      "issues": {
+        "499": {
+          "id": 499,
+          "issue_no": 1,
+          "title_id": 98,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "500": {
+          "id": 500,
+          "issue_no": 2,
+          "title_id": 98,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "501": {
+          "id": 501,
+          "issue_no": 3,
+          "title_id": 98,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "502": {
+          "id": 502,
+          "issue_no": 4,
+          "title_id": 98,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "503": {
+          "id": 503,
+          "issue_no": 5,
+          "title_id": 98,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 5
+    },
+    "99": {
+      "id": 99,
+      "name": "Terminator: The Enemy Within",
+      "publisher_id": 3,
+      "issues": {
+        "504": {
+          "id": 504,
+          "issue_no": 1,
+          "title_id": 99,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "505": {
+          "id": 505,
+          "issue_no": 2,
+          "title_id": 99,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "506": {
+          "id": 506,
+          "issue_no": 3,
+          "title_id": 99,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "507": {
+          "id": 507,
+          "issue_no": 4,
+          "title_id": 99,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "100": {
+      "id": 100,
+      "name": "Thanos Quest",
+      "publisher_id": 1,
+      "issues": {
+        "508": {
+          "id": 508,
+          "issue_no": 1,
+          "title_id": 100,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "509": {
+          "id": 509,
+          "issue_no": 2,
+          "title_id": 100,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "101": {
+      "id": 101,
+      "name": "Tick, The",
+      "publisher_id": 8,
+      "issues": {
+        "510": {
+          "id": 510,
+          "issue_no": 2,
+          "title_id": 101,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": "3rd Edition"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "102": {
+      "id": 102,
+      "name": "Uncanny X-Men Annual",
+      "publisher_id": 1,
+      "issues": {
+        "511": {
+          "id": 511,
+          "issue_no": 13,
+          "title_id": 102,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Atlantis Attacks"
+        },
+        "512": {
+          "id": 512,
+          "issue_no": 14,
+          "title_id": 102,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Days of Future Present crossover"
+        },
+        "513": {
+          "id": 513,
+          "issue_no": 15,
+          "title_id": 102,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Kings of Pain crossover"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "103": {
+      "id": 103,
+      "name": "Uncanny X-Men, The",
+      "publisher_id": 1,
+      "issues": {
+        "514": {
+          "id": 514,
+          "issue_no": 0,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Days of Future Past"
+        },
+        "515": {
+          "id": 515,
+          "issue_no": 0,
+          "title_id": 103,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Asgardian Wars"
+        },
+        "516": {
+          "id": 516,
+          "issue_no": 0,
+          "title_id": 103,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "The Phoenix Saga"
+        },
+        "517": {
+          "id": 517,
+          "issue_no": 0,
+          "title_id": 103,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "The Savage Land"
+        },
+        "518": {
+          "id": 518,
+          "issue_no": 19,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st app. The Mimic"
+        },
+        "519": {
+          "id": 519,
+          "issue_no": 42,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "520": {
+          "id": 520,
+          "issue_no": 104,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Magneto, intro Starjammers"
+        },
+        "521": {
+          "id": 521,
+          "issue_no": 105,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "522": {
+          "id": 522,
+          "issue_no": 106,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "523": {
+          "id": 523,
+          "issue_no": 121,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st Alpha Flight"
+        },
+        "524": {
+          "id": 524,
+          "issue_no": 133,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine app."
+        },
+        "525": {
+          "id": 525,
+          "issue_no": 135,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "526": {
+          "id": 526,
+          "issue_no": 136,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "527": {
+          "id": 527,
+          "issue_no": 137,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Death of Phoenix"
+        },
+        "528": {
+          "id": 528,
+          "issue_no": 140,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Alpha Flight app."
+        },
+        "529": {
+          "id": 529,
+          "issue_no": 141,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Days of Future Past"
+        },
+        "530": {
+          "id": 530,
+          "issue_no": 142,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Days of Future Past"
+        },
+        "531": {
+          "id": 531,
+          "issue_no": 143,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Last Byrne Issue"
+        },
+        "532": {
+          "id": 532,
+          "issue_no": 144,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Man-Thing app"
+        },
+        "533": {
+          "id": 533,
+          "issue_no": 145,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Dr. Doom"
+        },
+        "534": {
+          "id": 534,
+          "issue_no": 149,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "535": {
+          "id": 535,
+          "issue_no": 150,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Issue"
+        },
+        "536": {
+          "id": 536,
+          "issue_no": 151,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "537": {
+          "id": 537,
+          "issue_no": 152,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "538": {
+          "id": 538,
+          "issue_no": 153,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "539": {
+          "id": 539,
+          "issue_no": 154,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "540": {
+          "id": 540,
+          "issue_no": 155,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "541": {
+          "id": 541,
+          "issue_no": 156,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "542": {
+          "id": 542,
+          "issue_no": 157,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "543": {
+          "id": 543,
+          "issue_no": 158,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st Rogue in X-Men"
+        },
+        "544": {
+          "id": 544,
+          "issue_no": 159,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "545": {
+          "id": 545,
+          "issue_no": 160,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "546": {
+          "id": 546,
+          "issue_no": 161,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Origin Magneto"
+        },
+        "547": {
+          "id": 547,
+          "issue_no": 162,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine solo story"
+        },
+        "548": {
+          "id": 548,
+          "issue_no": 163,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Origin Binary"
+        },
+        "549": {
+          "id": 549,
+          "issue_no": 164,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st app. Binary as Carol Danvers"
+        },
+        "550": {
+          "id": 550,
+          "issue_no": 165,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "551": {
+          "id": 551,
+          "issue_no": 166,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Size"
+        },
+        "552": {
+          "id": 552,
+          "issue_no": 167,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "New Mutants crossover"
+        },
+        "553": {
+          "id": 553,
+          "issue_no": 168,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st Madelyne Pryor in X-Men"
+        },
+        "554": {
+          "id": 554,
+          "issue_no": 169,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "555": {
+          "id": 555,
+          "issue_no": 170,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "556": {
+          "id": 556,
+          "issue_no": 171,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Rogue Joins the X-Men"
+        },
+        "557": {
+          "id": 557,
+          "issue_no": 172,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine 2 part (part 1)"
+        },
+        "558": {
+          "id": 558,
+          "issue_no": 173,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine 2 part (part 2)"
+        },
+        "559": {
+          "id": 559,
+          "issue_no": 174,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Phoenix Cameo"
+        },
+        "560": {
+          "id": 560,
+          "issue_no": 175,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Phoenix Returns"
+        },
+        "561": {
+          "id": 561,
+          "issue_no": 176,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "562": {
+          "id": 562,
+          "issue_no": 177,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "563": {
+          "id": 563,
+          "issue_no": 178,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "564": {
+          "id": 564,
+          "issue_no": 179,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "565": {
+          "id": 565,
+          "issue_no": 180,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "566": {
+          "id": 566,
+          "issue_no": 181,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Sunfire app."
+        },
+        "567": {
+          "id": 567,
+          "issue_no": 182,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Rogue solo story"
+        },
+        "568": {
+          "id": 568,
+          "issue_no": 183,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "569": {
+          "id": 569,
+          "issue_no": 184,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "570": {
+          "id": 570,
+          "issue_no": 185,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "571": {
+          "id": 571,
+          "issue_no": 186,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Size"
+        },
+        "572": {
+          "id": 572,
+          "issue_no": 187,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "573": {
+          "id": 573,
+          "issue_no": 188,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "574": {
+          "id": 574,
+          "issue_no": 189,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "575": {
+          "id": 575,
+          "issue_no": 190,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Spider-Man/Avengers crossover"
+        },
+        "576": {
+          "id": 576,
+          "issue_no": 191,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Spider-Man/Avengers crossover"
+        },
+        "577": {
+          "id": 577,
+          "issue_no": 192,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "578": {
+          "id": 578,
+          "issue_no": 193,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Size, 100th app. New X-Men"
+        },
+        "579": {
+          "id": 579,
+          "issue_no": 194,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "580": {
+          "id": 580,
+          "issue_no": 195,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Power Pack crossover"
+        },
+        "581": {
+          "id": 581,
+          "issue_no": 196,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "582": {
+          "id": 582,
+          "issue_no": 197,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "583": {
+          "id": 583,
+          "issue_no": 198,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "584": {
+          "id": 584,
+          "issue_no": 199,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "585": {
+          "id": 585,
+          "issue_no": 200,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Double Size"
+        },
+        "586": {
+          "id": 586,
+          "issue_no": 201,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "587": {
+          "id": 587,
+          "issue_no": 202,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "588": {
+          "id": 588,
+          "issue_no": 203,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "589": {
+          "id": 589,
+          "issue_no": 204,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Nightcrawler solo story"
+        },
+        "590": {
+          "id": 590,
+          "issue_no": 205,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine solo story. Barry Smith art"
+        },
+        "591": {
+          "id": 591,
+          "issue_no": 206,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "592": {
+          "id": 592,
+          "issue_no": 207,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "593": {
+          "id": 593,
+          "issue_no": 208,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "594": {
+          "id": 594,
+          "issue_no": 209,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "595": {
+          "id": 595,
+          "issue_no": 210,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Mutant Massacre"
+        },
+        "596": {
+          "id": 596,
+          "issue_no": 211,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Mutant Massacre"
+        },
+        "597": {
+          "id": 597,
+          "issue_no": 212,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Mutant Massacre"
+        },
+        "598": {
+          "id": 598,
+          "issue_no": 213,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Mutant Massacre, Wolverine vs. Sabretooth"
+        },
+        "599": {
+          "id": 599,
+          "issue_no": 214,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "600": {
+          "id": 600,
+          "issue_no": 215,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "601": {
+          "id": 601,
+          "issue_no": 216,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "602": {
+          "id": 602,
+          "issue_no": 217,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "603": {
+          "id": 603,
+          "issue_no": 218,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "604": {
+          "id": 604,
+          "issue_no": 219,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Havok joins the X-Men"
+        },
+        "605": {
+          "id": 605,
+          "issue_no": 220,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "606": {
+          "id": 606,
+          "issue_no": 221,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "607": {
+          "id": 607,
+          "issue_no": 222,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Wolverine vs. Sabretooth"
+        },
+        "608": {
+          "id": 608,
+          "issue_no": 223,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "609": {
+          "id": 609,
+          "issue_no": 224,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "610": {
+          "id": 610,
+          "issue_no": 225,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Fall of the Mutants"
+        },
+        "611": {
+          "id": 611,
+          "issue_no": 226,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Fall of the Mutants, Double Issue"
+        },
+        "612": {
+          "id": 612,
+          "issue_no": 227,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Fall of the Mutants"
+        },
+        "613": {
+          "id": 613,
+          "issue_no": 228,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "614": {
+          "id": 614,
+          "issue_no": 229,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "$1.00 cover price begins"
+        },
+        "615": {
+          "id": 615,
+          "issue_no": 230,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "616": {
+          "id": 616,
+          "issue_no": 231,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "617": {
+          "id": 617,
+          "issue_no": 232,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "618": {
+          "id": 618,
+          "issue_no": 233,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "619": {
+          "id": 619,
+          "issue_no": 234,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "620": {
+          "id": 620,
+          "issue_no": 235,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "621": {
+          "id": 621,
+          "issue_no": 236,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "622": {
+          "id": 622,
+          "issue_no": 237,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "623": {
+          "id": 623,
+          "issue_no": 238,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "624": {
+          "id": 624,
+          "issue_no": 239,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Inferno"
+        },
+        "625": {
+          "id": 625,
+          "issue_no": 240,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Inferno,  Sabretooth"
+        },
+        "626": {
+          "id": 626,
+          "issue_no": 241,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Inferno"
+        },
+        "627": {
+          "id": 627,
+          "issue_no": 242,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Inferno, Double Size, X-Factor app"
+        },
+        "628": {
+          "id": 628,
+          "issue_no": 243,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Inferno"
+        },
+        "629": {
+          "id": 629,
+          "issue_no": 244,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "630": {
+          "id": 630,
+          "issue_no": 245,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Liefeld art"
+        },
+        "631": {
+          "id": 631,
+          "issue_no": 246,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "632": {
+          "id": 632,
+          "issue_no": 247,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Rogue into Seige Perilous"
+        },
+        "633": {
+          "id": 633,
+          "issue_no": 248,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Death of Storm, 1st Jim Lee art"
+        },
+        "634": {
+          "id": 634,
+          "issue_no": 249,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "635": {
+          "id": 635,
+          "issue_no": 250,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "636": {
+          "id": 636,
+          "issue_no": 251,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "637": {
+          "id": 637,
+          "issue_no": 252,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "638": {
+          "id": 638,
+          "issue_no": 253,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Return of Forge, all new X-Men begin"
+        },
+        "639": {
+          "id": 639,
+          "issue_no": 254,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "640": {
+          "id": 640,
+          "issue_no": 255,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "641": {
+          "id": 641,
+          "issue_no": 256,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Acts of Vengence. Return of Psylocke, Jim Lee art"
+        },
+        "642": {
+          "id": 642,
+          "issue_no": 257,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Acts of Vengence, Jim Lee art"
+        },
+        "643": {
+          "id": 643,
+          "issue_no": 258,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Acts of Vengence, Wolverine solo story, Jim Lee art"
+        },
+        "644": {
+          "id": 644,
+          "issue_no": 259,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Jim Lee art"
+        },
+        "645": {
+          "id": 645,
+          "issue_no": 260,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "646": {
+          "id": 646,
+          "issue_no": 261,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "647": {
+          "id": 647,
+          "issue_no": 262,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "648": {
+          "id": 648,
+          "issue_no": 263,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "649": {
+          "id": 649,
+          "issue_no": 264,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "650": {
+          "id": 650,
+          "issue_no": 265,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Storm Returns"
+        },
+        "651": {
+          "id": 651,
+          "issue_no": 266,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "652": {
+          "id": 652,
+          "issue_no": 267,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Jim Lee art"
+        },
+        "653": {
+          "id": 653,
+          "issue_no": 268,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Captain America, Black Widow, Jim Lee art"
+        },
+        "654": {
+          "id": 654,
+          "issue_no": 269,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Jim Lee art"
+        },
+        "655": {
+          "id": 655,
+          "issue_no": 270,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "X-Tinction Agenda"
+        },
+        "656": {
+          "id": 656,
+          "issue_no": 271,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "X-Tinction Agenda"
+        },
+        "657": {
+          "id": 657,
+          "issue_no": 272,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "X-Tinction Agenda"
+        },
+        "658": {
+          "id": 658,
+          "issue_no": 273,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "New Mutants & Cable app."
+        },
+        "659": {
+          "id": 659,
+          "issue_no": 274,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "660": {
+          "id": 660,
+          "issue_no": 275,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "661": {
+          "id": 661,
+          "issue_no": 276,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "662": {
+          "id": 662,
+          "issue_no": 277,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "663": {
+          "id": 663,
+          "issue_no": 278,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "The Muir Island Saga"
+        },
+        "664": {
+          "id": 664,
+          "issue_no": 279,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "The Muir Island Saga"
+        },
+        "665": {
+          "id": 665,
+          "issue_no": 280,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "The Muir Island Saga"
+        },
+        "666": {
+          "id": 666,
+          "issue_no": 281,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "667": {
+          "id": 667,
+          "issue_no": 282,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "1st Bishop"
+        },
+        "668": {
+          "id": 668,
+          "issue_no": 283,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "669": {
+          "id": 669,
+          "issue_no": 284,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "670": {
+          "id": 670,
+          "issue_no": 285,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "671": {
+          "id": 671,
+          "issue_no": 286,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "672": {
+          "id": 672,
+          "issue_no": 287,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "673": {
+          "id": 673,
+          "issue_no": 288,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "674": {
+          "id": 674,
+          "issue_no": 289,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "675": {
+          "id": 675,
+          "issue_no": 290,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "676": {
+          "id": 676,
+          "issue_no": 291,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": "Morelocks, Callisto"
+        },
+        "677": {
+          "id": 677,
+          "issue_no": 292,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "678": {
+          "id": 678,
+          "issue_no": 293,
+          "title_id": 103,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 165
+    },
+    "104": {
+      "id": 104,
+      "name": "V: The Visitors are our Friends",
+      "publisher_id": 2,
+      "issues": {
+        "679": {
+          "id": 679,
+          "issue_no": 6,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "680": {
+          "id": 680,
+          "issue_no": 7,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "681": {
+          "id": 681,
+          "issue_no": 8,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "682": {
+          "id": 682,
+          "issue_no": 9,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "683": {
+          "id": 683,
+          "issue_no": 10,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "684": {
+          "id": 684,
+          "issue_no": 11,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "685": {
+          "id": 685,
+          "issue_no": 12,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        },
+        "686": {
+          "id": 686,
+          "issue_no": 13,
+          "title_id": 104,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 8
+    },
+    "105": {
+      "id": 105,
+      "name": "Venus Wars",
+      "publisher_id": 3,
+      "issues": {
+        "687": {
+          "id": 687,
+          "issue_no": 1,
+          "title_id": 105,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Includes Trading Cards"
+        },
+        "688": {
+          "id": 688,
+          "issue_no": 2,
+          "title_id": 105,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "689": {
+          "id": 689,
+          "issue_no": 3,
+          "title_id": 105,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Includes Trading Cards"
+        },
+        "690": {
+          "id": 690,
+          "issue_no": 4,
+          "title_id": 105,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "691": {
+          "id": 691,
+          "issue_no": 5,
+          "title_id": 105,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 5
+    },
+    "106": {
+      "id": 106,
+      "name": "Vigilante",
+      "publisher_id": 2,
+      "issues": {
+        "692": {
+          "id": 692,
+          "issue_no": 19,
+          "title_id": 106,
+          "grade": "Good",
+          "grade_score": 2.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "107": {
+      "id": 107,
+      "name": "Watchmen",
+      "publisher_id": 2,
+      "issues": {
+        "693": {
+          "id": 693,
+          "issue_no": 9,
+          "title_id": 107,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "694": {
+          "id": 694,
+          "issue_no": 11,
+          "title_id": 107,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "695": {
+          "id": 695,
+          "issue_no": 12,
+          "title_id": 107,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 3
+    },
+    "108": {
+      "id": 108,
+      "name": "Web of Spider-Man",
+      "publisher_id": 1,
+      "issues": {
+        "696": {
+          "id": 696,
+          "issue_no": 18,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Missing in Action"
+        },
+        "697": {
+          "id": 697,
+          "issue_no": 29,
+          "title_id": 108,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": "Wolverine app."
+        },
+        "698": {
+          "id": 698,
+          "issue_no": 30,
+          "title_id": 108,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "699": {
+          "id": 699,
+          "issue_no": 31,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Kraven Saga"
+        },
+        "700": {
+          "id": 700,
+          "issue_no": 32,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Kraven Saga"
+        },
+        "701": {
+          "id": 701,
+          "issue_no": 33,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "702": {
+          "id": 702,
+          "issue_no": 34,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "703": {
+          "id": 703,
+          "issue_no": 35,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "704": {
+          "id": 704,
+          "issue_no": 36,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "705": {
+          "id": 705,
+          "issue_no": 37,
+          "title_id": 108,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 10
+    },
+    "109": {
+      "id": 109,
+      "name": "Web of Spider-Man Annual",
+      "publisher_id": 1,
+      "issues": {
+        "706": {
+          "id": 706,
+          "issue_no": 3,
+          "title_id": 109,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "110": {
+      "id": 110,
+      "name": "What If",
+      "publisher_id": 1,
+      "issues": {
+        "707": {
+          "id": 707,
+          "issue_no": 6,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "708": {
+          "id": 708,
+          "issue_no": 7,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "709": {
+          "id": 709,
+          "issue_no": 8,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "710": {
+          "id": 710,
+          "issue_no": 9,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "711": {
+          "id": 711,
+          "issue_no": 10,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "712": {
+          "id": 712,
+          "issue_no": 11,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "713": {
+          "id": 713,
+          "issue_no": 12,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "714": {
+          "id": 714,
+          "issue_no": 13,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "715": {
+          "id": 715,
+          "issue_no": 14,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "716": {
+          "id": 716,
+          "issue_no": 15,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "717": {
+          "id": 717,
+          "issue_no": 16,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "718": {
+          "id": 718,
+          "issue_no": 17,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "719": {
+          "id": 719,
+          "issue_no": 18,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "720": {
+          "id": 720,
+          "issue_no": 19,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "721": {
+          "id": 721,
+          "issue_no": 20,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "722": {
+          "id": 722,
+          "issue_no": 21,
+          "title_id": 110,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": 2,
+      "count": 16
+    },
+    "111": {
+      "id": 111,
+      "name": "What If ",
+      "publisher_id": 1,
+      "issues": {
+        "723": {
+          "id": 723,
+          "issue_no": 35,
+          "title_id": 111,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "724": {
+          "id": 724,
+          "issue_no": 45,
+          "title_id": 111,
+          "grade": "Very Good",
+          "grade_score": 4.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": 1,
+      "count": 2
+    },
+    "112": {
+      "id": 112,
+      "name": "Where Creatures Roam",
+      "publisher_id": 1,
+      "issues": {
+        "725": {
+          "id": 725,
+          "issue_no": 7,
+          "title_id": 112,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "113": {
+      "id": 113,
+      "name": "WildC.A.T.S.",
+      "publisher_id": 4,
+      "issues": {
+        "726": {
+          "id": 726,
+          "issue_no": 1,
+          "title_id": 113,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Jim Lee art (2 copies)"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "114": {
+      "id": 114,
+      "name": "Wolverine",
+      "publisher_id": 1,
+      "issues": {
+        "727": {
+          "id": 727,
+          "issue_no": 0,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Jungle Adventure"
+        },
+        "728": {
+          "id": 728,
+          "issue_no": 0,
+          "title_id": 114,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Compilation of 4 part mini-series, Fourth Printing"
+        },
+        "729": {
+          "id": 729,
+          "issue_no": 3,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "730": {
+          "id": 730,
+          "issue_no": 6,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "McFarlane back cover"
+        },
+        "731": {
+          "id": 731,
+          "issue_no": 7,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Hulk"
+        },
+        "732": {
+          "id": 732,
+          "issue_no": 8,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Hulk"
+        },
+        "733": {
+          "id": 733,
+          "issue_no": 9,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "734": {
+          "id": 734,
+          "issue_no": 10,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Sabretooth app. with Wolverine before claws"
+        },
+        "735": {
+          "id": 735,
+          "issue_no": 11,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair, new costume"
+        },
+        "736": {
+          "id": 736,
+          "issue_no": 12,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair"
+        },
+        "737": {
+          "id": 737,
+          "issue_no": 13,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair"
+        },
+        "738": {
+          "id": 738,
+          "issue_no": 14,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair"
+        },
+        "739": {
+          "id": 739,
+          "issue_no": 15,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair"
+        },
+        "740": {
+          "id": 740,
+          "issue_no": 16,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "The Gehenna Stone Affair"
+        },
+        "741": {
+          "id": 741,
+          "issue_no": 17,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "742": {
+          "id": 742,
+          "issue_no": 18,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "743": {
+          "id": 743,
+          "issue_no": 19,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Acts of Vengence"
+        },
+        "744": {
+          "id": 744,
+          "issue_no": 20,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Acts of Vengence"
+        },
+        "745": {
+          "id": 745,
+          "issue_no": 21,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "746": {
+          "id": 746,
+          "issue_no": 22,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "747": {
+          "id": 747,
+          "issue_no": 23,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "748": {
+          "id": 748,
+          "issue_no": 24,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "749": {
+          "id": 749,
+          "issue_no": 25,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "750": {
+          "id": 750,
+          "issue_no": 26,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "751": {
+          "id": 751,
+          "issue_no": 27,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Lazarus Project"
+        },
+        "752": {
+          "id": 752,
+          "issue_no": 28,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Lazarus Project"
+        },
+        "753": {
+          "id": 753,
+          "issue_no": 29,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Lazarus Project"
+        },
+        "754": {
+          "id": 754,
+          "issue_no": 30,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Lazarus Project"
+        },
+        "755": {
+          "id": 755,
+          "issue_no": 31,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "756": {
+          "id": 756,
+          "issue_no": 32,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "757": {
+          "id": 757,
+          "issue_no": 33,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "758": {
+          "id": 758,
+          "issue_no": 34,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "759": {
+          "id": 759,
+          "issue_no": 35,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Blood & Claws. Puck, Lady Deathstrike"
+        },
+        "760": {
+          "id": 760,
+          "issue_no": 36,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Blood & Claws"
+        },
+        "761": {
+          "id": 761,
+          "issue_no": 37,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Blood & Claws"
+        },
+        "762": {
+          "id": 762,
+          "issue_no": 38,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "763": {
+          "id": 763,
+          "issue_no": 39,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Storm"
+        },
+        "764": {
+          "id": 764,
+          "issue_no": 40,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "765": {
+          "id": 765,
+          "issue_no": 41,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Cable, Sabretooth revealed as Wolverine's father"
+        },
+        "766": {
+          "id": 766,
+          "issue_no": 42,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Sabretooth, Cable"
+        },
+        "767": {
+          "id": 767,
+          "issue_no": 43,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "768": {
+          "id": 768,
+          "issue_no": 44,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "769": {
+          "id": 769,
+          "issue_no": 45,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Sabretooth, Lady Deathstrike"
+        },
+        "770": {
+          "id": 770,
+          "issue_no": 46,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Sabretooth"
+        },
+        "771": {
+          "id": 771,
+          "issue_no": 47,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "772": {
+          "id": 772,
+          "issue_no": 48,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "773": {
+          "id": 773,
+          "issue_no": 49,
+          "title_id": 114,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Shiva Scenario - Continues Weapon X"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 47
+    },
+    "115": {
+      "id": 115,
+      "name": "Wolverine Saga, The",
+      "publisher_id": 1,
+      "issues": {
+        "774": {
+          "id": 774,
+          "issue_no": 1,
+          "title_id": 115,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "775": {
+          "id": 775,
+          "issue_no": 2,
+          "title_id": 115,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "776": {
+          "id": 776,
+          "issue_no": 3,
+          "title_id": 115,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "777": {
+          "id": 777,
+          "issue_no": 4,
+          "title_id": 115,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "116": {
+      "id": 116,
+      "name": "Wonder Man",
+      "publisher_id": 1,
+      "issues": {
+        "778": {
+          "id": 778,
+          "issue_no": 1,
+          "title_id": 116,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "117": {
+      "id": 117,
+      "name": "World Without End",
+      "publisher_id": 2,
+      "issues": {
+        "779": {
+          "id": 779,
+          "issue_no": 1,
+          "title_id": 117,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "780": {
+          "id": 780,
+          "issue_no": 2,
+          "title_id": 117,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "781": {
+          "id": 781,
+          "issue_no": 3,
+          "title_id": 117,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "782": {
+          "id": 782,
+          "issue_no": 4,
+          "title_id": 117,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        },
+        "783": {
+          "id": 783,
+          "issue_no": 5,
+          "title_id": 117,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 5
+    },
+    "118": {
+      "id": 118,
+      "name": "Worlds Unknown",
+      "publisher_id": 1,
+      "issues": {
+        "784": {
+          "id": 784,
+          "issue_no": 4,
+          "title_id": 118,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "119": {
+      "id": 119,
+      "name": "X-Factor",
+      "publisher_id": 1,
+      "issues": {
+        "785": {
+          "id": 785,
+          "issue_no": 24,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Fall of the Mutants"
+        },
+        "786": {
+          "id": 786,
+          "issue_no": 25,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Fall of the Mutants"
+        },
+        "787": {
+          "id": 787,
+          "issue_no": 26,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Fall of the Mutants"
+        },
+        "788": {
+          "id": 788,
+          "issue_no": 36,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Inferno"
+        },
+        "789": {
+          "id": 789,
+          "issue_no": 37,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Inferno"
+        },
+        "790": {
+          "id": 790,
+          "issue_no": 38,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Inferno"
+        },
+        "791": {
+          "id": 791,
+          "issue_no": 39,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Inferno"
+        },
+        "792": {
+          "id": 792,
+          "issue_no": 60,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "X-Tinction Agenda"
+        },
+        "793": {
+          "id": 793,
+          "issue_no": 61,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "X-Tinction Agenda"
+        },
+        "794": {
+          "id": 794,
+          "issue_no": 62,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "X-Tinction Agenda"
+        },
+        "795": {
+          "id": 795,
+          "issue_no": 69,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "The Muir Island Saga"
+        },
+        "796": {
+          "id": 796,
+          "issue_no": 70,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "The Muir Island Saga"
+        },
+        "797": {
+          "id": 797,
+          "issue_no": 71,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "The New X-Factor"
+        },
+        "798": {
+          "id": 798,
+          "issue_no": 72,
+          "title_id": 119,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 14
+    },
+    "120": {
+      "id": 120,
+      "name": "X-Factor Annual",
+      "publisher_id": 1,
+      "issues": {
+        "799": {
+          "id": 799,
+          "issue_no": 4,
+          "title_id": 120,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Atlantis Attacks"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "121": {
+      "id": 121,
+      "name": "X-Factor Special",
+      "publisher_id": 1,
+      "issues": {
+        "800": {
+          "id": 800,
+          "issue_no": 0,
+          "title_id": 121,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Prisoner of Love"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "122": {
+      "id": 122,
+      "name": "X-Farce",
+      "publisher_id": 1,
+      "issues": {
+        "801": {
+          "id": 801,
+          "issue_no": 1,
+          "title_id": 122,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "X-Force Parody"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 1
+    },
+    "123": {
+      "id": 123,
+      "name": "X-Force",
+      "publisher_id": 1,
+      "issues": {
+        "802": {
+          "id": 802,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged - Cable Trading Card"
+        },
+        "803": {
+          "id": 803,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged - Shatterstar Trading Card"
+        },
+        "804": {
+          "id": 804,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged - Deadpool Trading Card"
+        },
+        "805": {
+          "id": 805,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged - Sunspot & Gideon Trading Card"
+        },
+        "806": {
+          "id": 806,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged - Group Trading Card"
+        },
+        "807": {
+          "id": 807,
+          "issue_no": 1,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bagged (open) - Deadpool Trading Card"
+        },
+        "808": {
+          "id": 808,
+          "issue_no": 2,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "809": {
+          "id": 809,
+          "issue_no": 3,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Juggernaut app."
+        },
+        "810": {
+          "id": 810,
+          "issue_no": 4,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Spiderman app."
+        },
+        "811": {
+          "id": 811,
+          "issue_no": 5,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Brotherhood of Evil Mutants"
+        },
+        "812": {
+          "id": 812,
+          "issue_no": 6,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "813": {
+          "id": 813,
+          "issue_no": 7,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "814": {
+          "id": 814,
+          "issue_no": 8,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "815": {
+          "id": 815,
+          "issue_no": 9,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "816": {
+          "id": 816,
+          "issue_no": 10,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "817": {
+          "id": 817,
+          "issue_no": 11,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "818": {
+          "id": 818,
+          "issue_no": 12,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "819": {
+          "id": 819,
+          "issue_no": 13,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "820": {
+          "id": 820,
+          "issue_no": 14,
+          "title_id": 123,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 19
+    },
+    "126": {
+      "id": 126,
+      "name": "X-Men",
+      "publisher_id": 1,
+      "issues": {
+        "821": {
+          "id": 821,
+          "issue_no": 1,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Magneto Cover"
+        },
+        "822": {
+          "id": 822,
+          "issue_no": 1,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Wolverine, Iceman & Cyclops cover"
+        },
+        "823": {
+          "id": 823,
+          "issue_no": 1,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Collosus, Rogue, Psylocke & Gambit Cover"
+        },
+        "824": {
+          "id": 824,
+          "issue_no": 1,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Storm, Jean Grey, ArcAngel, Beast & Professor X cover"
+        },
+        "825": {
+          "id": 825,
+          "issue_no": 1,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Foldout cover"
+        },
+        "826": {
+          "id": 826,
+          "issue_no": 2,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "827": {
+          "id": 827,
+          "issue_no": 3,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "828": {
+          "id": 828,
+          "issue_no": 4,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Omega Red"
+        },
+        "829": {
+          "id": 829,
+          "issue_no": 5,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "830": {
+          "id": 830,
+          "issue_no": 6,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Sabretooth app."
+        },
+        "831": {
+          "id": 831,
+          "issue_no": 7,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "832": {
+          "id": 832,
+          "issue_no": 8,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Bishop app., Ghost Rider app."
+        },
+        "833": {
+          "id": 833,
+          "issue_no": 9,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Ghost Rider app."
+        },
+        "834": {
+          "id": 834,
+          "issue_no": 10,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "Longshot"
+        },
+        "835": {
+          "id": 835,
+          "issue_no": 11,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "836": {
+          "id": 836,
+          "issue_no": 12,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "837": {
+          "id": 837,
+          "issue_no": 13,
+          "title_id": 126,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        }
+      },
+      "year": 1991,
+      "volume": "NULL",
+      "count": 17
+    },
+    "124": {
+      "id": 124,
+      "name": "X-Men & Alpha Flight",
+      "publisher_id": 1,
+      "issues": {
+        "838": {
+          "id": 838,
+          "issue_no": 1,
+          "title_id": 124,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Asgardian Wars"
+        },
+        "839": {
+          "id": 839,
+          "issue_no": 2,
+          "title_id": 124,
+          "grade": "Very Fine",
+          "grade_score": 8.0,
+          "description": "Asgardian Wars"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 2
+    },
+    "125": {
+      "id": 125,
+      "name": "X-Men & the Micronauts",
+      "publisher_id": 1,
+      "issues": {
+        "843": {
+          "id": 843,
+          "issue_no": 1,
+          "title_id": 125,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "844": {
+          "id": 844,
+          "issue_no": 2,
+          "title_id": 125,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "845": {
+          "id": 845,
+          "issue_no": 3,
+          "title_id": 125,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        },
+        "846": {
+          "id": 846,
+          "issue_no": 4,
+          "title_id": 125,
+          "grade": "Fine",
+          "grade_score": 6.0,
+          "description": ""
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 4
+    },
+    "127": {
+      "id": 127,
+      "name": "X-Men, Classic",
+      "publisher_id": 1,
+      "issues": {
+        "840": {
+          "id": 840,
+          "issue_no": 4,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "841": {
+          "id": 841,
+          "issue_no": 31,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "842": {
+          "id": 842,
+          "issue_no": 34,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": ""
+        },
+        "847": {
+          "id": 847,
+          "issue_no": 1,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "1st Printing"
+        },
+        "848": {
+          "id": 848,
+          "issue_no": 1,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "2nd Printing - Gold border cover"
+        },
+        "849": {
+          "id": 849,
+          "issue_no": 2,
+          "title_id": 127,
+          "grade": "Near Mint",
+          "grade_score": 9.4,
+          "description": "2nd Printing - Gold border cover"
+        }
+      },
+      "year": "NULL",
+      "volume": "NULL",
+      "count": 6
+    }
+  },
+  "publishers": {
+    "1": {
+      "id": 1,
+      "name": "Marvel",
+      "url": "http://marvel.com",
+      "titles": {}
+    },
+    "2": {
+      "id": 2,
+      "name": "DC Comics",
+      "url": "http://www.dccomics.com",
+      "titles": {}
+    },
+    "3": {
+      "id": 3,
+      "name": "Dark Horse Comics",
+      "url": "http://www.darkhorse.com",
+      "titles": {}
+    },
+    "4": {
+      "id": 4,
+      "name": "Image Comics",
+      "url": "http://www.imagecomics.com",
+      "titles": {}
+    },
+    "5": {
+      "id": 5,
+      "name": "Chaos Comics",
+      "url": "http://www.chaoscomics.com",
+      "titles": {}
+    },
+    "6": {
+      "id": 6,
+      "name": "Crusade Comics",
+      "url": "http://www.crusadefinearts.com/",
+      "titles": {}
+    },
+    "7": {
+      "id": 7,
+      "name": "Viz Media",
+      "url": "http://www.viz.com",
+      "titles": {}
+    },
+    "8": {
+      "id": 8,
+      "name": "New England Comics",
+      "url": "http://www.newenglandcomics.com",
+      "titles": {}
+    },
+    "9": {
+      "id": 9,
+      "name": "Now Comics",
+      "url": "http://www.nowcomics.com",
+      "titles": {}
+    }
+  }
+}
