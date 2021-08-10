@@ -1,6 +1,7 @@
 type Comic {
   date: Int
   description: String
+  grade: Grade!
   grade_id: Int!
   id: ID!
   issue_no: Int
@@ -12,6 +13,13 @@ type ComicsPage {
   items: [Comic]
   pageInfo: PageInfo
   totalCount: Int!
+}
+
+type Grade {
+  abbr: String!
+  id: Int!
+  name: String!
+  score: Float!
 }
 
 type PageInfo {
@@ -35,11 +43,26 @@ type PublishersPage {
 
 type Query {
   comic(id: Int!): Comic
-  comics(afterCursor: String = null, beforeCursor: String = null, pageSize: Int = 100, publisherId: Int, titleId: Int): ComicsPage
+  comics(
+    afterCursor: String = null
+    beforeCursor: String = null
+    pageSize: Int = 100
+    publisherId: Int
+    titleId: Int
+  ): ComicsPage
   publisher(id: Int!): Publisher
-  publishers(afterCursor: String = null, beforeCursor: String = null, pageSize: Int = 100): PublishersPage
+  publishers(
+    afterCursor: String = null
+    beforeCursor: String = null
+    pageSize: Int = 100
+  ): PublishersPage
   title(id: Int!): Title
-  titles(afterCursor: String = null, beforeCursor: String = null, pageSize: Int = 100, publisherId: String): TitlesPage
+  titles(
+    afterCursor: String = null
+    beforeCursor: String = null
+    pageSize: Int = 100
+    publisherId: String
+  ): TitlesPage
 }
 
 type Title {

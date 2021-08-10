@@ -2,9 +2,12 @@ import { listComics, fetchComic } from "./comics"
 import { listTitles, fetchTitle } from "./titles"
 import { listPublishers, fetchPublisher } from "./publishers"
 
+import grades, { defaultGrade } from "../config/grades"
+
 import {
   Comic,
   ComicsPage,
+  Grade,
   Publisher,
   PublishersPage,
   QueryComicArgs,
@@ -62,6 +65,8 @@ export const resolvers: Resolvers = {
   Comic: {
     title: async (parent: Comic, _: any, context: AppContext): Promise<Title> =>
       await fetchTitle(parent.title_id, context),
+    grade: (parent: Comic, _: any, context: AppContext): Grade =>
+      grades.find((grade) => grade.id == parent.grade_id) || defaultGrade,
   },
 
   Title: {

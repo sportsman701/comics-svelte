@@ -1,5 +1,9 @@
 query GetTitles($pageSize: Int, $afterCursor: String, $beforeCursor: String) {
-  titles(pageSize: $pageSize, afterCursor: $afterCursor, beforeCursor: $beforeCursor) {
+  titles(
+    pageSize: $pageSize
+    afterCursor: $afterCursor
+    beforeCursor: $beforeCursor
+  ) {
     totalCount
     items {
       id
@@ -21,17 +25,36 @@ query GetTitles($pageSize: Int, $afterCursor: String, $beforeCursor: String) {
   }
 }
 
-query GetTitle($id: Int!) {
+query GetTitle($id: Int!, $pageSize: Int = 1000) {
   title(id: $id) {
     id
     name
     url
-		year
+    year
     volume
     publisher {
       id
       name
       url
+    }
+  }
+  comics(titleId: $id, pageSize: $pageSize) {
+    totalCount
+    items {
+      id
+      issue_no
+      grade {
+        id
+        abbr
+        name
+        score
+      }
+      description
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
     }
   }
 }

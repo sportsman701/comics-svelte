@@ -5,7 +5,7 @@ import { createProxyMiddleware } from "http-proxy-middleware"
 
 const controllers = (server: Express) => {
   server.get(
-    "/",
+    ["/", "/app", "/app/*"],
     (
       req: express.Request,
       res: express.Response,

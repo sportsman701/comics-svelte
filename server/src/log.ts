@@ -1,11 +1,13 @@
 const winston = require("winston")
 
+const environment = process.env.NODE_ENV || "development"
+
 const logLevel = process.env.NODE_ENV === "production" ? "warning" : "info"
 const logger = new winston.createLogger({
   level: logLevel,
 })
 
-if (process.env.NODE_ENV === "production") {
+if (environment === "production") {
   logger.add(
     new winston.transports.File({
       filename: "logs/all.log",
@@ -13,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
   )
 }
 
-if (process.env.NODE_ENV === "development") {
+if (environment in ["development", "test"]) {
   logger.add(
     new winston.transports.Console({
       level: "info",

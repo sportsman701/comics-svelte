@@ -1,0 +1,14 @@
+query GetPublisher($id: Int!) {
+  publisher(id: $id) {
+    id
+    name
+    url
+    titles {
+      id
+      name
+      url
+      year
+      volume
+    }
+  }
+}

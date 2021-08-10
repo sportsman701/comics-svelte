@@ -20,6 +20,7 @@ export type Comic = {
   __typename?: "Comic"
   date?: Maybe<Scalars["Int"]>
   description?: Maybe<Scalars["String"]>
+  grade: Grade
   grade_id: Scalars["Int"]
   id: Scalars["ID"]
   issue_no?: Maybe<Scalars["Int"]>
@@ -32,6 +33,14 @@ export type ComicsPage = {
   items?: Maybe<Array<Maybe<Comic>>>
   pageInfo?: Maybe<PageInfo>
   totalCount: Scalars["Int"]
+}
+
+export type Grade = {
+  __typename?: "Grade"
+  abbr: Scalars["String"]
+  id: Scalars["Int"]
+  name: Scalars["String"]
+  score: Scalars["Float"]
 }
 
 export type PageInfo = {
@@ -118,6 +127,106 @@ export type TitlesPage = {
   totalCount: Scalars["Int"]
 }
 
+export type GetComicsQueryVariables = Exact<{
+  pageSize?: Maybe<Scalars["Int"]>
+  afterCursor?: Maybe<Scalars["String"]>
+  beforeCursor?: Maybe<Scalars["String"]>
+  titleId?: Maybe<Scalars["Int"]>
+  publisherId?: Maybe<Scalars["Int"]>
+}>
+
+export type GetComicsQuery = {
+  __typename?: "Query"
+  comics?: Maybe<{
+    __typename?: "ComicsPage"
+    totalCount: number
+    items?: Maybe<
+      Array<
+        Maybe<{
+          __typename?: "Comic"
+          id: string
+          issue_no?: Maybe<number>
+          description?: Maybe<string>
+          grade: {
+            __typename?: "Grade"
+            id: number
+            abbr: string
+            name: string
+            score: number
+          }
+          title: {
+            __typename?: "Title"
+            id: string
+            name?: Maybe<string>
+            volume?: Maybe<number>
+            year?: Maybe<number>
+            publisher: { __typename?: "Publisher"; id: string; name: string }
+          }
+        }>
+      >
+    >
+    pageInfo?: Maybe<{
+      __typename?: "PageInfo"
+      startCursor?: Maybe<string>
+      endCursor?: Maybe<string>
+      hasNextPage?: Maybe<boolean>
+    }>
+  }>
+}
+
+export type GetComicQueryVariables = Exact<{
+  id: Scalars["Int"]
+}>
+
+export type GetComicQuery = {
+  __typename?: "Query"
+  comic?: Maybe<{
+    __typename?: "Comic"
+    id: string
+    issue_no?: Maybe<number>
+    description?: Maybe<string>
+    grade: {
+      __typename?: "Grade"
+      id: number
+      abbr: string
+      name: string
+      score: number
+    }
+    title: {
+      __typename?: "Title"
+      id: string
+      name?: Maybe<string>
+      publisher: { __typename?: "Publisher"; id: string; name: string }
+    }
+  }>
+}
+
+export type GetPublisherQueryVariables = Exact<{
+  id: Scalars["Int"]
+}>
+
+export type GetPublisherQuery = {
+  __typename?: "Query"
+  publisher?: Maybe<{
+    __typename?: "Publisher"
+    id: string
+    name: string
+    url?: Maybe<string>
+    titles?: Maybe<
+      Array<
+        Maybe<{
+          __typename?: "Title"
+          id: string
+          name?: Maybe<string>
+          url?: Maybe<string>
+          year?: Maybe<number>
+          volume?: Maybe<number>
+        }>
+      >
+    >
+  }>
+}
+
 export type GetTitlesQueryVariables = Exact<{
   pageSize?: Maybe<Scalars["Int"]>
   afterCursor?: Maybe<Scalars["String"]>
@@ -158,6 +267,7 @@ export type GetTitlesQuery = {
 
 export type GetTitleQueryVariables = Exact<{
   id: Scalars["Int"]
+  pageSize?: Maybe<Scalars["Int"]>
 }>
 
 export type GetTitleQuery = {
@@ -176,8 +286,402 @@ export type GetTitleQuery = {
       url?: Maybe<string>
     }
   }>
+  comics?: Maybe<{
+    __typename?: "ComicsPage"
+    totalCount: number
+    items?: Maybe<
+      Array<
+        Maybe<{
+          __typename?: "Comic"
+          id: string
+          issue_no?: Maybe<number>
+          description?: Maybe<string>
+          grade: {
+            __typename?: "Grade"
+            id: number
+            abbr: string
+            name: string
+            score: number
+          }
+        }>
+      >
+    >
+    pageInfo?: Maybe<{
+      __typename?: "PageInfo"
+      startCursor?: Maybe<string>
+      endCursor?: Maybe<string>
+      hasNextPage?: Maybe<boolean>
+    }>
+  }>
 }
 
+export const GetComicsDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "GetComics" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "pageSize" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "afterCursor" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "String" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "beforeCursor" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "String" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "titleId" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "publisherId" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "comics" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "pageSize" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "pageSize" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "afterCursor" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "afterCursor" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "beforeCursor" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "beforeCursor" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "titleId" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "titleId" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "publisherId" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "publisherId" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "totalCount" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "items" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "issue_no" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "grade" },
+                        selectionSet: {
+                          kind: "SelectionSet",
+                          selections: [
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "id" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "abbr" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "name" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "score" },
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "description" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "title" },
+                        selectionSet: {
+                          kind: "SelectionSet",
+                          selections: [
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "id" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "name" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "volume" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "year" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "publisher" },
+                              selectionSet: {
+                                kind: "SelectionSet",
+                                selections: [
+                                  {
+                                    kind: "Field",
+                                    name: { kind: "Name", value: "id" },
+                                  },
+                                  {
+                                    kind: "Field",
+                                    name: { kind: "Name", value: "name" },
+                                  },
+                                ],
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "pageInfo" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "startCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "endCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "hasNextPage" },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<GetComicsQuery, GetComicsQueryVariables>
+export const GetComicDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "GetComic" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: { kind: "Variable", name: { kind: "Name", value: "id" } },
+          type: {
+            kind: "NonNullType",
+            type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "comic" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "id" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "id" } },
+                { kind: "Field", name: { kind: "Name", value: "issue_no" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "grade" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "abbr" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                      { kind: "Field", name: { kind: "Name", value: "score" } },
+                    ],
+                  },
+                },
+                { kind: "Field", name: { kind: "Name", value: "description" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "title" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "publisher" },
+                        selectionSet: {
+                          kind: "SelectionSet",
+                          selections: [
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "id" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "name" },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<GetComicQuery, GetComicQueryVariables>
+export const GetPublisherDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "GetPublisher" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: { kind: "Variable", name: { kind: "Name", value: "id" } },
+          type: {
+            kind: "NonNullType",
+            type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "publisher" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "id" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "id" } },
+                { kind: "Field", name: { kind: "Name", value: "name" } },
+                { kind: "Field", name: { kind: "Name", value: "url" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "titles" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                      { kind: "Field", name: { kind: "Name", value: "url" } },
+                      { kind: "Field", name: { kind: "Name", value: "year" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "volume" },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<GetPublisherQuery, GetPublisherQueryVariables>
 export const GetTitlesDocument = {
   kind: "Document",
   definitions: [
@@ -330,6 +834,15 @@ export const GetTitleDocument = {
             type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
           },
         },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "pageSize" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          defaultValue: { kind: "IntValue", value: "1000" },
+        },
       ],
       selectionSet: {
         kind: "SelectionSet",
@@ -364,6 +877,98 @@ export const GetTitleDocument = {
                       { kind: "Field", name: { kind: "Name", value: "id" } },
                       { kind: "Field", name: { kind: "Name", value: "name" } },
                       { kind: "Field", name: { kind: "Name", value: "url" } },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "comics" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "titleId" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "pageSize" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "pageSize" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "totalCount" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "items" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "issue_no" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "grade" },
+                        selectionSet: {
+                          kind: "SelectionSet",
+                          selections: [
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "id" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "abbr" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "name" },
+                            },
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "score" },
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "description" },
+                      },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "pageInfo" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "startCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "endCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "hasNextPage" },
+                      },
                     ],
                   },
                 },

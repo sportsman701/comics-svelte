@@ -16,12 +16,7 @@ export const listComics = async (
       if (args.publisherId) {
         queryBuilder
           .join("titles", "comics.title_id", "=", "titles.id")
-          .join(
-            "publishers",
-            "titles.publisher_id",
-            "=",
-            args.publisherId.toString()
-          )
+          .join("publishers", "publishers.id", "=", args.publisherId.toString())
       }
     }
   )

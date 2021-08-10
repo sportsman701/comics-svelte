@@ -1,0 +1,65 @@
+query GetComics(
+  $pageSize: Int
+  $afterCursor: String
+  $beforeCursor: String
+  $titleId: Int
+  $publisherId: Int
+) {
+  comics(
+    pageSize: $pageSize
+    afterCursor: $afterCursor
+    beforeCursor: $beforeCursor
+    titleId: $titleId
+    publisherId: $publisherId
+  ) {
+    totalCount
+    items {
+      id
+      issue_no
+      grade {
+        id
+        abbr
+        name
+        score
+      }
+      description
+      title {
+        id
+        name
+        volume
+        year
+        publisher {
+          id
+          name
+        }
+      }
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
+    }
+  }
+}
+
+query GetComic($id: Int!) {
+  comic(id: $id) {
+    id
+    issue_no
+    grade {
+      id
+      abbr
+      name
+      score
+    }
+    description
+    title {
+      id
+      name
+      publisher {
+        id
+        name
+      }
+    }
+  }
+}

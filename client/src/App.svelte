@@ -1,8 +1,11 @@
 <script lang="ts">
-	import { Router, Route, Link } from "svelte-routing";
+	import { Router, Route, Link } from "svelte-routing"
 	import { initClient } from "@urql/svelte"
 
-	import Home from "./components/Home.svelte"
+	import Home from "./routes/Home.svelte"
+	import Title from "./routes/Title.svelte"
+	import Comic from "./routes/Comic.svelte"
+	import Publisher from "./routes/Publisher.svelte"
 
 	export let url = ""
 
@@ -23,13 +26,23 @@
 	})
 </script>
 
+<header>
+	<h1 class="title">Comics!</h1>
+</header>
 <Router {url}>
-	<nav>
-		<Link to="/">Home</Link>
-	</nav>
-	<div>
-		<Route path="/">
-			<Home/>
-		</Route>
-	</div>
+	<Route path="/">
+		<Home/>
+	</Route>
+	<Route path="app/titles/:id" let:params>
+		<Title id="{params.id}" />
+	</Route>
+	<Route path="app/comics/:id" let:params>
+		<Comic id="{params.id}" />
+	</Route>
+	<Route path="app/publishers/:id" let:params>
+		<Publisher id="{params.id}" />
+	</Route>
 </Router>
+<footer>
+	<p>&copy; Copyright Me.</p>
+</footer>

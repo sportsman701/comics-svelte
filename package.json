@@ -6,7 +6,7 @@
     "server"
   ],
   "scripts": {
-    "dev:client": "yarn workspace client dev",
+    "dev:client": "yarn workspace client run:dev",
     "dev:server": "yarn workspace server run:dev",
     "dev:all": "concurrently --kill-others-on-fail 'yarn dev:server' 'yarn dev:client'",
     "start:client": "yarn workspace client start",
@@ -15,11 +15,18 @@
     "build:client": "yarn workspace client build",
     "build:server": "yarn workspace server build",
     "build:all": "concurrently 'yarn build:client' 'yarn build:server'",
+    "test:client": "yarn workspace client run:test",
+    "test:server": "yarn workspace server run:test",
+    "test:all": "concurrently 'yarn test:server' 'yarn test:client'",
     "generate": "npx graphql-codegen",
     "clean": "rm -rf node_modules server/node_modules client/node_modules",
     "cy:run": "npx cypress run --headless",
     "cy:open": "npx cypress open",
-    "test": "start-server-and-test dev:all 3000 cy:run"
+    "test": "start-server-and-test test:all 3000 cy:run",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "concurrently": "^6.2.0"
@@ -38,6 +45,9 @@
     "graphql": "^15.5.1",
     "graphql-request": "^3.5.0",
     "graphql-tag": "^2.12.5",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
     "start-server-and-test": "^1.13.1",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"

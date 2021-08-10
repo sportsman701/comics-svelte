@@ -12,6 +12,7 @@ import { addResolversToSchema } from "@graphql-tools/schema"
 import { resolvers } from "./resolvers"
 
 import { db, paginateQuery, countTable } from "./database"
+import grades from "./config/grades"
 
 const morgan = require("morgan")("combined")
 
@@ -35,6 +36,7 @@ const configGraphQL = (server: Express) => {
           paginateQuery,
           countTable,
         },
+        grades: grades,
       },
     })
   )

@@ -1,0 +1,6 @@
+type Grade {
+  id: Int!
+  abbr: String!
+  name: String!
+  score: Float!
+}

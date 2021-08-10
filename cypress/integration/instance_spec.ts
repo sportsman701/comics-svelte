@@ -3,19 +3,19 @@ describe("GraphQL: instances", () => {
     cy.request("POST", "/graphql", {
       query: `{
           comic(id: 1) {
-            id,
+            id
             title {
               id
             }
           },
           title(id: 1) {
-            id,
+            id
             publisher {
               id
             }
           },
           publisher(id: 1) {
-            id,
+            id
             titles {
               id
             }
@@ -44,5 +44,37 @@ describe("GraphQL: instances", () => {
       // Publisher
       expect(publisher).to.have.all.keys(["id", "titles"])
     })
+  })
+
+  it("Comic Grades OK", () => {
+    cy.request("POST", "/graphql", {
+      query: `{
+          comic(id: 1) {
+            id
+            grade_id
+            grade {
+              id
+              abbr
+              name
+              score
+            }
+          }
+        }`,
+    })
+      .its("body")
+      .should("deep.equal", {
+        data: {
+          comic: {
+            id: "1",
+            grade_id: 5,
+            grade: {
+              id: 5,
+              abbr: "VG",
+              name: "Very Good",
+              score: 4,
+            },
+          },
+        },
+      })
   })
 })

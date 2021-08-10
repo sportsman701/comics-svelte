@@ -2,3 +2,5 @@ bin
 logs
 node_modules
 yarn.lock
+public
+server/database/seeds

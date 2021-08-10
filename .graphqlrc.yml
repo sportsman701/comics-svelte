@@ -11,10 +11,10 @@ extensions:
           - typescript
           - typescript-resolvers
       ./server/src/graphql/schema.generated.graphql:
-          config:
-            - includeDirectives: true
-          plugins:
-            - schema-ast
+        config:
+          - includeDirectives: true
+        plugins:
+          - schema-ast
       ./client/src/graphql/schemas.generated.ts:
         hooks:
           afterOneFileWrite:

@@ -1,33 +1,19 @@
 import { Knex, knex } from "knex"
 import { paginateQuery } from "./queryPaginator"
 import { countTable } from "./countTable"
+const databaseConfigs = require("../../knexfile.js")
 
-const environment = process.env.NODE_ENV || "production"
-console.log(`Environment: ${environment}`)
+const environment = process.env.NODE_ENV || "development"
+console.log(`DB Environment: ${environment}`)
 
-// const configs = {
-//     "test": {
-//         client: "sqlite3",
-//         connection: ":memory:",
-//         useNullAsDefault: true
-//     },
-//     "development": {
-//         client: "sqlite3",
-//         connection: {
-//             filename: "./database/production.db"
-//         },
-//         useNullAsDefault: true
-//     }
-// }
-
-const config: Knex.Config = {
-  client: "sqlite3",
-  connection: {
-    filename: "./database/production.db",
-  },
-  useNullAsDefault: true,
-}
-
+const config: Knex.Config = databaseConfigs[environment]
 const db = knex(config)
+
+if (environment === "test") {
+  console.log("Running DB migrations & seeding test data")
+  db.migrate.latest().then(() => {
+    db.seed.run()
+  })
+}
 
 export { db, paginateQuery, countTable }

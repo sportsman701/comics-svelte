@@ -1,0 +1,36 @@
+:root {
+    --table-border: 1px solid #000;
+    --darkgrey: dimgrey;
+    --mediumgrey: darkgrey;
+    --grey: grey;
+    --lightgrey: lightgrey;
+}
+body {
+    padding: 1em;
+}
+table {
+    border: var(--table-border);
+    border-top-color: var(--lightgrey);
+    border-left-color: var(--mediumgrey);
+    border-right-color: var(--grey);
+    border-bottom-color: var(--darkgrey);
+    border-width: 3px;
+}
+th, td {
+    border: var(--table-border);
+    border-top-color: var(--grey);
+    border-left-color: var(--grey);
+    border-right-color: var(--mediumgrey);
+    border-bottom-color: var(--lightgrey);
+    padding: 0.25em;
+}
+thead {
+    margin-bottom: 0.5em;
+}
+tr.spacer {
+    display: block;
+    padding: 0.05em;
+}
+tbody th {
+    font-weight: normal;
+}
