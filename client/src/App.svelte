@@ -6,6 +6,7 @@
 	import Title from "./routes/Title.svelte"
 	import Comic from "./routes/Comic.svelte"
 	import Publisher from "./routes/Publisher.svelte"
+	import TitleEdit from "./routes/TitleEdit.svelte"
 
 	export let url = ""
 
@@ -33,14 +34,17 @@
 	<Route path="/">
 		<Home/>
 	</Route>
+	<Route path="app/titles/:id/edit" let:params>
+		<TitleEdit id={params.id} />
+	</Route>
 	<Route path="app/titles/:id" let:params>
-		<Title id="{params.id}" />
+		<Title id={params.id} />
 	</Route>
 	<Route path="app/comics/:id" let:params>
-		<Comic id="{params.id}" />
+		<Comic id={params.id} />
 	</Route>
 	<Route path="app/publishers/:id" let:params>
-		<Publisher id="{params.id}" />
+		<Publisher id={params.id} />
 	</Route>
 </Router>
 <footer>

@@ -17,13 +17,15 @@ const controllers = (server: Express) => {
     }
   )
 
-  server.use(
-    ["/favicon.png", "/global.css", "/build"],
-    createProxyMiddleware({
-      target: "http://localhost:5000",
-      changeOrigin: true,
-    })
-  )
+  if (process.env.NODE_ENV !== "production") {
+    server.use(
+      ["/favicon.png", "/global.css", "/build"],
+      createProxyMiddleware({
+        target: "http://localhost:5000",
+        changeOrigin: true,
+      })
+    )
+  }
 }
 
 export default controllers

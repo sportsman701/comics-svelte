@@ -62,34 +62,6 @@ const configHealthcheck = (server: Express) => {
   )
 }
 
-const configErrorHandlers = (server: Express) => {
-  server.use(
-    (
-      err: any,
-      req: express.Request,
-      res: express.Response,
-      next: express.NextFunction
-    ) => {
-      res.status(err.status)
-      switch (err.status) {
-        case 400:
-          res.json({
-            type: "validation_error",
-            message: err.message,
-          })
-          break
-        default:
-          logger.error(err)
-          res.json({
-            type: "unknown_error",
-            message: "An unknown error has occurred",
-          })
-          break
-      }
-    }
-  )
-}
-
 async function genServer(): Promise<Express> {
   const server = express()
   server.use(morgan)
@@ -101,7 +73,6 @@ async function genServer(): Promise<Express> {
   configHealthcheck(server)
   configSinglePageApp(server)
   configGraphQL(server)
-  configErrorHandlers(server)
 
   return server
 }

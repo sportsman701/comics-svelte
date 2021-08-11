@@ -22,6 +22,10 @@ type Grade {
   score: Float!
 }
 
+type Mutation {
+  updateTitle(id: Int!, update: UpdateTitleInput!): Title
+}
+
 type PageInfo {
   endCursor: String
   hasNextPage: Boolean
@@ -68,7 +72,7 @@ type Query {
 type Title {
   id: ID!
   issues: Int
-  name: String
+  name: String!
   publisher: Publisher!
   publisher_id: Int!
   url: String
@@ -80,4 +84,12 @@ type TitlesPage {
   items: [Title]
   pageInfo: PageInfo
   totalCount: Int!
+}
+
+input UpdateTitleInput {
+  name: String
+  publisher_id: Int
+  url: String
+  volume: Int
+  year: Int
 }

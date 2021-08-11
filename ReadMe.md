@@ -41,3 +41,4 @@ To update services after changing the schema just run `yarn generate` in the roo
 - [ ] `num_issues` property for `Title`
 - [ ] `num_titles` property for `Publisher`
 - [ ] Just why do we need `rollup/plugin-replace` in the client? It feels like a half-assed replacement for good environment management.
+- [ ] 404 error handling to avoid cryptic missing field messages

@@ -1,7 +1,7 @@
 # import Publisher from "schema.publishers.graphql"
 type Title {
   id: ID!
-  name: String
+  name: String!
   publisher_id: Int!
   url: String
   issues: Int

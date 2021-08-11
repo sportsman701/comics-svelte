@@ -22,10 +22,13 @@
   <AwaitQuery queryStore={titleStore} let:data={{title, comics}}>
     <Breadcrumbs
       publisher={{id: title.publisher.id, name: title.publisher.name}}
-      title={{id: title.id, name: title.name}}
+      title={{name: title.name}}
     />
 
-    <h2>{title.name}</h2>
+    <div>
+      <h2>{title.name}</h2>
+      <div><a use:link href="/app/titles/{titleId}/edit">(edit)</a></div>
+    </div>
     <p>Publisher: {title.publisher.name}</p>
     <p>Year: <NullableString value={title.year}/></p>
     <p>Volume: <NullableString value={title.volume}/></p>

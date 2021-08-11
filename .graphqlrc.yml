@@ -1,5 +1,7 @@
 schema: "./schemas/*.graphql"
-documents: "./schemas/query.*.graphql"
+documents:
+  - "./schemas/query.*.graphql"
+  - "./schemas/mutation.*.graphql"
 extensions:
   codegen:
     generates:

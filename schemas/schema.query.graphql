@@ -2,6 +2,7 @@
 # import Title from "schema.titles.graphql"
 # import Publisher from "schema.publishers.graphql"
 # import ComicsPage, TitlesPage, PublishersPage from "schema.pages.graphql"
+# import UpdateTitleInput from "mutation.titles.graphql"
 
 type Query {
   comic(id: Int!): Comic
@@ -25,4 +26,8 @@ type Query {
     beforeCursor: String = null
     afterCursor: String = null
   ): PublishersPage
+}
+
+type Mutation {
+  updateTitle(id: Int!, update: UpdateTitleInput!): Title
 }

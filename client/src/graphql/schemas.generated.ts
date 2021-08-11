@@ -43,6 +43,16 @@ export type Grade = {
   score: Scalars["Float"]
 }
 
+export type Mutation = {
+  __typename?: "Mutation"
+  updateTitle?: Maybe<Title>
+}
+
+export type MutationUpdateTitleArgs = {
+  id: Scalars["Int"]
+  update: UpdateTitleInput
+}
+
 export type PageInfo = {
   __typename?: "PageInfo"
   endCursor?: Maybe<Scalars["String"]>
@@ -112,7 +122,7 @@ export type Title = {
   __typename?: "Title"
   id: Scalars["ID"]
   issues?: Maybe<Scalars["Int"]>
-  name?: Maybe<Scalars["String"]>
+  name: Scalars["String"]
   publisher: Publisher
   publisher_id: Scalars["Int"]
   url?: Maybe<Scalars["String"]>
@@ -125,6 +135,31 @@ export type TitlesPage = {
   items?: Maybe<Array<Maybe<Title>>>
   pageInfo?: Maybe<PageInfo>
   totalCount: Scalars["Int"]
+}
+
+export type UpdateTitleInput = {
+  name?: Maybe<Scalars["String"]>
+  publisher_id?: Maybe<Scalars["Int"]>
+  url?: Maybe<Scalars["String"]>
+  volume?: Maybe<Scalars["Int"]>
+  year?: Maybe<Scalars["Int"]>
+}
+
+export type UpdateTitleMutationVariables = Exact<{
+  id: Scalars["Int"]
+  update: UpdateTitleInput
+}>
+
+export type UpdateTitleMutation = {
+  __typename?: "Mutation"
+  updateTitle?: Maybe<{
+    __typename?: "Title"
+    id: string
+    name: string
+    publisher_id: number
+    volume?: Maybe<number>
+    year?: Maybe<number>
+  }>
 }
 
 export type GetComicsQueryVariables = Exact<{
@@ -157,7 +192,7 @@ export type GetComicsQuery = {
           title: {
             __typename?: "Title"
             id: string
-            name?: Maybe<string>
+            name: string
             volume?: Maybe<number>
             year?: Maybe<number>
             publisher: { __typename?: "Publisher"; id: string; name: string }
@@ -195,7 +230,7 @@ export type GetComicQuery = {
     title: {
       __typename?: "Title"
       id: string
-      name?: Maybe<string>
+      name: string
       publisher: { __typename?: "Publisher"; id: string; name: string }
     }
   }>
@@ -217,7 +252,7 @@ export type GetPublisherQuery = {
         Maybe<{
           __typename?: "Title"
           id: string
-          name?: Maybe<string>
+          name: string
           url?: Maybe<string>
           year?: Maybe<number>
           volume?: Maybe<number>
@@ -243,7 +278,7 @@ export type GetTitlesQuery = {
         Maybe<{
           __typename?: "Title"
           id: string
-          name?: Maybe<string>
+          name: string
           url?: Maybe<string>
           year?: Maybe<number>
           volume?: Maybe<number>
@@ -275,7 +310,7 @@ export type GetTitleQuery = {
   title?: Maybe<{
     __typename?: "Title"
     id: string
-    name?: Maybe<string>
+    name: string
     url?: Maybe<string>
     year?: Maybe<number>
     volume?: Maybe<number>
@@ -315,6 +350,111 @@ export type GetTitleQuery = {
   }>
 }
 
+export type GetTitleEditQueryVariables = Exact<{
+  id: Scalars["Int"]
+  pageSize?: Maybe<Scalars["Int"]>
+}>
+
+export type GetTitleEditQuery = {
+  __typename?: "Query"
+  title?: Maybe<{
+    __typename?: "Title"
+    id: string
+    name: string
+    url?: Maybe<string>
+    year?: Maybe<number>
+    volume?: Maybe<number>
+    publisher_id: number
+  }>
+  publishers?: Maybe<{
+    __typename?: "PublishersPage"
+    totalCount: number
+    items?: Maybe<
+      Array<Maybe<{ __typename?: "Publisher"; id: string; name: string }>>
+    >
+    pageInfo?: Maybe<{
+      __typename?: "PageInfo"
+      startCursor?: Maybe<string>
+      endCursor?: Maybe<string>
+      hasNextPage?: Maybe<boolean>
+    }>
+  }>
+}
+
+export const UpdateTitleDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "mutation",
+      name: { kind: "Name", value: "UpdateTitle" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: { kind: "Variable", name: { kind: "Name", value: "id" } },
+          type: {
+            kind: "NonNullType",
+            type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "update" },
+          },
+          type: {
+            kind: "NonNullType",
+            type: {
+              kind: "NamedType",
+              name: { kind: "Name", value: "UpdateTitleInput" },
+            },
+          },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "updateTitle" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "id" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "update" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "update" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "id" } },
+                { kind: "Field", name: { kind: "Name", value: "name" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "publisher_id" },
+                },
+                { kind: "Field", name: { kind: "Name", value: "volume" } },
+                { kind: "Field", name: { kind: "Name", value: "year" } },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<UpdateTitleMutation, UpdateTitleMutationVariables>
 export const GetComicsDocument = {
   kind: "Document",
   definitions: [
@@ -980,3 +1120,117 @@ export const GetTitleDocument = {
     },
   ],
 } as unknown as DocumentNode<GetTitleQuery, GetTitleQueryVariables>
+export const GetTitleEditDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "GetTitleEdit" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: { kind: "Variable", name: { kind: "Name", value: "id" } },
+          type: {
+            kind: "NonNullType",
+            type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "pageSize" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+          defaultValue: { kind: "IntValue", value: "1000" },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "title" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "id" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "id" } },
+                { kind: "Field", name: { kind: "Name", value: "name" } },
+                { kind: "Field", name: { kind: "Name", value: "url" } },
+                { kind: "Field", name: { kind: "Name", value: "year" } },
+                { kind: "Field", name: { kind: "Name", value: "volume" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "publisher_id" },
+                },
+              ],
+            },
+          },
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "publishers" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "pageSize" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "pageSize" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "totalCount" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "items" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "pageInfo" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "startCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "endCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "hasNextPage" },
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<GetTitleEditQuery, GetTitleEditQueryVariables>

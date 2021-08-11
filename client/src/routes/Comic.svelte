@@ -22,7 +22,7 @@
     <Breadcrumbs
       publisher={{id: comic.title.publisher.id, name: comic.title.publisher.name}}
       title={{id: comic.title.id, name: comic.title.name}}
-      comic={{id: comic.id, name: comic.issue_no.toString()}}
+      comic={{name: comic.issue_no.toString()}}
     />
     <h2>{comic.title.name} #{comic.issue_no}</h2>
     <p>Publisher: {comic.title.publisher.name}</p>

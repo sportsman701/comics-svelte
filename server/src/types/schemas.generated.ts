@@ -47,6 +47,16 @@ export type Grade = {
   score: Scalars["Float"]
 }
 
+export type Mutation = {
+  __typename?: "Mutation"
+  updateTitle?: Maybe<Title>
+}
+
+export type MutationUpdateTitleArgs = {
+  id: Scalars["Int"]
+  update: UpdateTitleInput
+}
+
 export type PageInfo = {
   __typename?: "PageInfo"
   endCursor?: Maybe<Scalars["String"]>
@@ -116,7 +126,7 @@ export type Title = {
   __typename?: "Title"
   id: Scalars["ID"]
   issues?: Maybe<Scalars["Int"]>
-  name?: Maybe<Scalars["String"]>
+  name: Scalars["String"]
   publisher: Publisher
   publisher_id: Scalars["Int"]
   url?: Maybe<Scalars["String"]>
@@ -129,6 +139,14 @@ export type TitlesPage = {
   items?: Maybe<Array<Maybe<Title>>>
   pageInfo?: Maybe<PageInfo>
   totalCount: Scalars["Int"]
+}
+
+export type UpdateTitleInput = {
+  name?: Maybe<Scalars["String"]>
+  publisher_id?: Maybe<Scalars["Int"]>
+  url?: Maybe<Scalars["String"]>
+  volume?: Maybe<Scalars["Int"]>
+  year?: Maybe<Scalars["Int"]>
 }
 
 export type ResolverTypeWrapper<T> = Promise<T> | T
@@ -245,6 +263,7 @@ export type ResolversTypes = {
   ComicsPage: ResolverTypeWrapper<ComicsPage>
   Grade: ResolverTypeWrapper<Grade>
   Float: ResolverTypeWrapper<Scalars["Float"]>
+  Mutation: ResolverTypeWrapper<{}>
   PageInfo: ResolverTypeWrapper<PageInfo>
   Boolean: ResolverTypeWrapper<Scalars["Boolean"]>
   Publisher: ResolverTypeWrapper<Publisher>
@@ -252,6 +271,7 @@ export type ResolversTypes = {
   Query: ResolverTypeWrapper<{}>
   Title: ResolverTypeWrapper<Title>
   TitlesPage: ResolverTypeWrapper<TitlesPage>
+  UpdateTitleInput: UpdateTitleInput
 }
 
 /** Mapping between all available schema types and the resolvers parents */
@@ -263,6 +283,7 @@ export type ResolversParentTypes = {
   ComicsPage: ComicsPage
   Grade: Grade
   Float: Scalars["Float"]
+  Mutation: {}
   PageInfo: PageInfo
   Boolean: Scalars["Boolean"]
   Publisher: Publisher
@@ -270,6 +291,7 @@ export type ResolversParentTypes = {
   Query: {}
   Title: Title
   TitlesPage: TitlesPage
+  UpdateTitleInput: UpdateTitleInput
 }
 
 export type ComicResolvers<
@@ -318,6 +340,18 @@ export type GradeResolvers<
   name?: Resolver<ResolversTypes["String"], ParentType, ContextType>
   score?: Resolver<ResolversTypes["Float"], ParentType, ContextType>
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>
+}
+
+export type MutationResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Mutation"] = ResolversParentTypes["Mutation"]
+> = {
+  updateTitle?: Resolver<
+    Maybe<ResolversTypes["Title"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdateTitleArgs, "id" | "update">
+  >
 }
 
 export type PageInfoResolvers<
@@ -422,7 +456,7 @@ export type TitleResolvers<
 > = {
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>
   issues?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
-  name?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>
+  name?: Resolver<ResolversTypes["String"], ParentType, ContextType>
   publisher?: Resolver<ResolversTypes["Publisher"], ParentType, ContextType>
   publisher_id?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   url?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>
@@ -453,6 +487,7 @@ export type Resolvers<ContextType = any> = {
   Comic?: ComicResolvers<ContextType>
   ComicsPage?: ComicsPageResolvers<ContextType>
   Grade?: GradeResolvers<ContextType>
+  Mutation?: MutationResolvers<ContextType>
   PageInfo?: PageInfoResolvers<ContextType>
   Publisher?: PublisherResolvers<ContextType>
   PublishersPage?: PublishersPageResolvers<ContextType>

@@ -21,7 +21,7 @@ import type { Publisher } from "../graphql/schemas.generated"
 <section class="publisher">
   <AwaitQuery queryStore={publisherStore} let:data={{publisher}}>
     <Breadcrumbs
-      publisher={{id: publisher.id, name: publisher.name}}
+      publisher={{name: publisher.name}}
     />
 
     <h2>{publisher.name}</h2>

@@ -1,5 +1,5 @@
 import { listComics, fetchComic } from "./comics"
-import { listTitles, fetchTitle } from "./titles"
+import { listTitles, fetchTitle, updateTitle } from "./titles"
 import { listPublishers, fetchPublisher } from "./publishers"
 
 import grades, { defaultGrade } from "../config/grades"
@@ -8,6 +8,7 @@ import {
   Comic,
   ComicsPage,
   Grade,
+  MutationUpdateTitleArgs,
   Publisher,
   PublishersPage,
   QueryComicArgs,
@@ -60,6 +61,14 @@ export const resolvers: Resolvers = {
       args: QueryPublishersArgs,
       context: AppContext
     ): Promise<PublishersPage> => listPublishers(args, context),
+  },
+
+  Mutation: {
+    updateTitle: async (
+      _: any,
+      args: MutationUpdateTitleArgs,
+      context: AppContext
+    ): Promise<Title> => updateTitle(args.id, args.update, context),
   },
 
   Comic: {

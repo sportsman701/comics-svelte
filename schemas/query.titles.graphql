@@ -58,3 +58,26 @@ query GetTitle($id: Int!, $pageSize: Int = 1000) {
     }
   }
 }
+
+query GetTitleEdit($id: Int!, $pageSize: Int = 1000) {
+  title(id: $id) {
+    id
+    name
+    url
+    year
+    volume
+    publisher_id
+  }
+  publishers(pageSize: $pageSize) {
+    totalCount
+    items {
+      id
+      name
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
+    }
+  }
+}
