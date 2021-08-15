@@ -2,7 +2,8 @@ import { AppContext } from "../modules"
 import { Comic, ComicsPage, QueryComicsArgs } from "../types"
 import { Knex } from "knex"
 
-const comicQueryBuilder = (db: Knex) => db("comics").select("comics.*")
+const comicQueryBuilder = (db: Knex) =>
+  db("comics").select("comics.*").orderBy("issue_no", "asc")
 
 export const listComics = async (
   args: QueryComicsArgs,
@@ -25,10 +26,10 @@ export const listComics = async (
   const comicsQuery = comicQueryBuilder(context.database.db).modify(filterFn)
 
   const { result, startCursor, endCursor, hasNextPage } =
-    await context.database.paginateQuery<Comic>(comicsQuery, args)
+    await context.database.paginateQuery<Comic>(comicsQuery, args, "issue_no")
 
   const totalCount = await context.database.countTable("comics", filterFn)
-
+  console.log(comicsQuery.toSQL().toNative())
   return {
     totalCount: totalCount,
     items: result,

@@ -9,10 +9,7 @@ import {
 
 const CURSOR_PREFIX = "id__"
 
-// the `string | number` here is bulls**t because of the id field
-// being textual in graphql and we're generating these types from
-// the graphql schemas. Probably need a better solution here.
-export const encodeCursor = (id: string | number): string => {
+export const encodeCursor = (id: any): string => {
   return Buffer.from(CURSOR_PREFIX + id.toString()).toString("base64")
 }
 
@@ -24,32 +21,31 @@ export const decodeCursor = (cursor: string): number => {
 class QueryPaginator<T> {
   readonly DEFAULT_START = 0
   readonly DEFAULT_PAGE_SIZE = 100
+  readonly DEFAULT_SORT_KEY = "id"
 
   pageSize: number
   before: number | null
   after: number | null
+  sortKey: string
 
   constructor(args: QueryPaginatorArgs) {
     this.pageSize =
       typeof args.pageSize === "number" ? args.pageSize : this.DEFAULT_PAGE_SIZE
     this.before = args.beforeCursor ? decodeCursor(args.beforeCursor) : null
     this.after = args.afterCursor ? decodeCursor(args.afterCursor) : null
+    this.sortKey = args.sortKey
   }
 
-  getBefore = () => this.before
-  getAfter = () => this.after
-  getPageSize = () => this.pageSize
-
   paginateQuery = (queryBuilder: Knex.QueryBuilder): Knex.QueryBuilder => {
-    queryBuilder.limit(this.getPageSize() + 1)
+    queryBuilder.limit(this.pageSize + 1)
 
-    if (this.getBefore()) {
-      const orderDir = this.getAfter() ? undefined : "desc"
-      queryBuilder.where("id", "<", this.getBefore()).orderBy("id", orderDir)
+    if (this.before) {
+      const orderDir = this.after ? undefined : "desc"
+      queryBuilder.where(this.sortKey, "<", this.after).orderBy("id", orderDir)
     }
 
-    if (this.getAfter()) {
-      queryBuilder.where("id", ">", this.getAfter()).orderBy("id", "asc")
+    if (this.after) {
+      queryBuilder.where(this.sortKey, ">", this.after).orderBy("id", "asc")
     }
 
     return queryBuilder
@@ -59,8 +55,8 @@ class QueryPaginator<T> {
     let result = await queryBuilder
     let hasNextPage = false
 
-    if (result.length > this.getPageSize()) {
-      result = result.slice(0, this.getPageSize())
+    if (result.length > this.pageSize) {
+      result = result.slice(0, this.pageSize)
       hasNextPage = true
     }
 
@@ -78,28 +74,39 @@ class QueryPaginator<T> {
   }
 
   shouldReverseResults = (): boolean => {
-    const isBefore = this.getBefore() !== null
-    const isAfter = this.getAfter() !== null
+    const isBefore = this.before !== null
+    const isAfter = this.after !== null
     return isBefore && !isAfter
   }
 }
 
 export const paginateQuery = async <T extends PrimitiveTypes>(
   queryBuilder: Knex.QueryBuilder,
-  args: ArgsTypes
+  args: ArgsTypes,
+  sortKey: keyof T
 ): Promise<PaginationResult<T>> => {
   const paginator = new QueryPaginator<T>({
     pageSize: args.pageSize,
     afterCursor: args.afterCursor,
     beforeCursor: args.beforeCursor,
+    sortKey: sortKey as string,
   })
 
   const paginatedQueryBuilder = paginator.paginateQuery(queryBuilder)
   const { result, hasNextPage } = await paginator.query(paginatedQueryBuilder)
 
-  const startCursor = result.length ? encodeCursor(result[0].id) : undefined
+  type SK = keyof T
+  const getObjectValue = (a: T, key: SK): any => {
+    return a[key]
+  }
+
+  const startCursor = result.length
+    ? encodeCursor(getObjectValue(result[0], sortKey))
+    : undefined
   const endCursor =
-    result.length > 1 ? encodeCursor(result[result.length - 1].id) : undefined
+    result.length > 1
+      ? encodeCursor(getObjectValue(result[result.length - 1], sortKey))
+      : undefined
 
   return {
     result,

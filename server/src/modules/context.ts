@@ -7,7 +7,8 @@ type DatabaseContext = {
   db: Knex
   paginateQuery: <T extends PrimitiveTypes>(
     qB: Knex.QueryBuilder,
-    a: ArgsTypes
+    a: ArgsTypes,
+    sK?: string
   ) => Promise<PaginationResult<T>>
   countTable: (tN: string, f?: CountFilter) => Promise<number>
 }

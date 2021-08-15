@@ -12,7 +12,11 @@ export const listPublishers = async (
   const publishersQuery = publisherQueryBuilder(context.database.db)
 
   const { result, startCursor, endCursor, hasNextPage } =
-    await context.database.paginateQuery<Publisher>(publishersQuery, args)
+    await context.database.paginateQuery<Publisher>(
+      publishersQuery,
+      args,
+      "name"
+    )
 
   const totalCount = await context.database.countTable("publishers")
 

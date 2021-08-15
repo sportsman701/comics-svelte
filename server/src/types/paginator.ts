@@ -7,8 +7,9 @@ import {
   Title,
 } from "./schemas.generated"
 
+type MaybeUndefined<T> = T | undefined
+type MaybeNullUndefined<T> = T | null | undefined
 export type PrimitiveTypes = Comic | Publisher | Title
-
 export type ArgsTypes = QueryComicsArgs | QueryPublishersArgs | QueryTitlesArgs
 
 export type ParsedResult<T> = {
@@ -20,13 +21,14 @@ export type ParsedResult<T> = {
 export type PaginationResult<T> = {
   __typename?: "PaginationResult"
   result: T[]
-  startCursor: string | undefined
-  endCursor: string | undefined
+  startCursor: MaybeUndefined<string>
+  endCursor: MaybeUndefined<string>
   hasNextPage: boolean
 }
 
 export type QueryPaginatorArgs = {
-  pageSize: number | null | undefined
-  beforeCursor: string | null | undefined
-  afterCursor: string | null | undefined
+  pageSize: MaybeNullUndefined<number>
+  beforeCursor: MaybeNullUndefined<string>
+  afterCursor: MaybeNullUndefined<string>
+  sortKey: string
 }

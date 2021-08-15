@@ -36,7 +36,7 @@ export const listTitles = async (
   )
 
   const { result, startCursor, endCursor, hasNextPage } =
-    await context.database.paginateQuery<Title>(titleQuery, args)
+    await context.database.paginateQuery<Title>(titleQuery, args, "name")
 
   const totalCount = await context.database.countTable("titles", filterFn)
 
