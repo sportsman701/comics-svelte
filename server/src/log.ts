@@ -1,13 +1,12 @@
+import { config } from "./config"
 const winston = require("winston")
 
-const environment = process.env.NODE_ENV || "development"
-
-const logLevel = process.env.NODE_ENV === "production" ? "warning" : "info"
+const logLevel = config.currentEnv === "production" ? "warning" : "info"
 const logger = new winston.createLogger({
   level: logLevel,
 })
 
-if (environment === "production") {
+if (config.currentEnv === "production") {
   logger.add(
     new winston.transports.File({
       filename: "logs/all.log",
@@ -15,7 +14,7 @@ if (environment === "production") {
   )
 }
 
-if (environment in ["development", "test"]) {
+if (config.currentEnv in ["development", "test"]) {
   logger.add(
     new winston.transports.Console({
       level: "info",

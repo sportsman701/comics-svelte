@@ -1,0 +1,4 @@
+type Series {
+  next: ID
+  previous: ID
+}

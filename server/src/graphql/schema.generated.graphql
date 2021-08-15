@@ -1,10 +1,13 @@
 type Comic {
   date: Int
+  date_created: Int!
+  date_updated: Int!
   description: String
   grade: Grade!
   grade_id: Int!
   id: ID!
-  issue_no: Int
+  issue_no: Int!
+  series: Series!
   title: Title!
   title_id: Int!
 }
@@ -33,6 +36,8 @@ type PageInfo {
 }
 
 type Publisher {
+  date_created: Int!
+  date_updated: Int!
   id: ID!
   name: String!
   titles: [Title]
@@ -69,12 +74,21 @@ type Query {
   ): TitlesPage
 }
 
+type Series {
+  next: ID
+  previous: ID
+}
+
 type Title {
+  date_created: Int!
+  date_updated: Int!
   id: ID!
+  issue_count: Int
   issues: Int
   name: String!
   publisher: Publisher!
   publisher_id: Int!
+  series: Series
   url: String
   volume: Int
   year: Int

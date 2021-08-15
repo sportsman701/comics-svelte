@@ -1,4 +1,6 @@
 # import Publisher from "schema.publishers.graphql"
+# import Series from "schema.series.graphql"
+
 type Title {
   id: ID!
   name: String!
@@ -8,4 +10,8 @@ type Title {
   year: Int
   volume: Int
   publisher: Publisher!
+  date_created: Int!
+  date_updated: Int!
+  series: Series
+  issue_count: Int
 }

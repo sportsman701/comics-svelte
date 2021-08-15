@@ -1,0 +1,19 @@
+# import Title from "schema.titles.graphql"
+
+input UpdateTitleInput {
+  name: String
+  publisher_id: Int
+  url: String
+  volume: Int
+  year: Int
+}
+
+mutation UpdateTitle($id: Int!, $update: UpdateTitleInput!) {
+  updateTitle(id: $id, update: $update) {
+    id
+    name
+    publisher_id
+    volume
+    year
+  }
+}

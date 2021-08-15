@@ -4,4 +4,6 @@ type Publisher {
   name: String!
   url: String
   titles: [Title]
+  date_created: Int!
+  date_updated: Int!
 }

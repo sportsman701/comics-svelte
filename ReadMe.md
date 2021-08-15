@@ -19,7 +19,9 @@ $ yarn test
 
 ## Server
 
-The server is an Express/GraphQL app. After install verify everything is good with a test run
+The server is an Express/GraphQL app.
+
+To Debug generated DB queries set the debug environment variable to `DEBUG=knex:query`.
 
 ## Client
 
@@ -37,8 +39,10 @@ To update services after changing the schema just run `yarn generate` in the roo
 
 # TODO
 
-- [ ] List count queries `totalCount` should reflect the current filters
-- [ ] `num_issues` property for `Title`
+- [ ] Run `yarn generate` before every dev, test and build
 - [ ] `num_titles` property for `Publisher`
 - [ ] Just why do we need `rollup/plugin-replace` in the client? It feels like a half-assed replacement for good environment management.
-- [ ] 404 error handling to avoid cryptic missing field messages
+- [ ] Optimize queries on Comic Series lookup
+  - not a huge deal since it only gets called on comic instance, but on comic list it could blow up
+- [ ] Token based paging based on sort column
+  - currently everything uses the ID as the token, but that should be the field that is being sorted by to ensure proper paging

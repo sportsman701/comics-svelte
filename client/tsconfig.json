@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
-    "types": ["svelte"],
+    "types": ["svelte", "node"],
     // sucks, but graphql-codegen does what it does
     "importsNotUsedAsValues": "preserve"
   },

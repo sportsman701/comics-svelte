@@ -1,5 +1,6 @@
-import { Knex } from "knex"
+import type { Knex } from "knex"
 import { db, paginateQuery, countTable } from "../database"
+import type { CountFilter } from "../database/countTable"
 import { ArgsTypes, PaginationResult, PrimitiveTypes } from "../types/paginator"
 
 type DatabaseContext = {
@@ -8,7 +9,7 @@ type DatabaseContext = {
     qB: Knex.QueryBuilder,
     a: ArgsTypes
   ) => Promise<PaginationResult<T>>
-  countTable: (tN: string) => Promise<number>
+  countTable: (tN: string, f?: CountFilter) => Promise<number>
 }
 
 export type AppContext = {

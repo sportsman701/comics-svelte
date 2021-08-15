@@ -23,11 +23,14 @@ export type Scalars = {
 export type Comic = {
   __typename?: "Comic"
   date?: Maybe<Scalars["Int"]>
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   description?: Maybe<Scalars["String"]>
   grade: Grade
   grade_id: Scalars["Int"]
   id: Scalars["ID"]
-  issue_no?: Maybe<Scalars["Int"]>
+  issue_no: Scalars["Int"]
+  series: Series
   title: Title
   title_id: Scalars["Int"]
 }
@@ -66,6 +69,8 @@ export type PageInfo = {
 
 export type Publisher = {
   __typename?: "Publisher"
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   id: Scalars["ID"]
   name: Scalars["String"]
   titles?: Maybe<Array<Maybe<Title>>>
@@ -122,13 +127,23 @@ export type QueryTitlesArgs = {
   publisherId?: Maybe<Scalars["String"]>
 }
 
+export type Series = {
+  __typename?: "Series"
+  next?: Maybe<Scalars["ID"]>
+  previous?: Maybe<Scalars["ID"]>
+}
+
 export type Title = {
   __typename?: "Title"
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   id: Scalars["ID"]
+  issue_count?: Maybe<Scalars["Int"]>
   issues?: Maybe<Scalars["Int"]>
   name: Scalars["String"]
   publisher: Publisher
   publisher_id: Scalars["Int"]
+  series?: Maybe<Series>
   url?: Maybe<Scalars["String"]>
   volume?: Maybe<Scalars["Int"]>
   year?: Maybe<Scalars["Int"]>
@@ -269,6 +284,7 @@ export type ResolversTypes = {
   Publisher: ResolverTypeWrapper<Publisher>
   PublishersPage: ResolverTypeWrapper<PublishersPage>
   Query: ResolverTypeWrapper<{}>
+  Series: ResolverTypeWrapper<Series>
   Title: ResolverTypeWrapper<Title>
   TitlesPage: ResolverTypeWrapper<TitlesPage>
   UpdateTitleInput: UpdateTitleInput
@@ -289,6 +305,7 @@ export type ResolversParentTypes = {
   Publisher: Publisher
   PublishersPage: PublishersPage
   Query: {}
+  Series: Series
   Title: Title
   TitlesPage: TitlesPage
   UpdateTitleInput: UpdateTitleInput
@@ -299,6 +316,8 @@ export type ComicResolvers<
   ParentType extends ResolversParentTypes["Comic"] = ResolversParentTypes["Comic"]
 > = {
   date?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
+  date_created?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
+  date_updated?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   description?: Resolver<
     Maybe<ResolversTypes["String"]>,
     ParentType,
@@ -307,7 +326,8 @@ export type ComicResolvers<
   grade?: Resolver<ResolversTypes["Grade"], ParentType, ContextType>
   grade_id?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>
-  issue_no?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
+  issue_no?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
+  series?: Resolver<ResolversTypes["Series"], ParentType, ContextType>
   title?: Resolver<ResolversTypes["Title"], ParentType, ContextType>
   title_id?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>
@@ -376,6 +396,8 @@ export type PublisherResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Publisher"] = ResolversParentTypes["Publisher"]
 > = {
+  date_created?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
+  date_updated?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>
   name?: Resolver<ResolversTypes["String"], ParentType, ContextType>
   titles?: Resolver<
@@ -450,15 +472,28 @@ export type QueryResolvers<
   >
 }
 
+export type SeriesResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Series"] = ResolversParentTypes["Series"]
+> = {
+  next?: Resolver<Maybe<ResolversTypes["ID"]>, ParentType, ContextType>
+  previous?: Resolver<Maybe<ResolversTypes["ID"]>, ParentType, ContextType>
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>
+}
+
 export type TitleResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Title"] = ResolversParentTypes["Title"]
 > = {
+  date_created?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
+  date_updated?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>
+  issue_count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
   issues?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
   name?: Resolver<ResolversTypes["String"], ParentType, ContextType>
   publisher?: Resolver<ResolversTypes["Publisher"], ParentType, ContextType>
   publisher_id?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
+  series?: Resolver<Maybe<ResolversTypes["Series"]>, ParentType, ContextType>
   url?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>
   volume?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
   year?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
@@ -492,6 +527,7 @@ export type Resolvers<ContextType = any> = {
   Publisher?: PublisherResolvers<ContextType>
   PublishersPage?: PublishersPageResolvers<ContextType>
   Query?: QueryResolvers<ContextType>
+  Series?: SeriesResolvers<ContextType>
   Title?: TitleResolvers<ContextType>
   TitlesPage?: TitlesPageResolvers<ContextType>
 }

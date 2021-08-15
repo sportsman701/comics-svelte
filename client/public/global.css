@@ -5,18 +5,25 @@
     --grey: grey;
     --lightgrey: lightgrey;
 }
+
+/*
 body {
-    padding: 1em;
+    margin: 0 0.25em;
 }
-table {
+*/
+.disabled {
+    color: var(--mediumgrey);
+}
+table.classic {
     border: var(--table-border);
     border-top-color: var(--lightgrey);
     border-left-color: var(--mediumgrey);
     border-right-color: var(--grey);
     border-bottom-color: var(--darkgrey);
+    border-spacing: 2px;
     border-width: 3px;
 }
-th, td {
+table.classic th, table.classic td {
     border: var(--table-border);
     border-top-color: var(--grey);
     border-left-color: var(--grey);
@@ -24,13 +31,22 @@ th, td {
     border-bottom-color: var(--lightgrey);
     padding: 0.25em;
 }
-thead {
-    margin-bottom: 0.5em;
-}
-tr.spacer {
+table.classic tr.spacer {
     display: block;
     padding: 0.05em;
 }
-tbody th {
+table.classic tbody th {
     font-weight: normal;
+}
+
+table.directory thead th {
+    text-align: center;
+}
+table.directory tbody td, table.directory tbody th {
+    font-weight: normal;
+    text-align: left;
+    padding-right: 10px;
+}
+table.directory tbody td:first-child {
+    padding-right: 0;
 }

@@ -16,6 +16,8 @@ query GetTitles($pageSize: Int, $afterCursor: String, $beforeCursor: String) {
         name
         url
       }
+      date_updated
+      issue_count
     }
     pageInfo {
       startCursor
@@ -37,6 +39,12 @@ query GetTitle($id: Int!, $pageSize: Int = 1000) {
       name
       url
     }
+    date_created
+    date_updated
+    series {
+      previous
+      next
+    }
   }
   comics(titleId: $id, pageSize: $pageSize) {
     totalCount
@@ -50,6 +58,7 @@ query GetTitle($id: Int!, $pageSize: Int = 1000) {
         score
       }
       description
+      date_updated
     }
     pageInfo {
       startCursor
@@ -67,6 +76,12 @@ query GetTitleEdit($id: Int!, $pageSize: Int = 1000) {
     year
     volume
     publisher_id
+    publisher {
+      id
+      name
+    }
+    date_created
+    date_updated
   }
   publishers(pageSize: $pageSize) {
     totalCount

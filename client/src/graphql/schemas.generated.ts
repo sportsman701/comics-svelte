@@ -19,11 +19,14 @@ export type Scalars = {
 export type Comic = {
   __typename?: "Comic"
   date?: Maybe<Scalars["Int"]>
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   description?: Maybe<Scalars["String"]>
   grade: Grade
   grade_id: Scalars["Int"]
   id: Scalars["ID"]
-  issue_no?: Maybe<Scalars["Int"]>
+  issue_no: Scalars["Int"]
+  series: Series
   title: Title
   title_id: Scalars["Int"]
 }
@@ -62,6 +65,8 @@ export type PageInfo = {
 
 export type Publisher = {
   __typename?: "Publisher"
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   id: Scalars["ID"]
   name: Scalars["String"]
   titles?: Maybe<Array<Maybe<Title>>>
@@ -118,13 +123,23 @@ export type QueryTitlesArgs = {
   publisherId?: Maybe<Scalars["String"]>
 }
 
+export type Series = {
+  __typename?: "Series"
+  next?: Maybe<Scalars["ID"]>
+  previous?: Maybe<Scalars["ID"]>
+}
+
 export type Title = {
   __typename?: "Title"
+  date_created: Scalars["Int"]
+  date_updated: Scalars["Int"]
   id: Scalars["ID"]
+  issue_count?: Maybe<Scalars["Int"]>
   issues?: Maybe<Scalars["Int"]>
   name: Scalars["String"]
   publisher: Publisher
   publisher_id: Scalars["Int"]
+  series?: Maybe<Series>
   url?: Maybe<Scalars["String"]>
   volume?: Maybe<Scalars["Int"]>
   year?: Maybe<Scalars["Int"]>
@@ -180,8 +195,9 @@ export type GetComicsQuery = {
         Maybe<{
           __typename?: "Comic"
           id: string
-          issue_no?: Maybe<number>
+          issue_no: number
           description?: Maybe<string>
+          date_updated: number
           grade: {
             __typename?: "Grade"
             id: number
@@ -218,8 +234,10 @@ export type GetComicQuery = {
   comic?: Maybe<{
     __typename?: "Comic"
     id: string
-    issue_no?: Maybe<number>
+    issue_no: number
     description?: Maybe<string>
+    date_created: number
+    date_updated: number
     grade: {
       __typename?: "Grade"
       id: number
@@ -232,6 +250,11 @@ export type GetComicQuery = {
       id: string
       name: string
       publisher: { __typename?: "Publisher"; id: string; name: string }
+    }
+    series: {
+      __typename?: "Series"
+      next?: Maybe<string>
+      previous?: Maybe<string>
     }
   }>
 }
@@ -247,6 +270,8 @@ export type GetPublisherQuery = {
     id: string
     name: string
     url?: Maybe<string>
+    date_created: number
+    date_updated: number
     titles?: Maybe<
       Array<
         Maybe<{
@@ -256,9 +281,42 @@ export type GetPublisherQuery = {
           url?: Maybe<string>
           year?: Maybe<number>
           volume?: Maybe<number>
+          date_updated: number
         }>
       >
     >
+  }>
+}
+
+export type GetPublishersQueryVariables = Exact<{
+  pageSize?: Maybe<Scalars["Int"]>
+  beforeCursor?: Maybe<Scalars["String"]>
+  afterCursor?: Maybe<Scalars["String"]>
+}>
+
+export type GetPublishersQuery = {
+  __typename?: "Query"
+  publishers?: Maybe<{
+    __typename?: "PublishersPage"
+    totalCount: number
+    items?: Maybe<
+      Array<
+        Maybe<{
+          __typename?: "Publisher"
+          id: string
+          name: string
+          url?: Maybe<string>
+          date_updated: number
+          titles?: Maybe<Array<Maybe<{ __typename?: "Title"; id: string }>>>
+        }>
+      >
+    >
+    pageInfo?: Maybe<{
+      __typename?: "PageInfo"
+      startCursor?: Maybe<string>
+      endCursor?: Maybe<string>
+      hasNextPage?: Maybe<boolean>
+    }>
   }>
 }
 
@@ -282,6 +340,8 @@ export type GetTitlesQuery = {
           url?: Maybe<string>
           year?: Maybe<number>
           volume?: Maybe<number>
+          date_updated: number
+          issue_count?: Maybe<number>
           publisher: {
             __typename?: "Publisher"
             id: string
@@ -314,12 +374,19 @@ export type GetTitleQuery = {
     url?: Maybe<string>
     year?: Maybe<number>
     volume?: Maybe<number>
+    date_created: number
+    date_updated: number
     publisher: {
       __typename?: "Publisher"
       id: string
       name: string
       url?: Maybe<string>
     }
+    series?: Maybe<{
+      __typename?: "Series"
+      previous?: Maybe<string>
+      next?: Maybe<string>
+    }>
   }>
   comics?: Maybe<{
     __typename?: "ComicsPage"
@@ -329,8 +396,9 @@ export type GetTitleQuery = {
         Maybe<{
           __typename?: "Comic"
           id: string
-          issue_no?: Maybe<number>
+          issue_no: number
           description?: Maybe<string>
+          date_updated: number
           grade: {
             __typename?: "Grade"
             id: number
@@ -365,6 +433,9 @@ export type GetTitleEditQuery = {
     year?: Maybe<number>
     volume?: Maybe<number>
     publisher_id: number
+    date_created: number
+    date_updated: number
+    publisher: { __typename?: "Publisher"; id: string; name: string }
   }>
   publishers?: Maybe<{
     __typename?: "PublishersPage"
@@ -638,6 +709,10 @@ export const GetComicsDocument = {
                           ],
                         },
                       },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "date_updated" },
+                      },
                     ],
                   },
                 },
@@ -750,6 +825,28 @@ export const GetComicDocument = {
                     ],
                   },
                 },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_created" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_updated" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "series" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "next" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "previous" },
+                      },
+                    ],
+                  },
+                },
               ],
             },
           },
@@ -811,6 +908,145 @@ export const GetPublisherDocument = {
                         kind: "Field",
                         name: { kind: "Name", value: "volume" },
                       },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "date_updated" },
+                      },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_created" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_updated" },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<GetPublisherQuery, GetPublisherQueryVariables>
+export const GetPublishersDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "GetPublishers" },
+      variableDefinitions: [
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "pageSize" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "Int" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "beforeCursor" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "String" } },
+        },
+        {
+          kind: "VariableDefinition",
+          variable: {
+            kind: "Variable",
+            name: { kind: "Name", value: "afterCursor" },
+          },
+          type: { kind: "NamedType", name: { kind: "Name", value: "String" } },
+        },
+      ],
+      selectionSet: {
+        kind: "SelectionSet",
+        selections: [
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "publishers" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "pageSize" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "pageSize" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "beforeCursor" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "beforeCursor" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "afterCursor" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "afterCursor" },
+                },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "totalCount" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "items" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                      { kind: "Field", name: { kind: "Name", value: "url" } },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "date_updated" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "titles" },
+                        selectionSet: {
+                          kind: "SelectionSet",
+                          selections: [
+                            {
+                              kind: "Field",
+                              name: { kind: "Name", value: "id" },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "pageInfo" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "startCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "endCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "hasNextPage" },
+                      },
                     ],
                   },
                 },
@@ -821,7 +1057,7 @@ export const GetPublisherDocument = {
       },
     },
   ],
-} as unknown as DocumentNode<GetPublisherQuery, GetPublisherQueryVariables>
+} as unknown as DocumentNode<GetPublishersQuery, GetPublishersQueryVariables>
 export const GetTitlesDocument = {
   kind: "Document",
   definitions: [
@@ -926,6 +1162,14 @@ export const GetTitlesDocument = {
                           ],
                         },
                       },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "date_updated" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "issue_count" },
+                      },
                     ],
                   },
                 },
@@ -1020,6 +1264,28 @@ export const GetTitleDocument = {
                     ],
                   },
                 },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_created" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_updated" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "series" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "previous" },
+                      },
+                      { kind: "Field", name: { kind: "Name", value: "next" } },
+                    ],
+                  },
+                },
               ],
             },
           },
@@ -1087,6 +1353,10 @@ export const GetTitleDocument = {
                       {
                         kind: "Field",
                         name: { kind: "Name", value: "description" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "date_updated" },
                       },
                     ],
                   },
@@ -1173,6 +1443,25 @@ export const GetTitleEditDocument = {
                 {
                   kind: "Field",
                   name: { kind: "Name", value: "publisher_id" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "publisher" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      { kind: "Field", name: { kind: "Name", value: "id" } },
+                      { kind: "Field", name: { kind: "Name", value: "name" } },
+                    ],
+                  },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_created" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_updated" },
                 },
               ],
             },

@@ -1,13 +1,17 @@
 # import Title from "schema.titles.graphql"
 # import Grade from "schema.grades.graphql"
+# import Series from "schema.series.graphql"
 
 type Comic {
   id: ID!
-  issue_no: Int
+  issue_no: Int!
   description: String
   date: Int
   grade_id: Int!
   grade: Grade!
   title_id: Int!
   title: Title!
+  series: Series!
+  date_created: Int!
+  date_updated: Int!
 }

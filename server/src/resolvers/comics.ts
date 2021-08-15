@@ -8,23 +8,26 @@ export const listComics = async (
   args: QueryComicsArgs,
   context: AppContext
 ): Promise<ComicsPage> => {
-  const comicsQuery = comicQueryBuilder(context.database.db).modify(
-    (queryBuilder) => {
-      if (args.titleId) {
-        queryBuilder.where("title_id", args.titleId)
-      }
-      if (args.publisherId) {
-        queryBuilder
-          .join("titles", "comics.title_id", "=", "titles.id")
-          .join("publishers", "publishers.id", "=", args.publisherId.toString())
-      }
+  const filterFn = (qB: Knex.QueryBuilder): void => {
+    if (args.titleId) {
+      qB.where("title_id", args.titleId)
     }
-  )
+    if (args.publisherId) {
+      qB.join("titles", "comics.title_id", "=", "titles.id").join(
+        "publishers",
+        "publishers.id",
+        "=",
+        args.publisherId.toString()
+      )
+    }
+  }
+
+  const comicsQuery = comicQueryBuilder(context.database.db).modify(filterFn)
 
   const { result, startCursor, endCursor, hasNextPage } =
     await context.database.paginateQuery<Comic>(comicsQuery, args)
 
-  const totalCount = await context.database.countTable("comics")
+  const totalCount = await context.database.countTable("comics", filterFn)
 
   return {
     totalCount: totalCount,

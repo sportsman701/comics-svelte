@@ -30,17 +30,17 @@
     </li>
     {#if publisher.name}
     <li>
-      <span>&raquo;</span> {@html wrapLink("/app/publishers", publisher)}
+      <span>&raquo;</span> {@html wrapLink("/comics/publishers", publisher)}
     </li>
     {/if}
     {#if title.name}
     <li>
-      <span>&raquo;</span> {@html wrapLink("/app/titles", title)}
+      <span>&raquo;</span> {@html wrapLink("/comics/titles", title)}
     </li>
     {/if}
     {#if comic.name}
     <li>
-      <span>&raquo;</span> {@html wrapLink("/app/comics",comic)}
+      <span>&raquo;</span> {@html wrapLink("/comics/comics",comic)}
     </li>
     {/if}
     {#if tail}

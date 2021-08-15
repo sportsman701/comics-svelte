@@ -12,7 +12,7 @@ import { addResolversToSchema } from "@graphql-tools/schema"
 import { resolvers } from "./resolvers"
 
 import { db, paginateQuery, countTable } from "./database"
-import grades from "./config/grades"
+import { grades, config } from "./config"
 
 const morgan = require("morgan")("combined")
 
@@ -29,7 +29,7 @@ const configGraphQL = (server: Express) => {
         resolvers,
       }),
       graphiql: true,
-      pretty: process.env.NODE_ENV === "development",
+      pretty: config.currentEnv === "development",
       context: {
         database: {
           db,
@@ -71,18 +71,24 @@ async function genServer(): Promise<Express> {
   server.disable("x-powered-by")
 
   configHealthcheck(server)
-  configSinglePageApp(server)
   configGraphQL(server)
+  // must be last routes added
+  configSinglePageApp(server)
 
   return server
 }
 
 genServer()
   .then((server) => {
-    server.listen(3000, () => {
-      console.log("Listening on http://localhost:3000")
+    server.listen(config.express.port, () => {
+      console.log(`Listening on http://localhost:${config.express.port}`)
     })
   })
   .catch((err) => {
     logger.error(`Error: ${err}`)
   })
+
+process.once("SIGUSR2", () => {
+  db.destroy()
+  process.kill(process.pid, "SIGUSR2")
+})

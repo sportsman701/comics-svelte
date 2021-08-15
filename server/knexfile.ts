@@ -1,4 +1,5 @@
-const path = require("path")
+// Update with your config settings.
+import * as path from "path"
 
 module.exports = {
   test: {
@@ -6,6 +7,9 @@ module.exports = {
     connection: {
       filename: ":memory:",
       multipleStatements: true,
+    },
+    pool: {
+      max: 1,
     },
     useNullAsDefault: true,
     migrations: {
@@ -21,13 +25,11 @@ module.exports = {
     connection: {
       filename: "./database/development.db",
     },
-    useNullAsDefault: true,
-  },
-
-  staging: {
-    client: "sqlite3",
-    connection: {
-      filename: "./database/staging.db",
+    pool: {
+      max: 1,
+    },
+    migrations: {
+      directory: path.join(__dirname, "database", "migrations"),
     },
     useNullAsDefault: true,
   },
@@ -36,6 +38,12 @@ module.exports = {
     client: "sqlite3",
     connection: {
       filename: "./database/production.db",
+    },
+    pool: {
+      max: 1,
+    },
+    migrations: {
+      directory: path.join(__dirname, "database", "migrations"),
     },
     useNullAsDefault: true,
   },

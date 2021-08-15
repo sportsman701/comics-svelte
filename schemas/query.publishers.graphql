@@ -9,6 +9,37 @@ query GetPublisher($id: Int!) {
       url
       year
       volume
+      date_updated
+    }
+    date_created
+    date_updated
+  }
+}
+
+query GetPublishers(
+  $pageSize: Int
+  $beforeCursor: String
+  $afterCursor: String
+) {
+  publishers(
+    pageSize: $pageSize
+    beforeCursor: $beforeCursor
+    afterCursor: $afterCursor
+  ) {
+    totalCount
+    items {
+      id
+      name
+      url
+      date_updated
+      titles {
+        id
+      }
+    }
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
     }
   }
 }

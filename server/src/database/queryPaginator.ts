@@ -97,7 +97,7 @@ export const paginateQuery = async <T extends PrimitiveTypes>(
   const paginatedQueryBuilder = paginator.paginateQuery(queryBuilder)
   const { result, hasNextPage } = await paginator.query(paginatedQueryBuilder)
 
-  const startCursor = encodeCursor(result[0].id)
+  const startCursor = result.length ? encodeCursor(result[0].id) : undefined
   const endCursor =
     result.length > 1 ? encodeCursor(result[result.length - 1].id) : undefined
 

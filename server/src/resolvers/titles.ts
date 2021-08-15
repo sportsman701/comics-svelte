@@ -1,4 +1,4 @@
-import { Knex } from "knex"
+import type { Knex } from "knex"
 import { AppContext } from "../modules"
 import { Title, TitlesPage, QueryTitlesArgs, UpdateTitleInput } from "../types"
 import { fetchPublisher } from "./publishers"
@@ -9,22 +9,36 @@ import { URL } from "url"
 const titleQueryBuilder = (db: Knex) =>
   db("titles").select("titles.*").orderBy("name", "asc")
 
+const issueCountQueryBuilder = (db: Knex) =>
+  db("comics")
+    .select("title_id")
+    .count("id as _cnt")
+    .groupBy("title_id")
+    .as("cq")
+
+const decorateQueryWithIssueCount = (db: Knex): Knex.QueryBuilder =>
+  titleQueryBuilder(db)
+    .select("cq._cnt as issue_count")
+    .leftOuterJoin(issueCountQueryBuilder(db), "cq.title_id", "titles.id")
+
 export const listTitles = async (
   args: QueryTitlesArgs,
   context: AppContext
 ): Promise<TitlesPage> => {
-  const titleQuery = titleQueryBuilder(context.database.db).modify(
-    (queryBuilder) => {
-      if (args.publisherId) {
-        queryBuilder.where("publisher_id", args.publisherId.toString())
-      }
+  const filterFn = (q: Knex.QueryBuilder): void => {
+    if (args.publisherId) {
+      q.where("publisher_id", args.publisherId.toString)
     }
+  }
+
+  const titleQuery = decorateQueryWithIssueCount(context.database.db).modify(
+    filterFn
   )
 
   const { result, startCursor, endCursor, hasNextPage } =
     await context.database.paginateQuery<Title>(titleQuery, args)
 
-  const totalCount = await context.database.countTable("titles")
+  const totalCount = await context.database.countTable("titles", filterFn)
 
   return {
     totalCount: totalCount,
@@ -41,7 +55,9 @@ export const fetchTitle = async (
   id: number,
   context: AppContext
 ): Promise<Title> => {
-  return await titleQueryBuilder(context.database.db).where("id", id).first()
+  return await decorateQueryWithIssueCount(context.database.db)
+    .where("id", id)
+    .first()
 }
 
 export const updateTitle = async (
@@ -107,8 +123,13 @@ export const updateTitle = async (
     throw new Error(`Validation Error: \n ${errors.join(", \n ")}`)
   }
 
+  const update = {
+    ...titleInput,
+    date_updated: Math.round(new Date().getTime() / 1000),
+  }
+
   return await titleQueryBuilder(context.database.db)
-    .update(titleInput)
+    .update(update)
     .where("id", id)
     .then((rows) => {
       if (!rows) {

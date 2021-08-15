@@ -33,6 +33,7 @@ query GetComics(
           name
         }
       }
+      date_updated
     }
     pageInfo {
       startCursor
@@ -60,6 +61,12 @@ query GetComic($id: Int!) {
         id
         name
       }
+    }
+    date_created
+    date_updated
+    series {
+      next
+      previous
     }
   }
 }

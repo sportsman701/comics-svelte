@@ -4,7 +4,7 @@ import { listPublishers, fetchPublisher } from "./publishers"
 
 import grades, { defaultGrade } from "../config/grades"
 
-import {
+import type {
   Comic,
   ComicsPage,
   Grade,
@@ -17,6 +17,7 @@ import {
   QueryPublishersArgs,
   QueryTitleArgs,
   QueryTitlesArgs,
+  Series,
   Title,
   TitlesPage,
 } from "../types"
@@ -76,6 +77,39 @@ export const resolvers: Resolvers = {
       await fetchTitle(parent.title_id, context),
     grade: (parent: Comic, _: any, context: AppContext): Grade =>
       grades.find((grade) => grade.id == parent.grade_id) || defaultGrade,
+    series: async (
+      parent: Comic,
+      _: any,
+      context: AppContext
+    ): Promise<Series> => {
+      if (!parent.issue_no && parent.issue_no !== 0) {
+        return {
+          next: null,
+          previous: null,
+        }
+      }
+
+      const previous: Comic = await context.database
+        .db("comics")
+        .where("title_id", parent.title_id)
+        .where("issue_no", "<", parent.issue_no)
+        .orderBy("issue_no", "desc")
+        .limit(1)
+        .first()
+
+      const next: Comic = await context.database
+        .db("comics")
+        .where("title_id", parent.title_id)
+        .where("issue_no", ">", parent.issue_no)
+        .orderBy("issue_no", "asc")
+        .limit(1)
+        .first()
+
+      return {
+        previous: previous ? previous.id : undefined,
+        next: next ? next.id : undefined,
+      }
+    },
   },
 
   Title: {
@@ -84,6 +118,33 @@ export const resolvers: Resolvers = {
       _: any,
       context: AppContext
     ): Promise<Publisher> => await fetchPublisher(parent.publisher_id, context),
+    series: async (
+      parent: Title,
+      _: any,
+      context: AppContext
+    ): Promise<Series> => {
+      // previous
+      // select * from Titles where name < "Supercops" ORDER BY name DESC LIMIT 1;
+      const previous: Title = await context.database
+        .db("titles")
+        .where("name", "<", parent.name)
+        .orderBy("name", "desc")
+        .limit(1)
+        .first()
+      // next
+      // select * from Titles where name > "Supercops" ORDER BY name ASC LIMIT 1;
+      const next: Title = await context.database
+        .db("titles")
+        .where("name", ">", parent.name)
+        .orderBy("name", "asc")
+        .limit(1)
+        .first()
+
+      return {
+        previous: previous ? previous.id : undefined,
+        next: next ? next.id : undefined,
+      }
+    },
   },
 
   Publisher: {
