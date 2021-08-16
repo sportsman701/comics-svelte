@@ -82,5 +82,5 @@
 </Router>
 
 <footer>
-	<p>&copy; Copyright {$properties.owner}</p>
+	<p>&copy; Copyright {$properties.copyrightYear} {$properties.owner}</p>
 </footer>

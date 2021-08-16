@@ -3,11 +3,12 @@ import { writable, derived } from "svelte/store"
 const PROPERTIES = "properties"
 
 type Properties = {
-  [key: string]: string
+  [key: string]: string | number
 }
 
-let defaultState: Properties = {
+export const defaultState: Properties = {
   owner: "me",
+  copyrightYear: 2021,
 }
 
 // Not worrying about fallback/shim because we're not doing SSR
@@ -24,7 +25,13 @@ const getStoredProperties = (): Properties => {
   }
 
   try {
-    return JSON.parse(lStore.getItem(PROPERTIES), reviver)
+    const props = JSON.parse(lStore.getItem(PROPERTIES), reviver)
+
+    // upgrade the stored properties if they're missing new keys
+    return {
+      ...defaultState,
+      ...props,
+    }
   } catch (e) {
     console.log(
       `Could not parse properties localStorage, setting properties to defaults`,

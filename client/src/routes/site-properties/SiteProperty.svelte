@@ -1,15 +1,32 @@
 <script type="ts">
   import { link, navigate } from "svelte-routing"
-  import { propertiesStore } from "../../stores/properties"
+  import { propertiesStore, defaultState } from "../../stores/properties"
 
   export let property: string = ""
 
   const propertyName = property.replace(".txt", "")
 
   let ownerName = $propertiesStore.owner
+  let copyrightYear = $propertiesStore.copyrightYear
 
   const update = (event: Event) => {
-    $propertiesStore.owner = event.target.owner.value
+    let defaultValue = defaultState[propertyName]
+    let value = event.target[propertyName].value
+
+    if (!value) {
+      value = defaultValue
+    }
+
+    switch (typeof defaultValue) {
+      case "number":
+        value = parseInt(value, 10)
+        break
+      case "string":
+        value = value.toString()
+        break
+    }
+
+    $propertiesStore[propertyName] = value
     navigate(`/site-properties`)
   }
 </script>
@@ -26,6 +43,13 @@
     <p>
       <label for="owner">Owner</label>
       <input type="text" name="owner" id="owner" value="{ownerName}" />
+    </p>
+    {/if}
+
+    {#if propertyName == "copyrightYear"}
+    <p>
+      <label for="copyrightYear">Copyright Year</label>
+      <input type="number" name="copyrightYear" id="copyrightYear" value="{copyrightYear}" />
     </p>
     {/if}
 

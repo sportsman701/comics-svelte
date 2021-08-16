@@ -19,5 +19,14 @@
       <td></td>
       <td>{$properties.owner}</td>
     </tr>
+    <tr>
+      <td><Icon icon="text" alt="property" /></td>
+      <th scope="row">
+        <a use:link href="/site-properties/copyrightYear.txt">copyrightYear.txt</a>
+      </th>
+      <td>-</td>
+      <td></td>
+      <td>{$properties.copyrightYear}</td>
+    </tr>
   </DirectoryList>
 </section>
