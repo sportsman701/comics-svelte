@@ -80,6 +80,7 @@ async function genServer(): Promise<Express> {
 
 genServer()
   .then((server) => {
+    console.log(`Starting server with config:`, config)
     server.listen(config.express.port, () => {
       console.log(`Listening on http://localhost:${config.express.port}`)
     })

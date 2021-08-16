@@ -1,6 +1,3 @@
-// Update with your config settings.
-import * as path from "path"
-
 module.exports = {
   test: {
     client: "sqlite3",
@@ -13,10 +10,10 @@ module.exports = {
     },
     useNullAsDefault: true,
     migrations: {
-      directory: path.join(__dirname, "database", "migrations"),
+      directory: "./database/migrations",
     },
     seeds: {
-      directory: path.join(__dirname, "database", "seeds"),
+      directory: "./database/seeds",
     },
   },
 
@@ -29,7 +26,7 @@ module.exports = {
       max: 1,
     },
     migrations: {
-      directory: path.join(__dirname, "database", "migrations"),
+      directory: "./database/migrations",
     },
     useNullAsDefault: true,
   },
@@ -43,7 +40,7 @@ module.exports = {
       max: 1,
     },
     migrations: {
-      directory: path.join(__dirname, "database", "migrations"),
+      directory: "./database/migrations",
     },
     useNullAsDefault: true,
   },

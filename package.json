@@ -23,7 +23,9 @@
     "cy:run": "npx cypress run --headless",
     "cy:open": "npx cypress open",
     "test": "start-server-and-test test:all 3000 cy:run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docker:build": "docker build --no-cache -t wookiee-comics:latest .",
+    "docker:run": "docker run --name wookiee-comics --env NODE_ENV=production -p 3000:3000 wookiee-comics:latest"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"

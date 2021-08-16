@@ -1,8 +1,8 @@
 import express from "express"
-import { Express } from "express-serve-static-core"
+import type { Express } from "express-serve-static-core"
 import * as path from "path"
-import { createProxyMiddleware } from "http-proxy-middleware"
 import { config } from "../config"
+import { createProxyMiddleware } from "http-proxy-middleware"
 
 const controllers = (server: Express) => {
   if (config.currentEnv !== "production") {
