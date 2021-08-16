@@ -64,16 +64,16 @@
   </table>
 
   <section class="title">
-    <p>Publisher: {title.publisher.name}</p>
-    <p>Url: 
+    <p><b>Publisher:</b> {title.publisher.name}</p>
+    <p><b>Url:</b> 
       {#if title.url}
       <a href="{title.url}" target="_blank">'{title.name}' product page</a>
       {:else}
       <NullableString value={title.url}/>
       {/if}
     </p>
-    <p>Volume: <NullableString value={title.volume}/></p>
-    <p>Year: <NullableString value={title.year}/></p>
+    <p><b>Volume:</b> <NullableString value={title.volume}/></p>
+    <p><b>Year:</b> <NullableString value={title.year}/></p>
 
     <DirectoryList parentDirectory="/comics/titles">
       <tr>

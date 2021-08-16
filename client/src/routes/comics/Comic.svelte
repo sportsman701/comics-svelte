@@ -5,7 +5,7 @@
   import type { Comic } from "../../graphql/schemas.generated"
   import AwaitQuery from "../../components/AwaitQuery.svelte"
   import NullableString from "../../components/NullableString.svelte"
-import PageTitle from "../../components/PageTitle.svelte"
+  import PageTitle from "../../components/PageTitle.svelte"
 
   export let id: string = ""
 
@@ -51,9 +51,9 @@ import PageTitle from "../../components/PageTitle.svelte"
       </table>
 
       <hr/>
-      <p>Publisher: {comic.title.publisher.name}</p>
-      <p>Grade: {comic.grade.name}</p>
-      <p>Description: <NullableString value={comic.description}/></p>
+      <p><b>Publisher:</b> {comic.title.publisher.name}</p>
+      <p><b>Grade:</b> {comic.grade.name}</p>
+      <p><b>Description:</b> <NullableString value={comic.description}/></p>
     </section>
   </AwaitQuery>
 

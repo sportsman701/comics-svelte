@@ -24,7 +24,7 @@
   <PageTitle value="/comics/publishers/{publisher.name}"/>
   <section class="publisher">
     <p>
-      Url: {#if publisher.url}
+      <b>Url:</b> {#if publisher.url}
         <a href="{publisher.url}" alt="{extractDomain(publisher.url)}" target="_blank">
           {extractDomain(publisher.url)}
         </a>
