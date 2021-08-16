@@ -6,13 +6,13 @@
   import NullableString from "../../components/NullableString.svelte"
   import PageTitle from "../../components/PageTitle.svelte"
   import { GetPublisherDocument } from "../../graphql/schemas.generated"
-  import type { Publisher } from "../../graphql/schemas.generated"
+  import type { Publisher, TitlesPage } from "../../graphql/schemas.generated"
   
   export let id: string = ""
 
   const publisherId = parseInt(id, 10)
 
-  const publisherStore = operationStore<{publisher: Publisher}>(GetPublisherDocument, {
+  const publisherStore = operationStore<{publisher: Publisher, titles: TitlesPage}>(GetPublisherDocument, {
     id: publisherId
   })
   query(publisherStore)
@@ -20,7 +20,7 @@
   const extractDomain = (url: string) => url ? new URL(url).hostname : url
 </script>
 
-<AwaitQuery queryStore={publisherStore} let:data={{publisher}}>
+<AwaitQuery queryStore={publisherStore} let:data={{publisher, titles}}>
   <PageTitle value="/comics/publishers/{publisher.name}"/>
   <section class="publisher">
     <p>
@@ -34,14 +34,14 @@
     </p>
     
     <DirectoryList parentDirectory="/comics/publishers">
-      {#each publisher.titles as title (title.id)}
+      {#each titles.items as title (title.id)}
       <tr>
         <td><img src="/icons/folder.gif" alt="[DIR]"></td>
         <th scope="row">
           <a use:link href="/comics/titles/{title.id}">{title.name}</a>
         </th>
         <td>-</td>
-        <td>-</td>
+        <td>{title.issue_count || 0}</td>
         <td></td>
       </tr>
       {/each}

@@ -24,7 +24,7 @@
           <a use:link href="/comics/publishers/{publisher.id}">{publisher.name}</a>
         </th>
         <td>-</td>
-        <td>{publisher.titles.length}</td>
+        <td>{publisher.title_count}</td>
         <td></td>
       </tr>
       {/each}

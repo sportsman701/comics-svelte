@@ -146,17 +146,4 @@ export const resolvers: Resolvers = {
       }
     },
   },
-
-  Publisher: {
-    async titles(
-      parent: Publisher,
-      _: any,
-      context: AppContext
-    ): Promise<Title[]> {
-      return await context.database
-        .db("titles")
-        .select("*")
-        .where("publisher_id", parent.id)
-    },
-  },
 }

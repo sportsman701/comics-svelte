@@ -44,5 +44,4 @@ To update services after changing the schema just run `yarn generate` in the roo
 - [ ] Just why do we need `rollup/plugin-replace` in the client? It feels like a half-assed replacement for good environment management.
 - [ ] Optimize queries on Comic Series lookup
   - not a huge deal since it only gets called on comic instance, but on comic list it could blow up
-- [ ] Token based paging based on sort column
-  - currently everything uses the ID as the token, but that should be the field that is being sorted by to ensure proper paging
+- [ ] Inspect requested params to omit subqueries when not needed

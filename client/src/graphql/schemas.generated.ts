@@ -69,6 +69,7 @@ export type Publisher = {
   date_updated: Scalars["Int"]
   id: Scalars["ID"]
   name: Scalars["String"]
+  title_count?: Maybe<Scalars["Int"]>
   titles?: Maybe<Array<Maybe<Title>>>
   url?: Maybe<Scalars["String"]>
 }
@@ -120,7 +121,7 @@ export type QueryTitlesArgs = {
   afterCursor?: Maybe<Scalars["String"]>
   beforeCursor?: Maybe<Scalars["String"]>
   pageSize?: Maybe<Scalars["Int"]>
-  publisherId?: Maybe<Scalars["String"]>
+  publisherId?: Maybe<Scalars["Int"]>
 }
 
 export type Series = {
@@ -272,7 +273,11 @@ export type GetPublisherQuery = {
     url?: Maybe<string>
     date_created: number
     date_updated: number
-    titles?: Maybe<
+  }>
+  titles?: Maybe<{
+    __typename?: "TitlesPage"
+    totalCount: number
+    items?: Maybe<
       Array<
         Maybe<{
           __typename?: "Title"
@@ -282,9 +287,16 @@ export type GetPublisherQuery = {
           year?: Maybe<number>
           volume?: Maybe<number>
           date_updated: number
+          issue_count?: Maybe<number>
         }>
       >
     >
+    pageInfo?: Maybe<{
+      __typename?: "PageInfo"
+      startCursor?: Maybe<string>
+      endCursor?: Maybe<string>
+      hasNextPage?: Maybe<boolean>
+    }>
   }>
 }
 
@@ -307,7 +319,7 @@ export type GetPublishersQuery = {
           name: string
           url?: Maybe<string>
           date_updated: number
-          titles?: Maybe<Array<Maybe<{ __typename?: "Title"; id: string }>>>
+          title_count?: Maybe<number>
         }>
       >
     >
@@ -896,7 +908,40 @@ export const GetPublisherDocument = {
                 { kind: "Field", name: { kind: "Name", value: "url" } },
                 {
                   kind: "Field",
-                  name: { kind: "Name", value: "titles" },
+                  name: { kind: "Name", value: "date_created" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "date_updated" },
+                },
+              ],
+            },
+          },
+          {
+            kind: "Field",
+            name: { kind: "Name", value: "titles" },
+            arguments: [
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "publisherId" },
+                value: {
+                  kind: "Variable",
+                  name: { kind: "Name", value: "id" },
+                },
+              },
+              {
+                kind: "Argument",
+                name: { kind: "Name", value: "pageSize" },
+                value: { kind: "IntValue", value: "10000" },
+              },
+            ],
+            selectionSet: {
+              kind: "SelectionSet",
+              selections: [
+                { kind: "Field", name: { kind: "Name", value: "totalCount" } },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "items" },
                   selectionSet: {
                     kind: "SelectionSet",
                     selections: [
@@ -912,16 +957,33 @@ export const GetPublisherDocument = {
                         kind: "Field",
                         name: { kind: "Name", value: "date_updated" },
                       },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "issue_count" },
+                      },
                     ],
                   },
                 },
                 {
                   kind: "Field",
-                  name: { kind: "Name", value: "date_created" },
-                },
-                {
-                  kind: "Field",
-                  name: { kind: "Name", value: "date_updated" },
+                  name: { kind: "Name", value: "pageInfo" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "startCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "endCursor" },
+                      },
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "hasNextPage" },
+                      },
+                    ],
+                  },
                 },
               ],
             },
@@ -1015,16 +1077,7 @@ export const GetPublishersDocument = {
                       },
                       {
                         kind: "Field",
-                        name: { kind: "Name", value: "titles" },
-                        selectionSet: {
-                          kind: "SelectionSet",
-                          selections: [
-                            {
-                              kind: "Field",
-                              name: { kind: "Name", value: "id" },
-                            },
-                          ],
-                        },
+                        name: { kind: "Name", value: "title_count" },
                       },
                     ],
                   },

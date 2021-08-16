@@ -6,4 +6,5 @@ type Publisher {
   titles: [Title]
   date_created: Int!
   date_updated: Int!
+  title_count: Int
 }

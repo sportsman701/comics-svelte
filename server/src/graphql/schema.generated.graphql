@@ -40,6 +40,7 @@ type Publisher {
   date_updated: Int!
   id: ID!
   name: String!
+  title_count: Int
   titles: [Title]
   url: String
 }
@@ -70,7 +71,7 @@ type Query {
     afterCursor: String = null
     beforeCursor: String = null
     pageSize: Int = 100
-    publisherId: String
+    publisherId: Int
   ): TitlesPage
 }
 

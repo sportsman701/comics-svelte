@@ -73,6 +73,7 @@ export type Publisher = {
   date_updated: Scalars["Int"]
   id: Scalars["ID"]
   name: Scalars["String"]
+  title_count?: Maybe<Scalars["Int"]>
   titles?: Maybe<Array<Maybe<Title>>>
   url?: Maybe<Scalars["String"]>
 }
@@ -124,7 +125,7 @@ export type QueryTitlesArgs = {
   afterCursor?: Maybe<Scalars["String"]>
   beforeCursor?: Maybe<Scalars["String"]>
   pageSize?: Maybe<Scalars["Int"]>
-  publisherId?: Maybe<Scalars["String"]>
+  publisherId?: Maybe<Scalars["Int"]>
 }
 
 export type Series = {
@@ -400,6 +401,7 @@ export type PublisherResolvers<
   date_updated?: Resolver<ResolversTypes["Int"], ParentType, ContextType>
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>
   name?: Resolver<ResolversTypes["String"], ParentType, ContextType>
+  title_count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>
   titles?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["Title"]>>>,
     ParentType,

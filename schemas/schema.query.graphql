@@ -15,7 +15,7 @@ type Query {
   ): ComicsPage
   title(id: Int!): Title
   titles(
-    publisherId: String
+    publisherId: Int
     pageSize: Int = 100
     beforeCursor: String = null
     afterCursor: String = null

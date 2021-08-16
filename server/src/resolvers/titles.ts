@@ -27,7 +27,7 @@ export const listTitles = async (
 ): Promise<TitlesPage> => {
   const filterFn = (q: Knex.QueryBuilder): void => {
     if (args.publisherId) {
-      q.where("publisher_id", args.publisherId.toString)
+      q.where("publisher_id", args.publisherId.toString())
     }
   }
 

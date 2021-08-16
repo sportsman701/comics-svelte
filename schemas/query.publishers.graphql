@@ -3,16 +3,25 @@ query GetPublisher($id: Int!) {
     id
     name
     url
-    titles {
+    date_created
+    date_updated
+  }
+  titles(publisherId: $id, pageSize: 10000) {
+    totalCount
+    items {
       id
       name
       url
       year
       volume
       date_updated
+      issue_count
     }
-    date_created
-    date_updated
+    pageInfo {
+      startCursor
+      endCursor
+      hasNextPage
+    }
   }
 }
 
@@ -32,9 +41,7 @@ query GetPublishers(
       name
       url
       date_updated
-      titles {
-        id
-      }
+      title_count
     }
     pageInfo {
       startCursor

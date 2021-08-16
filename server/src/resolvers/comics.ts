@@ -29,7 +29,7 @@ export const listComics = async (
     await context.database.paginateQuery<Comic>(comicsQuery, args, "issue_no")
 
   const totalCount = await context.database.countTable("comics", filterFn)
-  console.log(comicsQuery.toSQL().toNative())
+
   return {
     totalCount: totalCount,
     items: result,
