@@ -6,6 +6,9 @@ import { createProxyMiddleware } from "http-proxy-middleware"
 
 const controllers = (server: Express) => {
   if (config.currentEnv !== "production") {
+    /**
+     * For dev and testing we proxy over to the running svelte dev server
+     */
     server.use(
       ["/favicon.png", "/global.css", "/build", "/icons/*"],
       createProxyMiddleware({
@@ -13,6 +16,11 @@ const controllers = (server: Express) => {
         changeOrigin: true,
       })
     )
+  } else {
+    /**
+     * in the docker container the compiled svelte app is copied in ./public
+     */
+    server.use(express.static("/usr/src/app/public"))
   }
 
   server.get(

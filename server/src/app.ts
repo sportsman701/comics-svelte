@@ -68,12 +68,14 @@ async function genServer(): Promise<Express> {
   server.use(compression())
   server.use(cors())
 
-  server.disable("x-powered-by")
-
   configHealthcheck(server)
   configGraphQL(server)
+
   // must be last routes added
   configSinglePageApp(server)
+
+  server.set("x-powered-by", false)
+  server.set("ETag", config.currentEnv === "production")
 
   return server
 }
