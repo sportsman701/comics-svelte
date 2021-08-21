@@ -123,18 +123,41 @@ export const resolvers: Resolvers = {
       _: any,
       context: AppContext
     ): Promise<Series> => {
-      // previous
-      // select * from Titles where name < "Supercops" ORDER BY name DESC LIMIT 1;
       const previous: Title = await context.database
         .db("titles")
         .where("name", "<", parent.name)
         .orderBy("name", "desc")
         .limit(1)
         .first()
-      // next
-      // select * from Titles where name > "Supercops" ORDER BY name ASC LIMIT 1;
+
       const next: Title = await context.database
         .db("titles")
+        .where("name", ">", parent.name)
+        .orderBy("name", "asc")
+        .limit(1)
+        .first()
+
+      return {
+        previous: previous ? previous.id : undefined,
+        next: next ? next.id : undefined,
+      }
+    },
+  },
+  Publisher: {
+    series: async (
+      parent: Publisher,
+      _: any,
+      context: AppContext
+    ): Promise<Series> => {
+      const previous: Title = await context.database
+        .db("publishers")
+        .where("name", "<", parent.name)
+        .orderBy("name", "desc")
+        .limit(1)
+        .first()
+
+      const next: Title = await context.database
+        .db("publishers")
         .where("name", ">", parent.name)
         .orderBy("name", "asc")
         .limit(1)

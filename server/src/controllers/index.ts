@@ -20,7 +20,7 @@ const controllers = (server: Express) => {
     /**
      * in the docker container the compiled svelte app is copied in ./public
      */
-    server.use(express.static("/usr/src/app/public"))
+    server.use(express.static(config.static.dir))
   }
 
   server.get(

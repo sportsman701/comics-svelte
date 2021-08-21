@@ -3,6 +3,9 @@ const config = {
   express: {
     port: 3000,
   },
+  static: {
+    dir: "/usr/src/app/public", // only in docker container
+  },
 }
 
 export default config

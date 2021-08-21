@@ -22,6 +22,34 @@
 
 <AwaitQuery queryStore={publisherStore} let:data={{publisher, titles}}>
   <PageTitle value="/comics/publishers/{publisher.name}"/>
+
+  <table class="classic">
+    <tbody>
+      <tr>
+        <td>
+          <img src="/icons/left.gif" alt="[BACK]" role="presentation">
+          {#if publisher.series.previous}
+          <a href="/comics/publishers/{publisher.series.previous}">Previous Publisher</a>
+          {:else}
+          <span class="disabled">Previous Publisher</span>
+          {/if}
+        </td>
+        <td>
+          <img src="/icons/back.gif" alt="[PARENTDIR]" role="presentation">
+          <a use:link href="/comics/publishers">Up to Publishers List</a>
+        </td>
+        <td>
+          {#if publisher.series.next}
+          <a href="/comics/publishers/{publisher.series.next}">Next Publisher</a>
+          {:else}
+          <span class="disabled">Next Publisher</span>
+          {/if}
+          <img src="/icons/right.gif" alt="[NEXT]" role="presentation">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
   <section class="publisher">
     <p>
       <b>Url:</b> {#if publisher.url}

@@ -5,6 +5,10 @@ query GetPublisher($id: Int!) {
     url
     date_created
     date_updated
+    series {
+      previous
+      next
+    }
   }
   titles(publisherId: $id, pageSize: 10000) {
     totalCount

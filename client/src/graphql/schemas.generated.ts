@@ -69,6 +69,7 @@ export type Publisher = {
   date_updated: Scalars["Int"]
   id: Scalars["ID"]
   name: Scalars["String"]
+  series?: Maybe<Series>
   title_count?: Maybe<Scalars["Int"]>
   titles?: Maybe<Array<Maybe<Title>>>
   url?: Maybe<Scalars["String"]>
@@ -273,6 +274,11 @@ export type GetPublisherQuery = {
     url?: Maybe<string>
     date_created: number
     date_updated: number
+    series?: Maybe<{
+      __typename?: "Series"
+      previous?: Maybe<string>
+      next?: Maybe<string>
+    }>
   }>
   titles?: Maybe<{
     __typename?: "TitlesPage"
@@ -913,6 +919,20 @@ export const GetPublisherDocument = {
                 {
                   kind: "Field",
                   name: { kind: "Name", value: "date_updated" },
+                },
+                {
+                  kind: "Field",
+                  name: { kind: "Name", value: "series" },
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [
+                      {
+                        kind: "Field",
+                        name: { kind: "Name", value: "previous" },
+                      },
+                      { kind: "Field", name: { kind: "Name", value: "next" } },
+                    ],
+                  },
                 },
               ],
             },
