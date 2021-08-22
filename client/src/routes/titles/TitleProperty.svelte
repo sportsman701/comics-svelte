@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { navigate, link } from "svelte-routing"
   import AwaitQuery from "../../components/AwaitQuery.svelte"
   import { GetTitleEditDocument, UpdateTitleDocument } from "../../graphql/schemas.generated"

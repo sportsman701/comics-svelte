@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link } from "svelte-routing"
   import Icon from "../components/Icon.svelte"
   import PageTitle from "../components/PageTitle.svelte"

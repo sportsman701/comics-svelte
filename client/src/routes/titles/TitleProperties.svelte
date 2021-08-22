@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link } from "svelte-routing"
   import type { Title, ComicsPage } from "../../graphql/schemas.generated"
   import { GetTitleDocument } from "../../graphql/schemas.generated"

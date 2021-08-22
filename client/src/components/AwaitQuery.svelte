@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import type { OperationStore } from "@urql/svelte"
   
   type T = $$Generic

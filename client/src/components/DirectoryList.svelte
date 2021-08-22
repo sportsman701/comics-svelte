@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link } from "svelte-routing"
   
   export let parentDirectory: string = ""

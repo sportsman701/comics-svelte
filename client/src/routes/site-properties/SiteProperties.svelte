@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link } from "svelte-routing"
   import DirectoryList from "../../components/DirectoryList.svelte"
   import Icon from "../../components/Icon.svelte"

@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link } from "svelte-routing"
   import AwaitQuery from "../../components/AwaitQuery.svelte"
   import type { PublishersPage } from "../../graphql/schemas.generated"

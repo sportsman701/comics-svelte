@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
   import { link, navigate } from "svelte-routing"
   import { propertiesStore, defaultState } from "../../stores/properties"
 
