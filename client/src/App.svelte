@@ -1,9 +1,11 @@
 <script lang="ts">
-	import { Router, Route } from "svelte-routing"
+	import { Router, Route, link } from "svelte-routing"
 	import { initClient } from "@urql/svelte"
 
 	import NotFound from "./routes/NotFound.svelte"
 	import Home from "./routes/Home.svelte"
+	import Login from "./routes/session/Login.svelte"
+	import Logout from "./routes/session/Logout.svelte"
 	import Title from "./routes/titles/Title.svelte"
 	import Titles from "./routes/titles/Titles.svelte"
 	import Comic from "./routes/comics/Comic.svelte"
@@ -14,8 +16,10 @@
 	import TitleProperties from "./routes/titles/TitleProperties.svelte"
 	import SiteProperties from "./routes/site-properties/SiteProperties.svelte"
 	import SiteProperty from "./routes/site-properties/SiteProperty.svelte"
+	import Authenticated from "./components/Authenticated.svelte"
 
 	import { properties } from "./stores/properties"
+	import sessionStore from "./stores/session"
 
 	export let url = ""
 
@@ -41,11 +45,15 @@
 		<SiteProperties/>
 	</Route>
 	<Route path="/site-properties/:property" let:params>
-		<SiteProperty property={params.property}/>
+		<Authenticated>
+			<SiteProperty property={params.property}/>
+		</Authenticated>
 	</Route>
 
 	<Route path="comics/titles/:id/properties/:property" let:params>
-		<TitleProperty id={params.id} property={params.property} />
+		<Authenticated>
+			<TitleProperty id={params.id} property={params.property} />
+		</Authenticated>
 	</Route>
 	<Route path="comics/titles/:id/properties" let:params>
 		<TitleProperties id={params.id} type="title" />
@@ -72,6 +80,14 @@
 		<Comics/>
 	</Route>
 	
+	<Route path="login">
+		<Login/>
+	</Route>
+
+	<Route path="logout">
+		<Logout/>
+	</Route>
+
 	<Route path="/">
 		<Home/>
 	</Route>
@@ -82,5 +98,13 @@
 </Router>
 
 <footer>
-	<p>&copy; Copyright {$properties.copyrightYear} {$properties.owner}</p>
+	<p>
+		&copy; Copyright {$properties.copyrightYear} {$properties.owner}
+		&nbsp;|&nbsp;
+		{#if $sessionStore.username }
+			<a use:link href="/logout">logout ({$sessionStore.username})</a>
+		{:else}
+			<a use:link href="/login?g={window.location.pathname}">log in</a>
+		{/if}
+	</p>
 </footer>

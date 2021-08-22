@@ -21,6 +21,7 @@ import PageTitle from "../../components/PageTitle.svelte"
   const updateTitleMutation = mutation(titleMutationStore)
 
   const update = () => {
+    // @TODO - bind to local properties, update store on success
     const titleUpdate = {
       name: propertyName == "name" ? $titleStore.data.title.name : undefined,
       publisher_id: propertyName == "publisher" ? $titleStore.data.title.publisher_id : undefined,

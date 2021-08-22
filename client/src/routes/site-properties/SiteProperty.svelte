@@ -6,6 +6,7 @@
 
   const propertyName = property.replace(".txt", "")
 
+  // @TODO - bind to local properties, update store on success
   let ownerName = $propertiesStore.owner
   let copyrightYear = $propertiesStore.copyrightYear
 
@@ -34,7 +35,7 @@
 <section class="site-property">
   <p>
     <img src="/icons/back.gif" alt="[PARENTDIR]">
-    <a use:link href="./">Back</a>
+    <a use:link href="/site-properties">Back</a>
   </p>
   <hr />
   

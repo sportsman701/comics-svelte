@@ -67,6 +67,7 @@ async function genServer(): Promise<Express> {
   server.use(morgan)
   server.use(compression())
   server.use(cors())
+  server.use(express.json())
 
   configHealthcheck(server)
   configGraphQL(server)
