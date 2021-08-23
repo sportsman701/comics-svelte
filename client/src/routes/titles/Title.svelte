@@ -42,7 +42,7 @@
         <td>
           <img src="/icons/left.gif" alt="[BACK]" role="presentation">
           {#if title.series.previous}
-          <a href="/comics/titles/{title.series.previous}">Previous Title</a>
+          <a use:link href="/comics/titles/{title.series.previous}">Previous Title</a>
           {:else}
           <span class="disabled">Previous Title</span>
           {/if}
@@ -53,7 +53,7 @@
         </td>
         <td>
           {#if title.series.next}
-          <a href="/comics/titles/{title.series.next}">Next Title</a>
+          <a use:link href="/comics/titles/{title.series.next}">Next Title</a>
           {:else}
           <span class="disabled">Next Title</span>
           {/if}

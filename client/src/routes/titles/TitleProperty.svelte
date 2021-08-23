@@ -4,7 +4,7 @@
   import { GetTitleEditDocument, UpdateTitleDocument } from "../../graphql/schemas.generated"
   import type { PublishersPage, Title } from "../../graphql/schemas.generated"
   import { operationStore, query, mutation } from "@urql/svelte"
-import PageTitle from "../../components/PageTitle.svelte"
+  import PageTitle from "../../components/PageTitle.svelte"
 
   export let id: string
   export let property: string
@@ -20,6 +20,7 @@ import PageTitle from "../../components/PageTitle.svelte"
   const titleMutationStore = operationStore<Title>(UpdateTitleDocument)
   const updateTitleMutation = mutation(titleMutationStore)
 
+  // @TODO - bind update handler to form submit instead of button click
   const update = () => {
     // @TODO - bind to local properties, update store on success
     const titleUpdate = {

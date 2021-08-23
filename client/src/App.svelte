@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Router, Route, link } from "svelte-routing"
+	import { Router, Route } from "svelte-routing"
 	import { initClient } from "@urql/svelte"
 
+	import Footer from "./components/Footer.svelte"
 	import NotFound from "./routes/NotFound.svelte"
 	import Home from "./routes/Home.svelte"
 	import Login from "./routes/session/Login.svelte"
@@ -17,9 +18,6 @@
 	import SiteProperties from "./routes/site-properties/SiteProperties.svelte"
 	import SiteProperty from "./routes/site-properties/SiteProperty.svelte"
 	import Authenticated from "./components/Authenticated.svelte"
-
-	import { properties } from "./stores/properties"
-	import sessionStore from "./stores/session"
 
 	export let url = ""
 
@@ -97,14 +95,4 @@
 	</Route>
 </Router>
 
-<footer>
-	<p>
-		&copy; Copyright {$properties.copyrightYear} {$properties.owner}
-		&nbsp;|&nbsp;
-		{#if $sessionStore.username }
-			<a use:link href="/logout">logout ({$sessionStore.username})</a>
-		{:else}
-			<a use:link href="/login?g={window.location.pathname}">log in</a>
-		{/if}
-	</p>
-</footer>
+<Footer/>

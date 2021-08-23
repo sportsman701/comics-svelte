@@ -11,8 +11,6 @@
   import PageTitle from "../../components/PageTitle.svelte"
 
   export let id: string = ""
-  export let type: string = ""
-  console.log(type)
 
   const titleId = parseInt(id, 10)
 
@@ -21,50 +19,41 @@
   })
   query(titleStore)
 
-  const propertyHref = (id: string, name: string) => `/comics/titles/${id}/properties/${name}.txt`
-  const propertyLink = (id: string, name: string) => `<a use:link href="${propertyHref(id, name)}">${name}.txt</a>`
+  const propertyHref = (id: string, name: string) => `/comics/titles/${id}/properties/${propertyFileName(name)}`
+  const propertyFileName = (name: string) => `${name}.txt`
+  const propertyValue = (obj: Title, property: string) => {
+    let value = obj[property]
+    if (value instanceof Object && value.hasOwnProperty("name")) {
+      value = value.name
+    }
+    return value
+  }
   const dateTime = (timestamp: number) => new Date(timestamp * 1000).toUTCString()
+
+  const properties = [
+    "name",
+    "publisher",
+    "url",
+    "volume",
+    "year"
+  ]
 </script>
 
 <AwaitQuery queryStore={titleStore} let:data={{title, comics}}>
   <PageTitle value="/comics/titles/{title.name}/properties"/>
   <section class="properties">
     <DirectoryList parentDirectory="/comics/titles/{title.id}">
+      {#each properties as property}
       <tr>
         <td><Icon icon="text" alt="property" /></td>
-        <th scope="row">{@html propertyLink(title.id, "name")}</th>
+        <th scope="row">
+          <a use:link href={propertyHref(title.id, property)}>{propertyFileName(property)}</a>
+        </th>
         <td>{dateTime(title.date_updated)}</td>
-        <td>{title.name.toString().length}</td>
-        <td>{title.name}</td>
+        <td><NullableLength value={title[property]} /></td>
+        <td><NullableString value={propertyValue(title, property)} /></td>
       </tr>
-      <tr>
-        <td><Icon icon="text" alt="property" /></td>
-        <th scope="row">{@html propertyLink(title.id, "publisher")}</th>
-        <td>{dateTime(title.date_updated)}</td>
-        <td>{title.publisher.name.length}</td>
-        <td>{title.publisher.name}</td>
-      </tr>
-      <tr>
-        <td><Icon icon="text" alt="property" /></td>
-        <th scope="row">{@html propertyLink(title.id, "url")}</th>
-        <td>{dateTime(title.date_updated)}</td>
-        <td><NullableLength value={title.url} /></td>
-        <td><NullableString value={title.url} /></td>
-      </tr>
-      <tr>
-        <td><Icon icon="text" alt="property" /></td>
-        <th scope="row">{@html propertyLink(title.id, "volume")}</th>
-        <td>{dateTime(title.date_updated)}</td>
-        <td><NullableLength value={title.volume} /></td>
-        <td><NullableString value={title.volume} /></td>
-      </tr>
-      <tr>
-        <td><Icon icon="text" alt="property" /></td>
-        <th scope="row">{@html propertyLink(title.id, "year")}</th>
-        <td>{dateTime(title.date_updated)}</td>
-        <td><NullableLength value={title.year} /></td>
-        <td><NullableString value={title.year} /></td>
-      </tr>
+      {/each}
     </DirectoryList>
   </section>
 </AwaitQuery>

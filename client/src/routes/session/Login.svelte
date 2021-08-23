@@ -50,22 +50,38 @@ const login = async (): Promise<void> => {
 </script>
 
 <section id="login">
-  <h2>Authentication Required</h2>
-  <p>This server requires a username and password. The server says: Hey, you! No snooping. Log in or buzz off!</p>
-  {#if loginError}
-    <div class="error">
-      <p>{loginError}</p>
-    </div>
-  {/if}
-  <form on:submit|preventDefault={login} autocomplete=off>
-    <p>
-      <label for="username">User Name: </label>
-      <input type="text" id="username" name="username" bind:value={username} placeholder="What is your name?" />
-    </p>
-    <p>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="username" bind:value={password} placeholder="What is your quest?" /> 
-    </p>
-    <button type="submit">Log in</button> &nbsp; <button type="cancel">Cancel</button>
-  </form>
+  <div class="login-wrapper">
+    <h2>Authentication Required</h2>
+    <p>This server requires a username and password. The server says: Restricted Area</p>
+    {#if loginError}
+      <div class="error">
+        <p>{loginError}</p>
+      </div>
+    {/if}
+    <form on:submit|preventDefault={login} autocomplete=off>
+      <p>
+        <label for="username">User Name: </label>
+        <input type="text" id="username" name="username" bind:value={username} />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="username" bind:value={password} /> 
+      </p>
+      <button type="submit">Log in</button> &nbsp; <button type="cancel">Cancel</button>
+    </form>
+  </div>
 </section>
+
+<style>
+  .login-wrapper {
+    border: 1px solid var(--mediumgrey);
+    border-width: 0 1px 1px 1px;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.5);
+    height: max-content;
+    margin: auto;
+    padding: 1em;
+    position: absolute;
+    top: 0; left: 0; bottom: 100%; right: 0;
+    width: 25em;
+  }
+</style>
